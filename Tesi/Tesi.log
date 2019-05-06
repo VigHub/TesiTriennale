@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  6 MAY 2019 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  6 MAY 2019 14:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/viga211/Scrivania/Tesi/Tesi.tex
-(/home/viga211/Scrivania/Tesi/Tesi.tex
+**/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.tex
+(/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -179,7 +179,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen128
 \Gm@layoutvoffset=\dimen129
 \Gm@dimlist=\toks24
-) (/home/viga211/Scrivania/Tesi/Tesi.aux)
+) (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.aux)
 \openout1 = `Tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -301,28 +301,28 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/viga211/Scrivania/Tesi/Tesi.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.toc)
 \tf@toc=\write3
 \openout3 = `Tesi.toc'.
 
- [2] (/home/viga211/Scrivania/Tesi/chapters/introduzione/introduzione.tex [1] [2]) [3] (/home/viga211/Scrivania/Tesi/chapters/flutter/flutter.tex [4]
+ [2] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/introduzione/introduzione.tex [1] [2]) [3] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/flutter/flutter.tex [4]
 <images/StateLessApp.png, id=26, 1017.8025pt x 752.8125pt>
 File: images/StateLessApp.png Graphic file (type png)
 <use images/StateLessApp.png>
-Package pdftex.def Info: images/StateLessApp.png  used on input line 63.
+Package pdftex.def Info: images/StateLessApp.png  used on input line 61.
 (pdftex.def)             Requested size: 256.08069pt x 199.17271pt.
 <images/StateLessScreen.png, id=27, 1084.05pt x 1927.2pt>
 File: images/StateLessScreen.png Graphic file (type png)
 <use images/StateLessScreen.png>
-Package pdftex.def Info: images/StateLessScreen.png  used on input line 67.
+Package pdftex.def Info: images/StateLessScreen.png  used on input line 65.
 (pdftex.def)             Requested size: 128.02927pt x 199.14194pt.
- [5 </home/viga211/Scrivania/Tesi/images/StateLessApp.png (PNG copy)> </home/viga211/Scrivania/Tesi/images/StateLessScreen.png>]
+ [5 </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateLessApp.png (PNG copy)> </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateLessScreen.png>]
 <images/StateFullApp.png, id=36, 1133.73563pt x 919.93687pt>
 File: images/StateFullApp.png Graphic file (type png)
 <use images/StateFullApp.png>
-Package pdftex.def Info: images/StateFullApp.png  used on input line 97.
+Package pdftex.def Info: images/StateFullApp.png  used on input line 95.
 (pdftex.def)             Requested size: 396.81342pt x 321.98273pt.
- [6 </home/viga211/Scrivania/Tesi/images/StateFullApp.png (PNG copy)>]) [7] (/home/viga211/Scrivania/Tesi/chapters/utenti/utenti.tex
+ [6 </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateFullApp.png (PNG copy)>]) [7] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/utenti/utenti.tex
 <images/Login.png, id=43, 1084.05pt x 1927.2pt>
 File: images/Login.png Graphic file (type png)
 <use images/Login.png>
@@ -334,13 +334,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8]
 LaTeX Font Info:    Try loading font information for U+mvs on input line 71.
- (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd) [9 </home/viga211/Scrivania/Tesi/images/Login.png>]
+ (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd) [9 </home/viga211/Scrivania/TesiTriennale/Tesi/images/Login.png>]
 <images/Authentication.png, id=51, 704.6325pt x 335.00156pt>
 File: images/Authentication.png Graphic file (type png)
 <use images/Authentication.png>
 Package pdftex.def Info: images/Authentication.png  used on input line 83.
 (pdftex.def)             Requested size: 384.1122pt x 182.61568pt.
- [10 </home/viga211/Scrivania/Tesi/images/Authentication.png (PNG copy)>]) [11] (/home/viga211/Scrivania/Tesi/chapters/dati/dati.tex
+ [10 </home/viga211/Scrivania/TesiTriennale/Tesi/images/Authentication.png (PNG copy)>]) [11] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/dati/dati.tex
 
 Package caption Warning: \label without proper reference on input line 41.
 See the caption package documentation for explanation.
@@ -364,7 +364,7 @@ Overfull \hbox (40.21323pt too wide) in paragraph at lines 54--55
  [][][] 
  []
 
-) [13 </home/viga211/Scrivania/Tesi/images/ERTesi.png> </home/viga211/Scrivania/Tesi/images/LogicoTesi.png (PNG copy)>] (/home/viga211/Scrivania/Tesi/chapters/mappa/mappa.tex) [14] (/home/viga211/Scrivania/Tesi/Tesi.bbl
+) [13 </home/viga211/Scrivania/TesiTriennale/Tesi/images/ERTesi.png> </home/viga211/Scrivania/TesiTriennale/Tesi/images/LogicoTesi.png (PNG copy)>] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/mappa/mappa.tex) [14] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.bbl
 Underfull \hbox (badness 3209) in paragraph at lines 9--13
 \OT1/cmr/m/n/12 bike vo-la an-che in ita-lia e se-gna un ul-te-rio-re +19%, 2018.  URL
  []
@@ -374,7 +374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 []\OT1/cmr/m/n/12 material.io.  Ma-te-rial de-si-gn, 2019.  URL
  []
 
-) [15] (/home/viga211/Scrivania/Tesi/Tesi.aux)
+) [15] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -385,14 +385,14 @@ LaTeX Warning: There were undefined references.
 ### bottom level 
 Here is how much of TeX's memory you used:
  5357 strings out of 492616
- 76020 string characters out of 6135177
+ 76412 string characters out of 6135177
  167188 words of memory out of 5000000
  9139 multiletter control sequences out of 15000+600000
  13640 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,40p,828b,1981s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,40p,842b,1981s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on /home/viga211/Scrivania/Tesi/Tesi.pdf (17 pages, 1829869 bytes).
+Output written on /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.pdf (17 pages, 1829869 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
