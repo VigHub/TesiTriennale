@@ -1,0 +1,25 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Introduzione}{1}% 
+\contentsline {subsection}{\numberline {1.1}Obiettivi e origine del progetto}{1}% 
+\contentsline {subsection}{\numberline {1.2}Scelta del framework}{1}% 
+\contentsline {subsection}{\numberline {1.3}Organizzazione e sviluppo}{2}% 
+\contentsline {subsubsection}{\numberline {1.3.1}Git e Bitbucket}{2}% 
+\contentsline {subsubsection}{\numberline {1.3.2}Trello}{2}% 
+\contentsline {subsubsection}{\numberline {1.3.3}Visual Studio Code}{2}% 
+\contentsline {subsection}{\numberline {1.4}Struttura generale dell'applicazione}{3}% 
+\contentsline {section}{\numberline {2}Flutter}{4}% 
+\contentsline {subsection}{\numberline {2.1}Stateless e Statefull Widget}{4}% 
+\contentsline {subsection}{\numberline {2.2}Principali Widget}{6}% 
+\contentsline {subsection}{\numberline {2.3}Material Design}{7}% 
+\contentsline {section}{\numberline {3}Gestione degli utenti}{8}% 
+\contentsline {subsection}{\numberline {3.1}Firebase}{8}% 
+\contentsline {subsection}{\numberline {3.2}Schermata di avvio, tipologia di Utente e pagina Profilo}{8}% 
+\contentsline {subsection}{\numberline {3.3}Registrazione}{10}% 
+\contentsline {subsection}{\numberline {3.4}Utente anonimo}{10}% 
+\contentsline {subsection}{\numberline {3.5}Codifica}{11}% 
+\contentsline {section}{\numberline {4}Gestione e struttura del database}{12}% 
+\contentsline {subsection}{\numberline {4.1}Schema Concettuale}{12}% 
+\contentsline {subsection}{\numberline {4.2}Schema Logico}{13}% 
+\contentsline {subsection}{\numberline {4.3}Gestione dati in Firebase}{13}% 
+\contentsline {section}{\numberline {5}Mappa e sue funzionalit\IeC {\`a}}{14}% 

@@ -1,0 +1,118 @@
+%\documentclass[../../Tesi.tex]{subfiles}
+
+%\begin{document}
+
+\section{Introduzione}
+	Nel 2017 in Italia la produzione di veicoli a due ruote a pedalata assistita è aumentata
+	del 48\% e il mercato dell'e-bike ha ottenuto un incremento del 
+	19\%  per un totale di 148.000 unità vendute.
+	\cite{biciElettrica}   
+	\subsection{Obiettivi e origine del progetto}
+	Scopo del progetto è creare un’applicazione che mostri all’utilizzatore, in
+	base  alla propria posizione, le più vicine stazioni di ricarica per bici
+	elettriche. Inoltre vengono forniti numerosi servizi agguntivi per
+	facilitarne l'utilizzo e la personalizzazione.\\
+	L'idea è nata da un incontro con il dott. Marco Aceti, biker per passione,
+	nell'estate 2018. Durante il colloquio ha spiegato come il mercato delle
+	bici elettriche sia in continua espansione, e che sempre più ciclisti
+	decidono di passare dalla tradizionale bicicletta a quella con pedalata
+	assistita. Dunque ha raccontato la sua idea: un'applicazione che mette a
+	conoscenza dell'utente la posizione delle colonnine per ricaricare la
+	propria bici.
+	
+	\subsection{Scelta del framework}
+	Il committente dell'applicazione desiderava che il prodotto fosse 
+	usufruibile  da quanti più utenti possibile, e dunque una delle richieste
+	era che l'app fosse accessibile sia a dispositivi Apple, con il sistema
+	operativo iOS, sia per dispositivi Android. \newline
+	Per i sistemi Android non ci sarebbero stati problemi relativi al linguaggio
+	da utilizzare in quanto si aveva già avuto esperienza di Java, dei suoi
+	costrutti e della sua sintassi. Inoltre il programma Android Studio avrebbe
+	ulteriormente semplificato le cose. Il problema nasceva nel momento in cui
+	si era deciso di sviluppare un'app per iOS: la nostra conoscenza relativa
+	ai
+	linguaggi (Swift e C\verb|#|) era pressochè nulla e si sarebbe dovuto
+	investire diverso tempo per impararne in modo appropriato l'utilizzo. 
+	Inoltre per poter sviluppare un'applicazione che possa poi essere eseguita su un
+	Iphone si deve essere in possesso di un calcolatore Apple (Macbook) in
+	quanto è necessario il programma Xcode, funzionante solo su quest'ultimo; e
+	questo strumento non faceva parte delle nostre risorse.
+	Non
+	sapendo come procedere, si è deciso di chiedere maggiori informazioni a
+	diversi	professori del corso di Ingegneria Informatica e anche al gruppo
+	Unibg Seclab. Proprio questi ultimi ci hanno indicato come la soluzione al
+	problema fosse un (al tempo) nascente framework di Google in grado di creare
+	app native per entrambe le piattaforme di interesse: Flutter. Il prossimo
+	capitolo è dedicato alla comprensione e all'utilizzo di concetti base per
+	capire com sviluppare software mediante questo framework.
+	
+	\subsection{Organizzazione e sviluppo}
+	Lavorando in un team è stato necessario impiegare del tempo per scegliere i 
+	tool relativi allo sviluppo in gruppo, in modo da organizzare il tutto nel 
+	miglior modo possibile.
+
+	\subsubsection{Git e Bitbucket}
+	Bitbucket è uno strumento di gestione del codice Git. Un
+	progetto sviluppato con questi due tool dunque
+	non solo risiede fisicamente sulle macchine sulle quali si testa il
+	software, ma anche sul cloud, in modo da avere maggiore affidabilità delle
+	versioni (con una gestione efficace relativa alle modifiche) e potendo poi
+	accedere con un qualunque calcolatore al progetto. Per aggiungere un nuovo
+	file al progetto è necessario scrivere               
+	\verb|git --add nomefile|, se invece occore applicare delle modifiche
+	inserendo anche un commento per meglio comprendere il lavoro appena concluso
+	basta digitare \verb|git commit -a| \verb|-m "messaggio"| (dove il parametro
+	\verb|-a| sta a indicare che si vuole applicare a \textit{tutte} le
+	modifiche e il parametro \verb|-m| che si desidera lasciare un commento).
+	Volendo rendere dunque \textit{effettive} le modifiche è necessario dare
+	il comando \verb|git push  origin| \verb|master| in modo tale da inserire nel branch
+	\textit{master} la nuova porzione di codice. Per ottenere le modifiche
+	aggiunte da un altro membro del team bisogna scrivere \verb|git pull|:
+	dopo tale comando sul proprio calcolatore sono presenti tutti i file della
+	repository aggiornati all'ultima versione.
+
+	\subsubsection{Trello}
+	Trello è un programma che permette in modo molto rapido e soprattutto in
+	maniera intuitiva di organizzare le mansioni e i compiti di ogni membro del
+	team. La pagina principale consiste in una grande bacheca sulla quale sono
+	visibili delle \textit{schede}, ognuna con un titolo e relativa a un
+	particolare gruppo. Per ogni scheda è poi possibile indicare il membro del
+	team al quale è riferito il lavoro indicato, indicare una lista di azioni
+	(in modo da vedere la percentuale di avanzamento di quella particolare
+	scheda) e settare dei promemoria importanti che non devono essere persi.
+
+	\subsubsection{Visual Studio Code}
+	Il progetto conteneva numerosi file di estensione diversa. Infatti erano
+	presenti file dart (per l'applicazione vera e propria), xml (per lavori
+	specifici lato Android), plist (file descrittivo lato iOS), immagini e altri
+	ancora. Si è quindi deciso di utilizzare un editor testuale il più generale
+	possibile e non legato allo sviluppo di un particolare linguaggio. La
+	scelta è ricaduta su Visual Studio Code, di proprietà Microsoft. Oltre a
+	possedere "out of the box" funzionalità molto comode per lo sviluppo
+	software, è estensibile con migliaia di pacchetti relativi a pressochè ogni
+	linguaggio. Nello specifico l'estensione per Flutter non solo presenta
+	autocompletamenti vari e molto dettagliati, ma anche una comoda funzione per
+	fare il debugging del software gestendo il tutto con una barra che raccoglie i
+	principali comandi. 
+
+	\subsection{Struttura generale dell'applicazione}
+	Di seguito viene riportato un accenno alla struttura, alle pagine
+	dell'intera applicazione in modo da dare un contesto e dare una visione
+	d'insieme al lettore. A partire dal terzo capitolo ogni pagina verrà poi
+	analizzata nel dettaglio in base ai propri componenti e alle sue
+	funzionalità, mostrando anche immagini e codice. \newline
+	Al primo accesso all'utente viene mostrata una pagina di login nella quale
+	si può inserire la propria mail e password oppure creare un nuovo account.
+	Se l'autenticazione o la crezione di un nuovo utente sono andate a buon
+	fine, viene mostrata la pagina principale, la mappa, che indica tutte le
+	stazioni di ricarica, noleggio e manutenzione di bici elettriche presenti
+	nel database. Oltre a possedere numerose funzioni che verranno descritte nel
+	proprio capitolo, da questa pagina è possibile acedere all'inserimento di
+	una nuova stazione (che deve essere in ultimo confermata del gestore del
+	database), e si può infine arrivare alla pagina profilo, dove si possono
+	settare impostazioni personali come la tipologia di mappa che si vuole
+	visualizzare e cambiare la password, si possono vedere le stazioni aggiunte
+	dall'utente attuale ed effettuare il logout, per tornare così alla pagina
+	iniziale di login. 	
+	
+%\end{document}

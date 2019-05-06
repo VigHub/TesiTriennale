@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper]{article}
+
+\renewcommand{\contentsname}{Indice}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\refname}{Sitografia}
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+%\usepackage{subfig}
+\usepackage{subcaption}
+\usepackage{marvosym}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{{images/}{../images/}}
+\usepackage[italian]{babel}
+\numberwithin{figure}{section}
+\onehalfspace
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm]{geometry}
+% Prima Pagina
+\title{
+	EBikeRecharge  \\ \large Sviluppo di un'applicazione per smartphone   \\
+	Android e iOS tramite il framework Flutter}
+\date{2019 \\ Aprile}
+\author{Gianluca Viganò, Youssef Zraiba}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	% Indice
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	% Introduzione
+	\input{chapters/introduzione/introduzione.tex}
+	% capitoli
+	\newpage
+	\input{chapters/flutter/flutter.tex}
+	\newpage
+	\input{chapters/utenti/utenti.tex}
+	\newpage
+	\input{chapters/dati/dati.tex}
+	\newpage
+	\input{chapters/mappa/mappa.tex}
+	
+	
+	
+	\bibliographystyle{plainnat}
+	% bibliografia
+	\newpage
+	\bibliography{bibliografia}
+\end{document}
