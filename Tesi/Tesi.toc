@@ -12,14 +12,14 @@
 \contentsline {subsection}{\numberline {2.1}Stateless e Statefull Widget}{4}% 
 \contentsline {subsection}{\numberline {2.2}Principali Widget}{6}% 
 \contentsline {subsection}{\numberline {2.3}Material Design}{7}% 
-\contentsline {section}{\numberline {3}Gestione degli utenti}{8}% 
-\contentsline {subsection}{\numberline {3.1}Firebase}{8}% 
-\contentsline {subsection}{\numberline {3.2}Schermata di avvio, tipologia di Utente e pagina Profilo}{8}% 
-\contentsline {subsection}{\numberline {3.3}Registrazione}{10}% 
-\contentsline {subsection}{\numberline {3.4}Utente anonimo}{10}% 
-\contentsline {subsection}{\numberline {3.5}Codifica}{11}% 
-\contentsline {section}{\numberline {4}Gestione e struttura del database}{12}% 
-\contentsline {subsection}{\numberline {4.1}Schema Concettuale}{12}% 
-\contentsline {subsection}{\numberline {4.2}Schema Logico}{13}% 
-\contentsline {subsection}{\numberline {4.3}Gestione dati in Firebase}{13}% 
-\contentsline {section}{\numberline {5}Mappa e sue funzionalit\IeC {\`a}}{14}% 
+\contentsline {section}{\numberline {3}Gestione degli utenti}{10}% 
+\contentsline {subsection}{\numberline {3.1}Firebase}{10}% 
+\contentsline {subsection}{\numberline {3.2}Schermata di avvio, tipologia di Utente e pagina Profilo}{10}% 
+\contentsline {subsection}{\numberline {3.3}Registrazione}{12}% 
+\contentsline {subsection}{\numberline {3.4}Utente anonimo}{12}% 
+\contentsline {subsection}{\numberline {3.5}Codifica}{13}% 
+\contentsline {section}{\numberline {4}Gestione e struttura del database}{14}% 
+\contentsline {subsection}{\numberline {4.1}Schema Concettuale}{14}% 
+\contentsline {subsection}{\numberline {4.2}Schema Logico}{15}% 
+\contentsline {subsection}{\numberline {4.3}Gestione dati in Firebase}{15}% 
+\contentsline {section}{\numberline {5}Mappa e sue funzionalit\IeC {\`a}}{16}% 

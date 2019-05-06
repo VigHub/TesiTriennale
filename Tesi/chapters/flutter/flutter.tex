@@ -50,7 +50,7 @@
 	specifiche sezioni di codice), e mostrerà un testo con il più classico dei
 	messaggi d'avvio (Hello World!). Questo widget non è interattivo, non
 	cambierà mai graficamente e perciò si dice che non ha stato.
-	 Da questo esempio si può già notare come la
+	Da questo esempio si può già notare come la
 	struttura del codice flutter assuma \textit{graficamente} un'indentazione
 	naturale, con una gerarchia ad albero in cui c'è un padre iniziale e da cui
 	seguono numerosi figli, padri di successivi widget.
@@ -144,5 +144,86 @@
 	un buon design con l'innovazione della tecnologia e della scienza. 
 	\cite{material} \newline
 	Tale design è interamente sviluppato da Google e fa uso di layout basati su
-	una griglia, animazioni e transizioni. Sono
+	una griglia, animazioni e transizioni. Si prendono ora in cosiderazione i
+	widget più comuni appartenti a questo particolare design.
+	\begin{trivlist}
+		\item \textbf{Scaffold} \newline
+		Implementa la struttura (\textit{impalcatura}) del layout visuale di
+		base del material design. Si espande fino a occupare tutto lo spazio
+		disponibile sullo schermo, inoltre quando appare una tastiera a seguito
+		di un'interazione con l'utente la grandezza di questo widget cambia in
+		base alle dimensioni di quest'ultima. Presenta nel proprio costruttore
+		argomenti per mostare sulla schermata Drawer, SnackBar e BottomSheets,
+		descritte di seguito. 
+		\item \textbf{AppBar} \newline
+		Un'AppBar consiste in una linea orizzontale, solitamente posizionata in
+		alto sulla schermo, che contiene diverse azioni (IconButtons) seguite da
+		un menù a comparsa (PopUpMenu). In questo modo si possono inserire in un
+		unico luogo tutte le scorciatoie per passare da una schermata ad
+		un'altra oppure si possono accorpare funzionalità utili a portata di
+		mano per l'utente. Bisogna inserire come argomenti il titolo dell'AppBar
+		e inoltre una serie di azioni (\textit{actions}) sottoforma di una lista
+		di widget. 
+		\item \textbf{BottomNavigationBar} \newline
+		\'E un material widget disposto in fondo allo schermo per selezionare un
+		piccolo numero di schermate, solitamente tra le tre e le cinque.
+		Si costruisce tramite diversi strumenti quali widget di testo, icone o
+		entrambi. Se gli elementi figli sono minori di quattro, la grandezza di
+		ogni item è fissa, mentre se superiore la grandezza si adatta al numero
+		di widget contenuti.
+		\item \textbf{Drawer} \newline
+		Consiste in un pannello che entra in orizzontale sullo schermo
+		solitamente dal lato sinistro della Scaffold. Come figlio è solito avere
+		una ListView (particolare tipo di Column che gestisce anche lo scroll
+		verticale), in modo da mostrare all'utente utili link per la navigazione
+		all'interno dell'applicazione. L'AppBar mostra in automatico un Drawer
+		vuoto con la classica icona dei menù a comparsa se non viene specificato
+		nulla nel suo costruttore.
+		\item \textbf{SnackBar} \newline
+		Formato da un messaggio con un'azione opzionale visualizzato brevemente
+		nella parte inferiore dello schermo, viene utlizzato per comunicare
+		all'utente una particolare informazione come l'attesa per un caricamento
+		o il manifestarsi di un problema a seguito di un errore, come la
+		mancanaza di una connessione internet.
+		\item \textbf{FlatButton e IconButton} \newline
+		Sono entrambi pulsanti che si differenziano per ciò che contengono. Il
+		primo è solitamente formato da un rettangolo (i cui angoli possono
+		essere smussati a piacere) al cui interno risiede un testo esplicativo
+		dell'azione che verrà eseguita a seguito di un tocco da parte
+		dell'utente. Il secondo è invece circolare e contiene un'icona che
+		dovrebbe mostrare direttamente quale sarà la sua funzione. Entrambi sono
+		widget di tipo Statefull, in quanto il loro colore o la loro forma può
+		cambiare a seguito di pressioni sullo schermo.
+		\item \textbf{TextField} \newline
+		Consente all'utente di inserire del testo, attraverso l'uso della
+		tastiera che appare sullo schermo. Il widget chiama la funzione
+		\textit{onChanged}  ogni volta che viene il testo nel campo cambia. Se
+		l'utente indica di aver finito di digitare nel campo (ad esempio
+		premendo il pulsante di invio), si attiva
+		la funzione \textit{onSubmitted}. Per controllare il testo visualizzato nel
+		TextField si può utilizzare una particolare classe chiamata
+		TextEditingController, ad esempio per impostare
+		un valore iniziale già presente all'avvio della schermata o per inserire
+		i caratteri scritti dall'utente in un'altra variabile.
+		\item \textbf{AlertDialog} \newline
+		Una AlertDialog informa l'utente sulle situazioni che richiedono una
+		conferma di un'operazione. Inoltre ha un titolo opzionale e un
+		elenco opzionale di azioni. Il titolo viene visualizzato in alto e le
+		azioni vengono visualizzate sotto il contenuto dell’AlertDialog. Si può
+		anche scegliere che se l'utente tocca al di fuori dell'area dedicata a
+		questo widget esso sparisca, oppure si può decidere che l'AlertDialog si
+		dissolva solo a seguito della pressione di un particolare tasto.
+		\item \textbf{BottomSheet} \newline
+		Il BottomSheet è un particolare widget che appare nella parte inferiore
+		dello schermo e occupa spazio in base alla grandezza del proprio figlio
+		(solitamente una Column o una ListView). Esistono due tipologie: fisso e
+		dinamico. La prima rimane visibile anche quando l'utente interagisce con
+		altre parti dell'app. può essere creato e visualizzato  con
+		la funzione \textit{ScaffoldState.showBottomSheet}. La seconda tipologia
+		è un'alternativa a un menù o a una AlertDialog e impedisce all'utente di
+		interagire con il resto dell'app. I BottomSheet di questo tipo possono
+		essere creati e visualizzati con la funzione \textit{showModalBottomSheet}.
+	\end{trivlist}
+
+
 	
