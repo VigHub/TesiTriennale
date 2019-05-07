@@ -120,7 +120,21 @@
 		verticale. La loro grandezza in pixel sarà formata dalla somma della
 		dimensioni di ciò che contengono e si possono ancora una volta inserire diverse
 		preferenze di stile come la posizione rispetto all'asse principale o
-		secondario. 
+		secondario. Nella figura \ref{rowColumn} si possono vedere i due widget
+		che possiedono quattro Container figli di diverso colore.
+		\begin{figure}[h!]
+			\centering
+			\begin{subfigure}{0.3\linewidth}
+				\includegraphics[width=\linewidth]{Row.png}
+				\caption{Row}
+			\end{subfigure}
+			\begin{subfigure}{0.3\linewidth}
+				\includegraphics[width=\linewidth]{Column.png}
+				\caption{Column}
+			\end{subfigure}
+			\caption{}
+			\label{rowColumn}
+		\end{figure} 
 		\item \textbf{Stack} \newline
 		\'E simile ai due precedenti in quanto anch'esso contiene diversi widget
 		figli. Se ne differenzia in quanto non privilegia un'unica direzione di
@@ -164,6 +178,16 @@
 		mano per l'utente. Bisogna inserire come argomenti il titolo dell'AppBar
 		e inoltre una serie di azioni (\textit{actions}) sottoforma di una lista
 		di widget. 
+		\begin{figure}
+			\centering
+			\includegraphics[width=\linewidth]{Scaffold.png}			
+			\caption{Nell'esempio viene mostrata una Scaffold, che fa da widget
+			genitore all'AppBar posizionata in alto, al Drawer in alto a
+			sinistra e alla BottomNavigationBar in basso con tre icone con
+			titolo. Si noti inoltre come venga gestita in automatico la
+			possibilità di ruotare il proprio dispositivo, cambiando
+			l'orientazione della schermata.}
+		\end{figure}
 		\item \textbf{BottomNavigationBar} \newline
 		\'E un material widget disposto in fondo allo schermo per selezionare un
 		piccolo numero di schermate, solitamente tra le tre e le cinque.
@@ -205,6 +229,14 @@
 		TextEditingController, ad esempio per impostare
 		un valore iniziale già presente all'avvio della schermata o per inserire
 		i caratteri scritti dall'utente in un'altra variabile.
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.4\linewidth]{AlertDialog.png}			
+			\caption{Nell'esempio viene mostrata una Scaffold che contiene
+			un'AlertDialog. Quest'ultima presenta un titolo, un contenuto
+			formato da una TextForm per inserire del testo, e due pulsanti,
+			quello a sinistra è un FlatButton mentre quello a destra è un IconButton.}
+		\end{figure}
 		\item \textbf{AlertDialog} \newline
 		Una AlertDialog informa l'utente sulle situazioni che richiedono una
 		conferma di un'operazione. Inoltre ha un titolo opzionale e un
@@ -222,7 +254,9 @@
 		la funzione \textit{ScaffoldState.showBottomSheet}. La seconda tipologia
 		è un'alternativa a un menù o a una AlertDialog e impedisce all'utente di
 		interagire con il resto dell'app. I BottomSheet di questo tipo possono
-		essere creati e visualizzati con la funzione \textit{showModalBottomSheet}.
+		essere creati e visualizzati con
+		la funzione \textit{showModalBottomSheet}.
+		
 	\end{trivlist}
 
 
