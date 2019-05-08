@@ -180,7 +180,7 @@
 		di widget. 
 		\begin{figure}
 			\centering
-			\includegraphics[width=\linewidth]{Scaffold.png}			
+			\includegraphics[width=0.9\linewidth]{Scaffold.png}			
 			\caption{Nell'esempio viene mostrata una Scaffold, che fa da widget
 			genitore all'AppBar posizionata in alto, al Drawer in alto a
 			sinistra e alla BottomNavigationBar in basso con tre icone con
@@ -226,7 +226,7 @@
 		premendo il pulsante di invio), si attiva
 		la funzione \textit{onSubmitted}. Per controllare il testo visualizzato nel
 		TextField si può utilizzare una particolare classe chiamata
-		TextEditingController, ad esempio per impostare
+		\verb|TextEditingController|, ad esempio per impostare
 		un valore iniziale già presente all'avvio della schermata o per inserire
 		i caratteri scritti dall'utente in un'altra variabile.
 		\begin{figure}
@@ -256,8 +256,31 @@
 		interagire con il resto dell'app. I BottomSheet di questo tipo possono
 		essere creati e visualizzati con
 		la funzione \textit{showModalBottomSheet}.
-		
 	\end{trivlist}
+
+	\subsection{Animation}
+	Le Animation rendono l'interfaccia più intuitiva, contribuiscono a
+	rendere elegante 
+	l'aspetto di un'app e migliorano l'esperienza dell'utente. Il
+	supporto di Flutter semplifica l'implementazione di una grande varietà di tipi di
+	animazioni. Molti widget, in particolare i Material Widget, hanno
+	animazioni standard definite nelle loro specifiche di progettazione, ma è
+	anche possibile personalizzarle. \\
+	Esistono due tipi di animazioni: Tween e Physic-based. Nella prima tipologia
+	(che è l'abbreviazione di \textit{in-betweening}, traducibile come "nel frattempo,
+	in mezzo"), vengono definiti l'aspetto e la forma iniziali e finali del
+	widget, insieme alla durata e alla velocità dell'animazione. Il framework
+	calcola poi automaticamente come effettuare la transizione in base ai dati
+	che vengono forniti al costruttore della particolare Animation. La seconda
+	tipologia cerca invece di gestire quegli elementi che vogliono rappresentare
+	comportamenti del mondo reale, cercando di modellare i movimenti e le
+	dinamiche di oggetti concreti. Per esempio per muovere una piccola sfera la
+	velocità con cui essa rimbalzerà dipenderà dalla spinta inziziale che le è
+	stata posta mentre l'altezza del salto dipenderà invece da quanto essa sia lontana dal terreno.
+	Nello specifico esiste una classe chiamata AnimationController che possiede
+	il metodo \textit{animateWith} e inoltre è possibile simulare il
+	comportamento di una molla con la classe SpringSimulator.
+	
 
 
 	

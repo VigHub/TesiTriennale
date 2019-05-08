@@ -1,9 +1,11 @@
 \section{Gestione e struttura del database}
+
+\subsection{Progettazione iniziale}
 Una delle prime attività del progetto è stata la progettazione della base di
 dati, e fin dall'inizio era chiaro che non si sarebbe trattato di uno schema
 molto complesso. Infatti con sole tre tabelle si riesce a descrivere in modo
 appropriato l'ambiente nel quale risiede il progetto.
-\subsection{Schema Concettuale}
+\subsubsection{Schema Concettuale}
  La tabella principale e da cui si è partiti è
 quella delle stazioni, che presenta una chiave primaria (Key), un nome con
 cui è conosciuta, l'indirizzo cioè il nome della via nella quale risiede, la
@@ -38,21 +40,57 @@ utilizzare l'app per conoscere la posizioni di stazioni senza mai inserirne ness
 
 \begin{figure}[ht!]
     \centering
-    {\includegraphics[scale=0.5]{ERTesi.png}\label{schemaEr}}
+    {\includegraphics[scale=0.5]{ERTesi.png}}
     \caption{Schema Concettuale del progetto}
+    \label{schemaEr}
 \end{figure} 
 
-\subsection{Schema Logico}
+\subsubsection{Schema Logico}
 Data la semplicità dello schema Entità-Relazione la fase di progettazione logica
 è stata anch'essa priva di ostacoli. Si è posta particolare attenzione alle
 relazioni "Inserimento" e "Tipologia" perchè sarebbero potute diventare delle
 tabelle ma dato che entrambe sono del tipo (1,1) verso (0,n) si è scelto di
-renderle degli attributi della tabella Stazione, diventando quindi chiavi esterne. 
+renderle degli attributi della tabella Stazione, diventando quindi chiavi
+esterne (figura \ref{schemaLogico}). 
 
 \begin{figure}[ht!]
     \centering
-    {\includegraphics[scale=0.95]{LogicoTesi.png}\label{schemaLogico}}
+    {\includegraphics[width=15cm]{LogicoTesi.png}}
     \caption{Schema Logico del progetto}
+    \label{schemaLogico}
 \end{figure} 
 
 \subsection{Gestione dati in Firebase}
+Quando si crea un progetto nella propria Firebase Console una delle prime
+importanti operazioni è quella di scegliere la tipologia di database. Il
+servizio Google infatti offre due possibili alternative: il Realtime Database
+oppure il Cloud Firestore. Fino alla fine del 2018 la prima opzione era anche
+l'unica disponibile e consiste in una soluzione efficiente, a bassa latenza per
+applicazioni mobili che richiedono la sincronizzazione di stato tra client
+diversi in un tempo paragonabile alle prestazioni di un sistema real time. Il
+secondo, disponibile da minor tempo, è stato sviluppato per migliorare
+ulteriormente il suo predecessore, cambiando anche il modo in cui i dati vengono
+organizzati all'interno dello storage. Entrambe queste soluzioni sono database
+costruiti per tecnologie NoSQL, dunque non sfruttano le classiche tabelle dove
+ogni riga di una tabella è un record che contiene sempre lo stesso numero e
+tipologia di attributi. La tipologia Realtime immagazzina i dati in un unico
+grande albero JSON. Questo comporta una relativa facilità nell'inseriemento dati
+soprattutto se di ridotte dimensioni, ma nel momento in cui la grandezza e
+complessità del database non sono più banali diventa difficile organizzare una
+struttura gerarchica. La tipologia Cloud immagazzina invece i dati in documenti
+chiamati \textit{collections}, ne segue quindi che essa fa parte delle cosiddette
+basi di dati oreientate al documento. Strutture dati modeste sono molto facili
+da inserire (in modo simile al metodo visto prima tramite JSON) e se queste
+diventano complesse e di grandi dimensioni usando collezioni e sotto-collezioni si
+può facilmente organizzare il tutto senza perdere in efficienza. Considerando
+invece le funzionalità relative all'effettuare query, per il Realtime Database è
+possibile filtrare o ordinare dati in una sola query, mentre per il Cloud
+Firestore è possibile effettuare entrambe le operazioni nella stessa query.
+Inoltre nella prima tipologia il risultato è sempre un albero JSON che contiene
+tutti i dati, dunque le dimensioni possono assumere una certa importanza, mentre
+nella seconda le performnce della query sono proporzionali alla grandezza del
+risultato non dell'intera struttura. A seguito di queste considerazioni si è
+quindi deciso, benchè il progetto non presenti strutture particolarmente
+complesse, di utilizzare Cloud Firestore. 
+
+\subsection{Utilizzare il Cloud Firestore}
