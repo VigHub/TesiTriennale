@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  8 MAY 2019 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.4.29)  17 MAY 2019 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -382,7 +382,7 @@ File: images/LogicoTesi.png Graphic file (type png)
 <use images/LogicoTesi.png>
 Package pdftex.def Info: images/LogicoTesi.png  used on input line 58.
 (pdftex.def)             Requested size: 426.79134pt x 79.74028pt.
- [19 </home/viga211/Scrivania/TesiTriennale/Tesi/images/ERTesi.png>] [20 </home/viga211/Scrivania/TesiTriennale/Tesi/images/LogicoTesi.png (PNG copy)>]) [21] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/mappa/mappa.tex) [22] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.bbl
+ [19 </home/viga211/Scrivania/TesiTriennale/Tesi/images/ERTesi.png>] [20 </home/viga211/Scrivania/TesiTriennale/Tesi/images/LogicoTesi.png (PNG copy)>]) [21] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/mappa/mappa.tex [22]) [23] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.bbl
 Underfull \hbox (badness 3209) in paragraph at lines 9--13
 \OT1/cmr/m/n/12 bike vo-la an-che in ita-lia e se-gna un ul-te-rio-re +19%, 2018.  URL
  []
@@ -392,7 +392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 []\OT1/cmr/m/n/12 material.io.  Ma-te-rial de-si-gn, 2019.  URL
  []
 
-) [23] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.aux) )
+) [24] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.aux) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 22 (\begingroup)
@@ -406,10 +406,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  42i,8n,40p,842b,2090s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.pdf (25 pages, 2001864 bytes).
+Output written on /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.pdf (26 pages, 2004514 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

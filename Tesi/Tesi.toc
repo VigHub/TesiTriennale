@@ -26,3 +26,6 @@
 \contentsline {subsection}{\numberline {4.2}Gestione dati in Firebase}{19}% 
 \contentsline {subsection}{\numberline {4.3}Utilizzare il Cloud Firestore}{21}% 
 \contentsline {section}{\numberline {5}Mappa e sue funzionalit\IeC {\`a}}{22}% 
+\contentsline {subsection}{\numberline {5.1}Scelta del servizio API}{22}% 
+\contentsline {subsection}{\numberline {5.2}MapPage}{23}% 
+\contentsline {subsection}{\numberline {5.3}Funzionalit\IeC {\`a}}{23}% 

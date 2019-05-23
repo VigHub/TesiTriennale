@@ -81,7 +81,7 @@
 	varibile di tipo intero denominata counter (anch'essa privata grazie al
 	trattino basso) e ha valore iniziale 0. Presenta poi un metodo denominato
 	buttonPressed al cui interno risiede una funzione molto importante, la
-	\textit{setState}. Quando viene compliata una sezione di codice che sta
+	\textit{setState}. Quando viene compilata una sezione di codice che sta
 	all'interno di tale funzione, viene richiamata la funzione build del widget
 	in esecuzione ed è quindi grazie ad essa che l'app diventa interattiva, in
 	quanto tramite azioni dell'utente cambiano i valori delle variabili.
@@ -159,7 +159,7 @@
 	\cite{material} \newline
 	Tale design è interamente sviluppato da Google e fa uso di layout basati su
 	una griglia, animazioni e transizioni. Si prendono ora in cosiderazione i
-	widget più comuni appartenti a questo particolare design.
+	widget più comuni appartenenti a questo particolare design.
 	\begin{trivlist}
 		\item \textbf{Scaffold} \newline
 		Implementa la struttura (\textit{impalcatura}) del layout visuale di
@@ -221,8 +221,8 @@
 		\item \textbf{TextField} \newline
 		Consente all'utente di inserire del testo, attraverso l'uso della
 		tastiera che appare sullo schermo. Il widget chiama la funzione
-		\textit{onChanged}  ogni volta che viene il testo nel campo cambia. Se
-		l'utente indica di aver finito di digitare nel campo (ad esempio
+		\textit{onChanged} ogni volta che viene modificato il testo nel campo. Se
+		l'utente indica di aver finito di digitare (ad esempio
 		premendo il pulsante di invio), si attiva
 		la funzione \textit{onSubmitted}. Per controllare il testo visualizzato nel
 		TextField si può utilizzare una particolare classe chiamata
@@ -250,7 +250,7 @@
 		dello schermo e occupa spazio in base alla grandezza del proprio figlio
 		(solitamente una Column o una ListView). Esistono due tipologie: fisso e
 		dinamico. La prima rimane visibile anche quando l'utente interagisce con
-		altre parti dell'app. può essere creato e visualizzato  con
+		altre parti dell'app. Può essere creato e visualizzato  con
 		la funzione \textit{ScaffoldState.showBottomSheet}. La seconda tipologia
 		è un'alternativa a un menù o a una AlertDialog e impedisce all'utente di
 		interagire con il resto dell'app. I BottomSheet di questo tipo possono
@@ -264,9 +264,9 @@
 	l'aspetto di un'app e migliorano l'esperienza dell'utente. Il
 	supporto di Flutter semplifica l'implementazione di una grande varietà di tipi di
 	animazioni. Molti widget, in particolare i Material Widget, hanno
-	animazioni standard definite nelle loro specifiche di progettazione, ma è
-	anche possibile personalizzarle. \\
-	Esistono due tipi di animazioni: Tween e Physic-based. Nella prima tipologia
+	animazioni standard definite nelle loro specifiche di progettazione, 
+	anche se il programmatore può crearne di nuove personalizzando quelle già esistenti. \\
+	Sono implementati due tipi di animazioni: Tween e Physic-based. Nella prima tipologia
 	(che è l'abbreviazione di \textit{in-betweening}, traducibile come "nel frattempo,
 	in mezzo"), vengono definiti l'aspetto e la forma iniziali e finali del
 	widget, insieme alla durata e alla velocità dell'animazione. Il framework
@@ -275,7 +275,7 @@
 	tipologia cerca invece di gestire quegli elementi che vogliono rappresentare
 	comportamenti del mondo reale, cercando di modellare i movimenti e le
 	dinamiche di oggetti concreti. Per esempio per muovere una piccola sfera la
-	velocità con cui essa rimbalzerà dipenderà dalla spinta inziziale che le è
+	velocità con cui essa rimbalzerà dipenderà dalla spinta iniziale che le è
 	stata posta mentre l'altezza del salto dipenderà invece da quanto essa sia lontana dal terreno.
 	Nello specifico esiste una classe chiamata AnimationController che possiede
 	il metodo \textit{animateWith} e inoltre è possibile simulare il

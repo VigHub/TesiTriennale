@@ -1,1 +1,42 @@
 \section{Mappa e sue funzionalità}
+La pagina della mappa è stata la sezione dell'applicazione più difficile da
+implementare, perchè al suo interno risiedono numerosi servizi e funzioni che
+hanno richiesto diverso tempo per essere sviluppati e inoltre è stato necessario
+documentarsi per capire come utilizzare le API che la pagina utilizza.
+
+\subsection{Scelta del servizio API}
+In un primo momento si è pensato di utilizzare il servizio mappe di Google Maps
+che, oltre ad essere uno dei più efficienti e meglio documentati, è anche
+implementabile facilmente. Il problema è nato nel momento in cui Google ha
+deciso di cambiare le proprie politiche di utilizzo delle API verso la fine del
+2018. Prima di quel momento, sotto a un certo numero di richieste al servizio di
+geolocalizzazione il programmatore poteva usare liberamente il codice e senza
+necessità di registrazione, ma in seguito l'azienda di Mountain View ha deciso
+che chiunque volesse utilizzare il proprio servizio mappe dovesse prima
+registrare un proprio account ed inserire una carta di credito che eventualmente
+pagasse mensilmente le risorse di cui si è fatto uso. Questo scenario ha portato
+a prendere in cosiderazione altri gestori di mappe. La scelta è ricaduta su
+MapBox, azienda emergente nel proprio campo. Il servizio era gratuito e permetteva
+un agevole utlizzo senza registrazione ma il problema era formato
+dall'implementazione vera e propria. Al contrario di Google, non esiste un
+pacchetto software che implementi il codice MapBox e quindi era necessario fare
+uso di richieste http tramite valori codificati all'interno di lunghi url.
+Inoltre la fluidità della mappa non rispettava le direttive del committente
+dott. Marco Aceti, spesso a seguito di un rapido movimento delle dita per
+spostarsi in un'altra zona della mappa la schermata rimaneva per qualche secondo
+completamente grigia, rendendo l'esperienza di utilizzo sicuramente peggiore.
+Nel seguito, tra Gennaio e Febbraio 2019 è stata rilasciata la prima versione
+ufficiale di Flutter (versione 1.0.0) e tra le tante novità spiccava la presenza
+di un widget particolare, chiamato GoogleMap. Semplificando notevolmente
+l'utlizzo delle mappe, tale widget presenta ottime prestazioni e facilità di
+implementazione. Si è quindi deciso di dedicare del tempo nell'apprendere ogni
+aspetto delle politiche di utlizzo delle API di Google, capendo quindi che,
+facendo un numero di richieste minore di una soglia stabilita, non è necessario
+pagare nulla, anche se si è registrata una carta di credito. Quindi la scelta è
+ricaduta sulle API di Google e si è importato nel progetto il pacchetto
+\verb|googlemap|.
+
+\subsection{MapPage}
+
+\subsection{Funzionalità}
+
