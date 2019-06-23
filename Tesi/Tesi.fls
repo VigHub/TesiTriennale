@@ -170,6 +170,11 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/chapters/sist_operativi/sis_operativi.tex
+INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/chapters/sist_operativi/sis_operativi.tex
+INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/images/kernel.png
+INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/images/kernel.png
+INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/images/kernel.png
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/chapters/flutter/flutter.tex
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/chapters/flutter/flutter.tex
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/images/StateLessApp.png
