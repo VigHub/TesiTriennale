@@ -165,3 +165,99 @@ pagare direttamente Google.
 \end{figure}
 
 \subsection{Aggiungere una Stazione}
+Aspetto interessante dell'applicazione è che l'utente, se registrato, ha la
+possibilità di inserire lui stesso una nuova stazione e, dopo che essa è
+approvata, vederla comparire sulla mappa. Questa funzione è accessibile nella
+pagina Aggiungi Stazione, raggiungibile dopo aver premuto l'icona centrale della
+BottomNavigationBar. 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.33\linewidth,height=9cm]{AddStation1.jpg}
+    \caption{Pagina Aggiungi Stazione}
+    \label{addStation1}
+\end{figure}
+La pagina si presenta come in figura \ref{addStation1}. Ogni riga fa parte
+dell'unica grande Form che contiene tutte le TextFormField. Ognuna di queste è
+formata da un titolo stampato che indica quale dato inserire e che scompare non
+appena inizia la digitazione dell'utente in quel particolare campo. 
+Il quarto campo è in realtà un menù a tendina e presenta tutte le tipologie di
+stazione, raffigurate in figura \ref{addStation4}.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.33\linewidth]{AddStation4.jpg}
+    \caption{Menù a tendina con le tipologie di stazioni}
+    \label{addStation4}
+\end{figure}
+
+Aver
+inserito i componenti all'interno di una Form facilita notevolmente i controlli
+per l'integrità dei dati. Infatti, se l'utilizzatore preme il tasto
+\textit{Aggiungi Stazione} prima che abbia inserito i dati obbligatori (tutti
+fuorchè la descrizione) si avrà la situazione mostrata in figura \ref{addStation2}.
+\begin{figure}[!h]
+    \centering
+    \begin{subfigure}{0.3\linewidth}
+        \includegraphics[width=\linewidth,height=9cm]{AddStation2.jpg}
+    \end{subfigure}
+    \begin{subfigure}{0.3\linewidth}
+        \includegraphics[width=\linewidth,height=9cm]{AddStation3.jpg}
+    \end{subfigure}
+    \caption{Poichè la funzione onSubmit ha restituito False in almeno un campo,
+    lo stato della Form è in Errore, anche se basta cominciare a scrivere per
+    per cambiarne lo stato.}
+    \label{addStation2}
+\end{figure}
+Sotto tutti i campi in cui non è stato inserito nessun dato, si mostrerà a
+schermo una scritta di colore rosso indicante il motivo dell'errore. Questo
+accade perchè quando si preme il pulsante viene richiamata la funzione
+\textit{onSubmit} che richiama tutte le funzioni dallo stesso nome all'interno
+di tutte le TextFormField. Ognuna di queste funzioni deve restituire un booleano
+True o False. Se anche un solo campo restituisce False, tutto lo stato della
+Form è considerabile in stato di Errore. Se invece tutti i campi restituiscono
+True ecco che allora il controllo è superato e si inserisce la stazione dopo
+l'aver confermato la propria scelta. \\
+Si  noti come nel campo in cui bisogna indicare l'indirizzo della stazione siano
+presenti due diversi tipi di errore: il primo si manifesta nel momento in cui il
+campo è vuoto e non ha alcuna parola al suo interno, il secondo quando si
+comincia sì a scrivere ma non si ha ancora premuto l'icona rossa a lato, che
+serve per cercare esattamente l'indirizzo fornito e tradurlo in coordinate
+geografiche (latitudine e longitudine). Quando questo accade l'icona diventa di
+colore azzurro (fig. \ref{addStation6}) e la funzione onSubmit di quel particolare campo
+restituisce True.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.53\linewidth]{AddStation6.jpg}
+    \caption{Indirizzo verificato e tradotto in latitudine e longitudine}
+    \label{addStation6}
+\end{figure}  
+\\
+Sotto i quattro campi sono presenti due pulsanti con le scritte \textit{Apri
+Fotocamera} e \textit{Carica Immagine} (fig. \ref{addStation5}). Come ben indicato dal nome, questi due
+Container sono stati codificati per diventare pulsanti che permettono
+all'utente di indicare un'immagine catturata dalla propria fotocamera o caricata
+dalla galleria. Ovviamente al primo accesso l'app chiede il permesso
+all'utilizzatore di accedere sia alla fotocamera che alle immagini presenti nello storage
+interno del proprio device. Caricata l'immagine, è possibile vedere la propria
+scelta all'interno della pagina e premendo la X rossa che compare a schermo,
+eliminarla e prenderne in considerazione altre.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.33\linewidth]{AddStation5.jpg}
+    \caption{Pagina con immagine caricata dalla galleria}
+    \label{addStation5}
+\end{figure}
+Una volta caricata l'immagine e aver confermato che tutti i dati inseriti
+abbiano superato il controllo della Form, la stazione è aggiunta nel database
+edll'applicazione. Per prevenire che utenti malintenzionati inseriscano stazioni
+che in realtà non esistano o inseriscano dati non coerenti, ogni stazione appena
+aggiunta presenta un campo di flag settato a False. Sarà poi compito del gestore
+dell'app che periodicamente controlla le nuove aggiunte controllare la
+veridicità dei dati inseriti e settare a True il campo flag. Dopo questa
+operazione la stazione diventa visibile per tutti gli utenti come in figura
+\ref{addStation7}.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.33\linewidth]{AddStation7.jpg}
+    \caption{Nuova stazione inserita che ha superato tutti i controlli}
+    \label{addStation7}
+\end{figure}

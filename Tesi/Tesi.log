@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.22)  23 JUN 2019 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.22)  23 JUN 2019 23:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -529,7 +529,56 @@ File: images/MapFunSearch2.jpg Graphic file (type jpg)
 <use images/MapFunSearch2.jpg>
 Package pdftex.def Info: images/MapFunSearch2.jpg  used on input line 162.
 (pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
- [30 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunFavourite.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunFilter.png> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunNearest.jpg>]) [31 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunSearch1.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunSearch2.jpg>] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.bbl
+ [30 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunFavourite.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunFilter.png> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunNearest.jpg>]
+<images/AddStation1.jpg, id=175, 468.24937pt x 963.6pt>
+File: images/AddStation1.jpg Graphic file (type jpg)
+<use images/AddStation1.jpg>
+Package pdftex.def Info: images/AddStation1.jpg  used on input line 175.
+(pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
+<images/AddStation4.jpg, id=176, 463.7325pt x 361.35pt>
+File: images/AddStation4.jpg Graphic file (type jpg)
+<use images/AddStation4.jpg>
+Package pdftex.def Info: images/AddStation4.jpg  used on input line 187.
+(pdftex.def)             Requested size: 140.84192pt x 109.74567pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunSearch1.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunSearch2.jpg>]
+<images/AddStation2.jpg, id=180, 468.24937pt x 963.6pt>
+File: images/AddStation2.jpg Graphic file (type jpg)
+<use images/AddStation2.jpg>
+Package pdftex.def Info: images/AddStation2.jpg  used on input line 200.
+(pdftex.def)             Requested size: 128.03662pt x 256.07324pt.
+<images/AddStation3.jpg, id=181, 468.24937pt x 963.6pt>
+File: images/AddStation3.jpg Graphic file (type jpg)
+<use images/AddStation3.jpg>
+Package pdftex.def Info: images/AddStation3.jpg  used on input line 203.
+(pdftex.def)             Requested size: 128.03662pt x 256.07324pt.
+<images/AddStation6.jpg, id=182, 459.21562pt x 149.05687pt>
+File: images/AddStation6.jpg Graphic file (type jpg)
+<use images/AddStation6.jpg>
+Package pdftex.def Info: images/AddStation6.jpg  used on input line 229.
+(pdftex.def)             Requested size: 226.19888pt x 73.42288pt.
+<images/AddStation5.jpg, id=183, 468.24937pt x 963.6pt>
+File: images/AddStation5.jpg Graphic file (type jpg)
+<use images/AddStation5.jpg>
+Package pdftex.def Info: images/AddStation5.jpg  used on input line 245.
+(pdftex.def)             Requested size: 140.84192pt x 289.8321pt.
+<images/AddStation7.jpg, id=184, 468.24937pt x 963.6pt>
+File: images/AddStation7.jpg Graphic file (type jpg)
+<use images/AddStation7.jpg>
+Package pdftex.def Info: images/AddStation7.jpg  used on input line 260.
+(pdftex.def)             Requested size: 140.84192pt x 289.8321pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation1.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation4.jpg>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation2.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation3.jpg>] [34 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation6.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation5.jpg>] [35 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation7.jpg>] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/conclusione/conclusione.tex) [36] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.bbl
 Underfull \hbox (badness 3209) in paragraph at lines 9--13
 \OT1/cmr/m/n/12 bike vo-la an-che in ita-lia e se-gna un ul-te-rio-re +19%, 2018.  URL
  []
@@ -539,24 +588,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 []\OT1/cmr/m/n/12 material.io.  Ma-te-rial de-si-gn, 2019.  URL
  []
 
-) [32] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.aux) )
+) [37] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.aux) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 22 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6731 strings out of 492623
- 96879 string characters out of 6135669
- 195692 words of memory out of 5000000
- 10457 multiletter control sequences out of 15000+600000
+ 6777 strings out of 492623
+ 98065 string characters out of 6135669
+ 195759 words of memory out of 5000000
+ 10491 multiletter control sequences out of 15000+600000
  11040 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,842b,2053s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.pdf (35 pages, 5483979 bytes).
+Output written on /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.pdf (40 pages, 5986430 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
+ 231 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

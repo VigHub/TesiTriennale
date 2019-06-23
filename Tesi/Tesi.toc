@@ -8,7 +8,7 @@
 \contentsline {subsubsection}{\numberline {1.3.2}Trello}{3}% 
 \contentsline {subsubsection}{\numberline {1.3.3}Visual Studio Code}{3}% 
 \contentsline {subsection}{\numberline {1.4}Struttura generale dell'applicazione}{3}% 
-\contentsline {section}{\numberline {2}Sistemi Operativi per smartphone: Android e iOS}{5}% 
+\contentsline {section}{\numberline {2}Sistemi Operativi per smartphone: \\ Android e iOS}{5}% 
 \contentsline {subsection}{\numberline {2.1}Android}{5}% 
 \contentsline {subsubsection}{\numberline {2.1.1}Kernel Linux e Architettura}{5}% 
 \contentsline {subsubsection}{\numberline {2.1.2}ART Virtual Machine e Dalvik Virtual Machine}{7}% 
@@ -35,3 +35,4 @@
 \contentsline {subsection}{\numberline {6.2}MapPage}{27}% 
 \contentsline {subsection}{\numberline {6.3}Funzionalit\IeC {\`a}}{29}% 
 \contentsline {subsection}{\numberline {6.4}Aggiungere una Stazione}{31}% 
+\contentsline {section}{\numberline {7}Conclusioni}{36}% 
