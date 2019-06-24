@@ -10,7 +10,7 @@ Android è un sistema operativo mobile, realizzato per dispositivi mobili
 touchscreen, ed è stato sviluppato inizialmente dall'azienda Android Inc., che
 nel 2005 è stata acquistata da Google. [inserisci fonte] \\
 Una delle caratteristiche più importanti di questo sistema operativo è che
-detiene una licenza open source. Questo tipo di licenza consente liberamente a
+detiene una licenza open source. Questo tipo di licenza consente a
 qualsiasi utente di modificare e distribuire liberamente il codice
 sorgente, consentendo quindi una continua evoluzione del sistema operativo e una
 più semplice diffusione. Considerando i processi, Android riesce a gestirli in
@@ -29,7 +29,7 @@ un’applicazione vuole rispondere a un comando, può inoltrare le istruzioni al
 kernel e quest’ultimo può utilizzare i driver dell’hardware che vogliamo
 controllare per ottenere il comportamento desiderato. In particolare, Android si
 appoggia al kernel Linux (fig. \ref{kernel}). Esso fornisce
-tutte le funzioni essenziali per il sistema, tra cui: la gestione della memoria
+tutte le funzioni essenziali per il sistema, tra cui la gestione della memoria
 primaria e la gestione delle risorse hardware del sistema e delle periferiche.
 Il suo incarico quindi è quello di gestire
 il tempo processore, le comunicazioni e la memoria, assegnando ogni cosa ai processi in
@@ -69,7 +69,7 @@ La VM Dalvik è basata su tecnologia \textit{just-in-time}: ogni applicazione vi
 compilata solo in parte dal programmatore e sarà poi di volta in volta dovere
 della Dalvik VM eseguire il codice e compilarlo in linguaggio macchina in tempo
 reale. Questo ovviamente grava sulle prestazioni.
-La ART VM invece è basata su tecnologia \textit{ahead-of-time} che esegue l'intera
+La ART VM (Android Run Time) invece è basata su tecnologia \textit{ahead-of-time} che esegue l'intera
 compilazione del codice durante l'installazione dell'applicazione e non durante
 l'esecuzione stessa del software. Questo permette di avere un vantaggio in
 termine di prestazioni, anche se incide sul tempo di installazione delle
@@ -95,21 +95,97 @@ installare il software in caso richieda risorse non coerenti con lo scopo
 dichiarato dell’applicazione. Una volta scritta e concluso il progetto, il
 codice java e il codice XML vengono compilati generando un file con estensione
 .apk (l’eseguibile delle applicazioni Android). Esso contiene il bytecode che verrà
-mandato eseguito dalla Virtual Machine. Le applicazioni Android sono pilotate
+eseguito dalla Virtual Machine. Le applicazioni Android sono pilotate
 dagli eventi (Event Driven), cioè azioni che vengono causate da hardware o da altri
 componenti. Il programmatore quindi sviluppa per ogni hardware routine
 indipendenti, permettendo al sistema operativo di rinunciare al caricamento di
-componenti che non si andranno a utilizzare, e utilizzando solo quelli che sono
+componenti che non si andranno a utilizzare, facendo uso solo di quelli che sono
 strettamente necessari. \\
 Quando si avvia per la prima volta un dispositivo Android, si può notare come su
 tale sistema siano già presenti
 applicazioni di terze parti, che possono essere utilizzate fin da subito
-dagli utenti. Quando si vuole utlizzare un'applicazione non ancora presente sul
+dagli utenti. Quando si vuole utilizzare un'applicazione non ancora presente sul
 proprio smartphone bisogna scaricare e installare il file apk dell’applicazione
 dal Google Play Store. Quest’ultimo è il principale "negozio" di
 applicazioni installato su dispositivi Android, e consente agli utenti di
 scaricare e aggiornare le applicazioni pubblicate da Google o sviluppatori di
-terze parti. Esistono infine anche un certo numero di mercati di app di terze
+terze parti. Esistono infine anche un certo numero di store di app di terze
 parti, che forniscono servizi che non possono essere offerti dallo store
 ufficiale a causa di violazioni di particolari norme.
+
+\subsection{iOS}
+Il sistema operativo creato da Apple è esclusivo dei propri device, in quanto
+solo gli iPhone presentano questo software. Nonostante questo è però il secondo
+sistema operativo mobile più popolare al mondo. Inoltre, a differenza di Android, Apple
+non concede licenze per l’installazione di iOS su hardware diverso da quello
+proprietario. \\
+Per lo sviluppo di queste applicazioni viene messo a disposizione un SDK apposito,
+disponibile unicamente per PC Mac. L’SDK contiene diversi strumenti che
+consentono ai programmatori di utilizzare le varie funzioni e servizi dei
+dispositivi iOS. Il Software Development Kit, in coppia con XCode, assiste gli
+sviluppatori a scrivere
+applicazioni per Apple utilizzando linguaggi di programmazione ufficialmente
+supportati (Swift
+e Objective-C). Xcode è un ambiente di sviluppo per macOS adibito allo sviluppo
+di software in grado di essere esguito sui dispositivi dell'azienda di
+Cupertino. La suite Xcode include la maggior parte
+della documentazione per sviluppatori di Apple e con un Interface Builder integrato,
+(applicazione facile e intuitiva utilizzata per costruire interfacce utente
+grafiche) Al suo interno è anche presente un simulatore in grado di creare un
+iPhone virtuale all'interno del proprio Mac su cui poi testare le applicazioni
+sviluppate.
+\subsubsection{Architettura}
+Le app interagiscono con l’hardware attraverso una serie di interfacce di
+sistema. Queste interfacce semplificano la scrittura di applicazioni per i
+dispositivi Apple. I livelli inferiori forniscono servizi di base a cui tutte le
+applicazioni fanno affidamento, quelli superiori invece forniscono servizi
+per avere una grafica di alto livello. iOS usa kernel XNU (\textit{X is Not
+Unix}) ed è caratterizzato da
+4 livelli di astrazione: il Core OS Layer, il Core Services Layer, il Media layer e
+il Cocoa Touch Layer (fig. \ref{ios1}). Ogni livello ha una serie di framework
+utilizzabili dagli sviluppatori. 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=9cm]{ios1.png}
+    \caption{Struttura del sistema operativo iOS}
+    \label{ios1}
+\end{figure}
+
+Il livello più basso di iOS è costituito dal kernel di cui si parlerà nel
+prossimo paragrafo. Al di sopra del kernel, abbiamo il Core OS,
+responsabile della gestione della memoria, delle attività del file system, della
+rete e delle attività del sistema operativo ed interagisce anche con l’hardware.
+Al livello successivo è presente il Core Services, il quale fornisce servizi Peer-to-Peer,
+archiviazione su iCloud, protezione dati, supporto per condivisione di file, Grand
+Central Dispatch, SQLite, supporto XML e gestisce anche gli acquisti in app. Successivamente
+si ha il Media Layer, che fornisce al sistema operativo funzionalità audio, video
+e animazioni. L’ultimo livello, il Cocoa Touch, contine framework molto importanti
+che definiscono l’aspetto dell’app. Esso fornisce anche l'infrastruttura di base delle
+applicazioni e supporto per tecnologie importanti come multitasking, touch,
+notifiche push e per altri aspetti di alto livello.
+
+\subsubsection{Kernel XNU}
+Il kernel XNU, come detto precedentemente, fa da mediatore tra il software
+e l’hardware, ed è il primo programma ad essere caricato in memoria
+all’accensione del dispositivo. XNU è utilizzato nel sistema operativo open source
+Darwin, ed Apple lo usa come base per il proprio software. Esso è inoltre
+ibrido, poiché formato da due tipologie di kernel: il microKernel Mach e il
+Kernel BSD (fig. \ref{ios2}).
+Inoltre XNU è modulare, ovvero è possibile utilizzare moduli aggiuntivi
+attivabili e disattivabili durante il funzionamento. \\
+Il primo componente, il vero e proprio cuore di XNU, è Mach, microkernel che gestisce le
+responsabilità elementari del sistema operativo: scambio di messaggi tra
+processi, pianificazione delle attività, gestione della memoria virtuale ed
+elaborazione dei thread. Il secondo componente è il kernel BSD, che fornisce un
+livello di astrazione superiore e permette l’accesso ai dispositivi e al file
+system. L’ultimo componente è il framework I/O Kit, completamente indipendente
+dal kernel e consente agli sviluppatori di creare rapidamente driver per i
+dispositivi. \\
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=11cm]{ios2.png}
+    \caption{I diversi livelli e sezioni del kernel XNU}
+    \label{ios2}
+\end{figure}
+
 

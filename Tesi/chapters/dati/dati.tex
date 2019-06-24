@@ -94,3 +94,67 @@ quindi deciso, benchè il progetto non presenti strutture particolarmente
 complesse, di utilizzare Cloud Firestore. 
 
 \subsection{Utilizzare il Cloud Firestore}
+In questa sezione verranno prese in considerazione le modalità con cui si sono
+svolte le query all'interno dell'applicazione. Prima di tutto è doveroso dire
+che per effettuare interrgoazioni al proprio database è necessario importare nel
+proprio progetto il pacchetto \textit{cloud\_firestore}. Grazie a questo si ha
+accesso all'oggetto Firestore che permette all'app di comunicare con il database
+realtime sul cloud.
+\subsubsection{Ottenere tutti gli elementi di una collezione}
+Quando si visualizza la pagina della mappa, è necessario visualizzare tutte le
+stazioni presenti nel database senza applicare dei filtri. Bisogna quindi
+effettuare il corrispettivo di una SELECT ALL nel linguaggio SQL. 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=13cm]{query1.png}
+    \caption{La funzione populateStations che permette di ottenere tutte le stazioni presenti nel database}
+    \label{query1}
+\end{figure}
+In figura \ref{query1} si può quindi vedere il metodo populateStations che viene
+chiamato nel momento in cui l'utente termina la propria autenticazione e
+raggiunge la pagina della mappa. Sulla firebase console del progetto è presente
+la collezione \textit{stazioni}, a cui si fa accesso alla linea 81 tramite il
+metodo \verb|Firestore.instance.collection('stazioni').getDocuments()|. Questo
+metodo è di tipo Future (si rimanda al capitolo su Flutter e Dart), e quindi
+necessita del metodo \verb|then()| per accedere ai dati inviati in modo
+asincrono. Una volta connessi al database e ottenuti i documenti, si controlla
+che essi non siano di lunghezza nulla (tramite il campo
+\verb|docs.document.isNotEmpty|). Se si è ottenuta almeno una stazione si
+procede quindi a creare un oggetto di tipo Stazione per ogni elemento nella
+firebase console tramite il suo costruttore, e si inserisce dunque l'oggetto
+nella lista di stazioni \verb|_stations|. Si procede poi con la funzione
+\verb|initMarker| che inizializza ogni stazione rendendola un marker
+visualizzabile nella mappa e si ordinano poi le stazioni in base alla vicinanza
+dalla posizione attuale dell'utente tramite una classe (Utilities) creata per
+sfruttare funzioni quali l'ordinamento o il controllo di alcuni campi.
+
+\subsubsection{Ottenere dati filtrati da una collezione}
+Ci sono diversi casi all'interno dell'applicazione in cui è necessario ottenere
+uno specificio documento o un gruppo selezionato da una collezione. Per esempio
+per ottenere la preferenza dell'utente rispetto alla tipologia di mappa che
+vuole visualizzare bisogna ottenere uno e un solo documento nella collezione
+users. \\
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=12cm]{query2.png}
+    \caption{}
+    \label{query2}
+\end{figure}
+Nella figura \ref{query2} si accede alla collezione users nel solito modo visto
+anche precedentemente, ciò che cambia è che ora si introduce anche il metodo
+\verb|where()| che prende come primo argomento una stringa indicante il nome del
+campo su cui si vuole effettuare la selezione, e un secondo argomento che indica
+il tipo di confronto che si vuole fare, in questo caso un \textit{isEqualTo}
+(tra gli altri sono presenti anche \textit{isGreaterThan} e
+\textit{isLessThan}). Una volta ottenuto l'utente che ha lo stesso id
+dell'utser attuale si può quindi accedere al suo campo \verb|tipoMappa| e
+tramite un metodo apposito convertire la stringa ottenuta nella tipologia di
+mappa desiderata. Si noti anche il metodo \verb|catchError()| che è sucessivo al
+\verb|then()| relativo ai documenti della collezione: in caso di un qualunque errore di
+connessione l'app non smette di funzionare ma cattura l'eccezione ottenuta e va
+avanti nell'esecuzione di codice. Se si volesse effettuare filtraggio di dati su
+più campi sarebbe necessario banalmente continuare ad aggiungere metodi
+\verb|where| ai documenti ottenuti indicando i nomi dei campi e la condizione
+che si vuole applicare.
+
+
