@@ -1,18 +1,43 @@
 \chapter{Flutter}
 % \section{Flutter}
-	I pregi di Flutter sono numerosi e se ne vogliono citare alcuni. \newline
-	Per primo si considera il linguaggio. Flutter viene sviluppato con il
-	linguaggio (sempre appartente alla famiglia Google) Dart. Esso è
-	multifunzione, può essere impiegato per lo sviluppo web (tant'è che è nato
-	 per sostituire Javascript) e in tale linguaggio una variabile può sia
+	Flutter, come già accennato in precedenza, è una tecnologia open source di Google
+	per la creazione di applicazioni native Android e iOS con un unico codice di base.
+	\'E composto da un kit di sviluppo (SDK) che all’interno include: API di integrazione,
+	rendering engine, widget (descritti in seguito) e strumenti da riga di comando. Una delle
+	caratteristiche principali che differenzia Flutter dagli altri framework è il
+	“reactive development”. Esso infatti permette di aggiornare in modo automatico il
+	contenuto dell’interfaccia senza utilizzare tecnologie ausiliarie, comunicando
+	direttamente con la piattaforma nativa usando il linguaggio Dart. Questo è un
+	linguaggio orientato agli oggetti anch’esso di proprietà Google, che utilizza tecniche di
+	compilazione Ahead-of-Time, accelerando notevolmente il tempo di avvio
+	dell’app, permettendo prestazioni migliori rispetto ad altri framework
+	concorrenti. Per esempio React Native, anch’esso un framework per lo sviluppo
+	di applicazioni sia per Android che per iOS, deve utilizzare un Bridge
+	Javascript per accedere ai Widget,
+	causando problemi di prestazioni e rallentamenti.
+	Flutter ha un'architettura che include widget personalizzabili ed
+	estensibili, quindi non utilizza widget appartenenti a una specifica
+	piattaforma, ma usa elementi
+	di sua proprietà. C’è sempre un’interfaccia tra il programma in Dart e il codice
+	della piattaforma nativa, che  decodifica e codifica i dati, rimanendo però molto più
+	veloce di un Bridge in Javascript. \\
+	Tornando a parlare di Dart, bisogna ricordare che esso è multifunzione, può
+	essere impiegato per lo sviluppo web (tant'è che è nato
+	per sostituire Javascript) e in tale linguaggio una variabile può sia
 	presentare una tipazione statica a compile time, sia essere definita
 	\textit{dynamic} e cambiare tipo più
-	volte nel corso dell'esecuzione. Con Flutter basta scrivere una volta sola
+	volte nel corso dell'esecuzione. Si ricorda inpltre che con Flutter basta
+	scrivere una volta sola
 	il proprio codice in Dart, e il framework penserà poi a creare i file
 	necessari per essere eseguiti sia su iOS che su Android. Da qui ne segue un
 	enorme risparmio di tempo e risorse, in quanto si dimezza il lavoro totale.
-	Un altro aspetto importante è che
-	grazie ad esso è possibile sviluppare in modo rapido, e ciò è permesso dalla
+	Purtoppo un aspetto negativo è la dimensione dei file, dato che gli
+	sviluppatori tendono sempre a mantenere al minimo le dimensioni di
+	un’applicazione per via della capacità di memoria limitata degli utenti. Le dimensioni
+	delle applicazioni scritte con Flutter sono significativamente maggiori rispetto alle app native Java e
+	Kotlin.
+	Un'altra importante caratteristica è che
+	grazie a questo framework è possibile sviluppare in modo rapido, e ciò è permesso dalla
 	funzione \textit{Hot Reload} che consente in qualche secondo di ricaricare
 	la particolare sezione di codice che si sta testando senza dover ricaricare
 	l'intera applicazione. In secondo luogo tale framework presenta

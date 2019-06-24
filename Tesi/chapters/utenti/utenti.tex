@@ -105,3 +105,30 @@ visita, la data di creazione e l'id dell'utente. Inoltre ne viene indicato anche
 il tipo, sia esso standard, Google o un utente anonimo.
 
 \section{Codifica}
+All'interno del progetto il primo file da cui ha inizio l'esecuzione del codice è il
+\textit{main.dart}. Al suo interno è presente il metodo \verb|runApp()| che
+prende come argomento l'oggetto che sta a indicare l'intera applicazione e lo esegue.
+Per capire lo stato attuale dell'utente all'avvio, cioè per definire se si è già
+loggati all'interno dell'app o se è necessario presentare la pagina di login.
+Nella figura \ref{user1} si può vedere come sia stata implementata tale funzione.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=10cm]{user1.png}
+    \caption{}
+    \label{user1}
+\end{figure}
+Tutto il codice è all'interno di initState, la prima funzione
+richiamata quando si inizializza l'app. Tramite la variabile \verb|auth| di tipo
+Auth (classe implementata all'interno del progetto per rendere facilmente
+accessibili le funzionalità dei pachetti flutter \textit{firebase\_auth} e
+\textit{google\_sign\_in}), si controlla subito se l'utente si è gia autenticato
+precedentemente con Google. Questo è possibile verificando l'output del metodo
+\verb|googleCurrentUser| che restituisce un puntatore all'utente in caso di accesso o
+\verb|null| se non è presente nessun utilizzatore. In questo secondo caso, si
+verifica quindi che non ci sia già loggati tramite procedura standard tramite
+\verb|auth.currentUser|, dal funzionamento molto simile al metodo precedente,
+con l'unica differenza che ciò che restituisce è di tipo Future e quindi
+necessita del metodo then (chiamata asincrona). In base quindi a ciò che viene
+restituito si cambia quindi il valore del campo \verb|_authState| tramite un
+Enum definito a inizio file con gli unici due stati di loggato (signedIn) e non
+loggato (notSignedIn).

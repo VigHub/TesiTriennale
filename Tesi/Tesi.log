@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.22)  24 JUN 2019 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.22)  24 JUN 2019 23:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -435,61 +435,57 @@ Package pdftex.def Info: images/ios2.png  used on input line 194.
 
 ]
 Capitolo 3.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-<images/StateLessApp.png, id=97, 1017.8025pt x 752.8125pt>
+[13] [14]
+<images/StateLessApp.png, id=100, 1017.8025pt x 752.8125pt>
 File: images/StateLessApp.png Graphic file (type png)
 <use images/StateLessApp.png>
-Package pdftex.def Info: images/StateLessApp.png  used on input line 63.
+Package pdftex.def Info: images/StateLessApp.png  used on input line 88.
 (pdftex.def)             Requested size: 256.08069pt x 199.17271pt.
-<images/StateLessScreen.png, id=98, 1084.05pt x 1927.2pt>
+<images/StateLessScreen.png, id=101, 1084.05pt x 1927.2pt>
 File: images/StateLessScreen.png Graphic file (type png)
 <use images/StateLessScreen.png>
-Package pdftex.def Info: images/StateLessScreen.png  used on input line 67.
+Package pdftex.def Info: images/StateLessScreen.png  used on input line 92.
 (pdftex.def)             Requested size: 128.02927pt x 199.14194pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+ [15 </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateLessApp.png (PNG copy)> </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateLessScreen.png>]
+<images/StateFullApp.png, id=109, 1133.73563pt x 919.93687pt>
+File: images/StateFullApp.png Graphic file (type png)
+<use images/StateFullApp.png>
+Package pdftex.def Info: images/StateFullApp.png  used on input line 122.
+(pdftex.def)             Requested size: 396.81342pt x 321.98273pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
-<images/StateFullApp.png, id=103, 1133.73563pt x 919.93687pt>
-File: images/StateFullApp.png Graphic file (type png)
-<use images/StateFullApp.png>
-Package pdftex.def Info: images/StateFullApp.png  used on input line 97.
-(pdftex.def)             Requested size: 396.81342pt x 321.98273pt.
+ [16 </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateFullApp.png (PNG copy)>]
+<images/Row.png, id=113, 1084.05pt x 1927.2pt>
+File: images/Row.png Graphic file (type png)
+<use images/Row.png>
+Package pdftex.def Info: images/Row.png  used on input line 156.
+(pdftex.def)             Requested size: 128.0387pt x 227.60759pt.
+<images/Column.png, id=114, 1084.05pt x 1927.2pt>
+File: images/Column.png Graphic file (type png)
+<use images/Column.png>
+Package pdftex.def Info: images/Column.png  used on input line 160.
+(pdftex.def)             Requested size: 128.0387pt x 227.60759pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15 </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateLessApp.png (PNG copy)> </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateLessScreen.png>]
-<images/Row.png, id=110, 1084.05pt x 1927.2pt>
-File: images/Row.png Graphic file (type png)
-<use images/Row.png>
-Package pdftex.def Info: images/Row.png  used on input line 131.
-(pdftex.def)             Requested size: 128.0387pt x 227.60759pt.
-<images/Column.png, id=111, 1084.05pt x 1927.2pt>
-File: images/Column.png Graphic file (type png)
-<use images/Column.png>
-Package pdftex.def Info: images/Column.png  used on input line 135.
-(pdftex.def)             Requested size: 128.0387pt x 227.60759pt.
- [16 </home/viga211/Scrivania/TesiTriennale/Tesi/images/StateFullApp.png (PNG copy)>] [17 </home/viga211/Scrivania/TesiTriennale/Tesi/images/Row.png> </home/viga211/Scrivania/TesiTriennale/Tesi/images/Column.png>]
-<images/Scaffold.png, id=120, 1927.2pt x 1084.05pt>
+[17] [18 </home/viga211/Scrivania/TesiTriennale/Tesi/images/Row.png> </home/viga211/Scrivania/TesiTriennale/Tesi/images/Column.png>]
+<images/Scaffold.png, id=123, 1927.2pt x 1084.05pt>
 File: images/Scaffold.png Graphic file (type png)
 <use images/Scaffold.png>
-Package pdftex.def Info: images/Scaffold.png  used on input line 187.
+Package pdftex.def Info: images/Scaffold.png  used on input line 212.
 (pdftex.def)             Requested size: 384.1096pt x 216.0618pt.
- [18] [19 </home/viga211/Scrivania/TesiTriennale/Tesi/images/Scaffold.png>]
+ [19 </home/viga211/Scrivania/TesiTriennale/Tesi/images/Scaffold.png>]
 <images/AlertDialog.png, id=128, 1084.05pt x 1927.2pt>
 File: images/AlertDialog.png Graphic file (type png)
 <use images/AlertDialog.png>
-Package pdftex.def Info: images/AlertDialog.png  used on input line 238.
+Package pdftex.def Info: images/AlertDialog.png  used on input line 263.
 (pdftex.def)             Requested size: 170.71393pt x 303.47679pt.
- [20 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AlertDialog.png>] [21]) [22] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/utenti/utenti.tex
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+ [20] [21 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AlertDialog.png>]) [22] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/utenti/utenti.tex
 Capitolo 4.
 [23
 
@@ -507,12 +503,20 @@ File: images/Authentication.png Graphic file (type png)
 <use images/Authentication.png>
 Package pdftex.def Info: images/Authentication.png  used on input line 87.
 (pdftex.def)             Requested size: 384.1122pt x 182.61568pt.
-) [26 </home/viga211/Scrivania/TesiTriennale/Tesi/images/Authentication.png (PNG copy)>] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/dati/dati.tex
-Capitolo 5.
-[27
+<images/user1.png, id=153, 447.17062pt x 316.93407pt>
+File: images/user1.png Graphic file (type png)
+<use images/user1.png>
+Package pdftex.def Info: images/user1.png  used on input line 116.
+(pdftex.def)             Requested size: 284.52756pt x 201.66196pt.
+)
+Underfull \vbox (badness 6063) has occurred while \output is active []
+
+ [26 </home/viga211/Scrivania/TesiTriennale/Tesi/images/Authentication.png (PNG copy)>] [27 </home/viga211/Scrivania/TesiTriennale/Tesi/images/user1.png (PNG copy)>] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/dati/dati.tex [28
 
 ]
-<images/ERTesi.png, id=160, 751.80875pt x 503.8825pt>
+Capitolo 5.
+[29]
+<images/ERTesi.png, id=167, 751.80875pt x 503.8825pt>
 File: images/ERTesi.png Graphic file (type png)
 <use images/ERTesi.png>
 Package pdftex.def Info: images/ERTesi.png  used on input line 46.
@@ -520,14 +524,14 @@ Package pdftex.def Info: images/ERTesi.png  used on input line 46.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 </home/viga211/Scrivania/TesiTriennale/Tesi/images/ERTesi.png>]
-<images/LogicoTesi.png, id=164, 491.58656pt x 91.84312pt>
+ [30 </home/viga211/Scrivania/TesiTriennale/Tesi/images/ERTesi.png>]
+<images/LogicoTesi.png, id=171, 491.58656pt x 91.84312pt>
 File: images/LogicoTesi.png Graphic file (type png)
 <use images/LogicoTesi.png>
 Package pdftex.def Info: images/LogicoTesi.png  used on input line 62.
 (pdftex.def)             Requested size: 426.79134pt x 79.74028pt.
- [29 </home/viga211/Scrivania/TesiTriennale/Tesi/images/LogicoTesi.png (PNG copy)>]
-<images/query1.png, id=168, 623.32875pt x 374.14781pt>
+ [31 </home/viga211/Scrivania/TesiTriennale/Tesi/images/LogicoTesi.png (PNG copy)>]
+<images/query1.png, id=175, 623.32875pt x 374.14781pt>
 File: images/query1.png Graphic file (type png)
 <use images/query1.png>
 Package pdftex.def Info: images/query1.png  used on input line 116.
@@ -536,8 +540,8 @@ Package pdftex.def Info: images/query1.png  used on input line 116.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30]
-<images/query2.png, id=172, 524.71031pt x 187.45032pt>
+[32]
+<images/query2.png, id=179, 524.71031pt x 187.45032pt>
 File: images/query2.png Graphic file (type png)
 <use images/query2.png>
 Package pdftex.def Info: images/query2.png  used on input line 147.
@@ -546,131 +550,131 @@ Package pdftex.def Info: images/query2.png  used on input line 147.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 </home/viga211/Scrivania/TesiTriennale/Tesi/images/query1.png (PNG copy)>]) [32 </home/viga211/Scrivania/TesiTriennale/Tesi/images/query2.png (PNG copy)>] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/mappa/mappa.tex
+[33 </home/viga211/Scrivania/TesiTriennale/Tesi/images/query1.png (PNG copy)>]) [34 </home/viga211/Scrivania/TesiTriennale/Tesi/images/query2.png (PNG copy)>] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/mappa/mappa.tex
 Capitolo 6.
-[33
+[35
 
 ]
-<images/MapNormale.jpg, id=183, 468.24937pt x 963.6pt>
+<images/MapNormale.jpg, id=190, 468.24937pt x 963.6pt>
 File: images/MapNormale.jpg Graphic file (type jpg)
 <use images/MapNormale.jpg>
-Package pdftex.def Info: images/MapNormale.jpg  used on input line 65.
+Package pdftex.def Info: images/MapNormale.jpg  used on input line 66.
 (pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
-<images/MapSatellite.jpg, id=184, 468.24937pt x 963.6pt>
+<images/MapSatellite.jpg, id=191, 468.24937pt x 963.6pt>
 File: images/MapSatellite.jpg Graphic file (type jpg)
 <use images/MapSatellite.jpg>
-Package pdftex.def Info: images/MapSatellite.jpg  used on input line 69.
+Package pdftex.def Info: images/MapSatellite.jpg  used on input line 70.
 (pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
-<images/MapIbrida.jpg, id=185, 468.24937pt x 963.6pt>
+<images/MapIbrida.jpg, id=192, 468.24937pt x 963.6pt>
 File: images/MapIbrida.jpg Graphic file (type jpg)
 <use images/MapIbrida.jpg>
-Package pdftex.def Info: images/MapIbrida.jpg  used on input line 73.
+Package pdftex.def Info: images/MapIbrida.jpg  used on input line 74.
 (pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
-<images/MapRilievo.jpg, id=186, 468.24937pt x 963.6pt>
+<images/MapRilievo.jpg, id=193, 468.24937pt x 963.6pt>
 File: images/MapRilievo.jpg Graphic file (type jpg)
 <use images/MapRilievo.jpg>
-Package pdftex.def Info: images/MapRilievo.jpg  used on input line 77.
+Package pdftex.def Info: images/MapRilievo.jpg  used on input line 78.
 (pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
- [34] [35 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapNormale.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapSatellite.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapIbrida.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapRilievo.jpg>]
-<images/MapFun.jpg, id=193, 468.24937pt x 963.6pt>
+ [36] [37 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapNormale.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapSatellite.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapIbrida.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapRilievo.jpg>]
+<images/MapFun.jpg, id=200, 468.24937pt x 963.6pt>
 File: images/MapFun.jpg Graphic file (type jpg)
 <use images/MapFun.jpg>
-Package pdftex.def Info: images/MapFun.jpg  used on input line 104.
+Package pdftex.def Info: images/MapFun.jpg  used on input line 105.
 (pdftex.def)             Requested size: 199.16928pt x 409.87012pt.
-<images/MapFunFavourite.jpg, id=194, 468.24937pt x 963.6pt>
+<images/MapFunFavourite.jpg, id=201, 468.24937pt x 963.6pt>
 File: images/MapFunFavourite.jpg Graphic file (type jpg)
 <use images/MapFunFavourite.jpg>
-Package pdftex.def Info: images/MapFunFavourite.jpg  used on input line 132.
+Package pdftex.def Info: images/MapFunFavourite.jpg  used on input line 133.
 (pdftex.def)             Requested size: 128.03662pt x 256.07324pt.
-<images/MapFunFilter.png, id=195, 1084.05pt x 1927.2pt>
+<images/MapFunFilter.png, id=202, 1084.05pt x 1927.2pt>
 File: images/MapFunFilter.png Graphic file (type png)
 <use images/MapFunFilter.png>
-Package pdftex.def Info: images/MapFunFilter.png  used on input line 136.
+Package pdftex.def Info: images/MapFunFilter.png  used on input line 137.
 (pdftex.def)             Requested size: 128.02927pt x 256.07324pt.
-<images/MapFunNearest.jpg, id=196, 468.24937pt x 963.6pt>
+<images/MapFunNearest.jpg, id=203, 468.24937pt x 963.6pt>
 File: images/MapFunNearest.jpg Graphic file (type jpg)
 <use images/MapFunNearest.jpg>
-Package pdftex.def Info: images/MapFunNearest.jpg  used on input line 141.
+Package pdftex.def Info: images/MapFunNearest.jpg  used on input line 142.
 (pdftex.def)             Requested size: 128.03662pt x 256.07324pt.
- [36] [37 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFun.jpg>]
-<images/MapFunSearch1.jpg, id=203, 468.24937pt x 963.6pt>
+ [38] [39 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFun.jpg>]
+<images/MapFunSearch1.jpg, id=212, 468.24937pt x 963.6pt>
 File: images/MapFunSearch1.jpg Graphic file (type jpg)
 <use images/MapFunSearch1.jpg>
-Package pdftex.def Info: images/MapFunSearch1.jpg  used on input line 163.
+Package pdftex.def Info: images/MapFunSearch1.jpg  used on input line 164.
 (pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
-<images/MapFunSearch2.jpg, id=204, 468.24937pt x 963.6pt>
+<images/MapFunSearch2.jpg, id=213, 468.24937pt x 963.6pt>
 File: images/MapFunSearch2.jpg Graphic file (type jpg)
 <use images/MapFunSearch2.jpg>
-Package pdftex.def Info: images/MapFunSearch2.jpg  used on input line 166.
+Package pdftex.def Info: images/MapFunSearch2.jpg  used on input line 167.
 (pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/AddStation1.jpg, id=205, 468.24937pt x 963.6pt>
+<images/AddStation1.jpg, id=214, 468.24937pt x 963.6pt>
 File: images/AddStation1.jpg Graphic file (type jpg)
 <use images/AddStation1.jpg>
-Package pdftex.def Info: images/AddStation1.jpg  used on input line 180.
+Package pdftex.def Info: images/AddStation1.jpg  used on input line 181.
 (pdftex.def)             Requested size: 140.84027pt x 256.07324pt.
-<images/AddStation4.jpg, id=206, 463.7325pt x 361.35pt>
+<images/AddStation4.jpg, id=215, 463.7325pt x 361.35pt>
 File: images/AddStation4.jpg Graphic file (type jpg)
 <use images/AddStation4.jpg>
-Package pdftex.def Info: images/AddStation4.jpg  used on input line 192.
+Package pdftex.def Info: images/AddStation4.jpg  used on input line 193.
 (pdftex.def)             Requested size: 140.84192pt x 109.74567pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunFavourite.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunFilter.png> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunNearest.jpg>]
+ [40 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunFavourite.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunFilter.png> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunNearest.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/AddStation2.jpg, id=211, 468.24937pt x 963.6pt>
+<images/AddStation2.jpg, id=220, 468.24937pt x 963.6pt>
 File: images/AddStation2.jpg Graphic file (type jpg)
 <use images/AddStation2.jpg>
-Package pdftex.def Info: images/AddStation2.jpg  used on input line 205.
+Package pdftex.def Info: images/AddStation2.jpg  used on input line 206.
 (pdftex.def)             Requested size: 128.03662pt x 256.07324pt.
-<images/AddStation3.jpg, id=212, 468.24937pt x 963.6pt>
+<images/AddStation3.jpg, id=221, 468.24937pt x 963.6pt>
 File: images/AddStation3.jpg Graphic file (type jpg)
 <use images/AddStation3.jpg>
-Package pdftex.def Info: images/AddStation3.jpg  used on input line 208.
+Package pdftex.def Info: images/AddStation3.jpg  used on input line 209.
 (pdftex.def)             Requested size: 128.03662pt x 256.07324pt.
-<images/AddStation6.jpg, id=213, 459.21562pt x 149.05687pt>
+<images/AddStation6.jpg, id=222, 459.21562pt x 149.05687pt>
 File: images/AddStation6.jpg Graphic file (type jpg)
 <use images/AddStation6.jpg>
-Package pdftex.def Info: images/AddStation6.jpg  used on input line 234.
+Package pdftex.def Info: images/AddStation6.jpg  used on input line 235.
 (pdftex.def)             Requested size: 226.19888pt x 73.42288pt.
-<images/AddStation5.jpg, id=214, 468.24937pt x 963.6pt>
+<images/AddStation5.jpg, id=223, 468.24937pt x 963.6pt>
 File: images/AddStation5.jpg Graphic file (type jpg)
 <use images/AddStation5.jpg>
-Package pdftex.def Info: images/AddStation5.jpg  used on input line 250.
+Package pdftex.def Info: images/AddStation5.jpg  used on input line 251.
 (pdftex.def)             Requested size: 140.84192pt x 289.8321pt.
-<images/AddStation7.jpg, id=215, 468.24937pt x 963.6pt>
+<images/AddStation7.jpg, id=224, 468.24937pt x 963.6pt>
 File: images/AddStation7.jpg Graphic file (type jpg)
 <use images/AddStation7.jpg>
-Package pdftex.def Info: images/AddStation7.jpg  used on input line 265.
+Package pdftex.def Info: images/AddStation7.jpg  used on input line 266.
 (pdftex.def)             Requested size: 140.84192pt x 289.8321pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunSearch1.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunSearch2.jpg>]
+[41 </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunSearch1.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/MapFunSearch2.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation1.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation4.jpg>]
+ [42 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation1.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation4.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation2.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation3.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation6.jpg>]
+[43 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation2.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation3.jpg> </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation6.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [42 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation5.jpg>] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/conclusione/conclusione.tex [43 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation7.jpg>] [44
+) [44 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation5.jpg>] (/home/viga211/Scrivania/TesiTriennale/Tesi/chapters/conclusione/conclusione.tex [45 </home/viga211/Scrivania/TesiTriennale/Tesi/images/AddStation7.jpg>] [46
 
 ]
 Capitolo 7.
-) [45] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.bbl [46
+) [47] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.bbl [48
 
 ]
 Underfull \hbox (badness 3209) in paragraph at lines 9--13
@@ -682,24 +686,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 []\OT1/cmr/m/n/12 material.io.  Ma-te-rial de-si-gn, 2019.  URL
  []
 
-) [47] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.aux) )
+) [49] (/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.aux) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 23 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6825 strings out of 492623
- 98721 string characters out of 6135669
- 197279 words of memory out of 5000000
- 10534 multiletter control sequences out of 15000+600000
+ 6831 strings out of 492623
+ 98820 string characters out of 6135669
+ 197292 words of memory out of 5000000
+ 10539 multiletter control sequences out of 15000+600000
  11998 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,842b,2063s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.pdf (51 pages, 6161723 bytes).
+Output written on /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.pdf (53 pages, 6214854 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 282 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
