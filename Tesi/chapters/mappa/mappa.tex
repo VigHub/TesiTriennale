@@ -1,10 +1,12 @@
-\section{Mappa e sue funzionalità}
+\chapter{Mappa e sue funzionalità}
+% \section{Mappa e sue funzionalità}
 La pagina della mappa è stata la sezione dell'applicazione più difficile da
 implementare, perchè al suo interno risiedono numerosi servizi e funzioni che
 hanno richiesto diverso tempo per essere sviluppati e inoltre è stato necessario
 documentarsi per capire come utilizzare le API che la pagina utilizza.
 
-\subsection{Scelta del servizio API}
+\section{Scelta del servizio API}
+% \subsection{Scelta del servizio API}
 In un primo momento si è pensato di utilizzare il servizio mappe di Google Maps
 che, oltre ad essere uno dei più efficienti e meglio documentati, è anche
 implementabile facilmente. Il problema è nato nel momento in cui Google ha
@@ -36,7 +38,8 @@ pagare nulla, anche se si è registrata una carta di credito. Quindi la scelta �
 ricaduta sulle API di Google e si è importato nel progetto il pacchetto
 \verb|googlemap|.
 
-\subsection{MapPage}
+\section{MapPage}
+% \subsection{MapPage}
 Dopo che l'utente ha eseguito correttamente la procedura di login o ha aperto
 l'applicazione in caso di autoidentificazione con mantenimento dello stato della
 registrazione, viene mostrata la MapPage. In alto è presente un'AppBar che 
@@ -91,7 +94,8 @@ momento in cui non si disponga di una connessione adeguata, condizione che si
 verifica sempre più di rado negli ultimi tempi. 
 
 
-\subsection{Funzionalità}
+\section{Funzionalità}
+% \subsection{Funzionalità}
 Nelle immagini precedenti si è forse notato un pulsante nella parte inferiore
 dello schermo verso destra. Se premuto (figura \ref{4puls}), quest'ultimo mostra una serie di
 pulsanti con diverse funzionalità. 
@@ -164,7 +168,8 @@ pagare direttamente Google.
     \caption{La funzione di ricerca e autocompletamento dell'API Google Places}
 \end{figure}
 
-\subsection{Aggiungere una Stazione}
+\section{Aggiungere una Stazione}
+% \subsection{Aggiungere una Stazione}
 Aspetto interessante dell'applicazione è che l'utente, se registrato, ha la
 possibilità di inserire lui stesso una nuova stazione e, dopo che essa è
 approvata, vederla comparire sulla mappa. Questa funzione è accessibile nella
@@ -262,4 +267,4 @@ operazione la stazione diventa visibile per tutti gli utenti come in figura
     \label{addStation7}
 \end{figure}
 
-\subsection{Codifica}
+\section{Codifica}

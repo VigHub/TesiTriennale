@@ -1,11 +1,14 @@
-\section{Gestione e struttura del database}
+\chapter{Gestione e struttura del database}
+% \section{Gestione e struttura del database}
 
-\subsection{Progettazione iniziale}
+\section{Progettazione iniziale}
+% \subsection{Progettazione iniziale}
 Una delle prime attività del progetto è stata la progettazione della base di
 dati, e fin dall'inizio era chiaro che non si sarebbe trattato di uno schema
 molto complesso. Infatti con sole tre tabelle si riesce a descrivere in modo
 appropriato l'ambiente nel quale risiede il progetto.
-\subsubsection{Schema Concettuale}
+\subsection{Schema Concettuale}
+% \subsubsection{Schema Concettuale}
  La tabella principale e da cui si è partiti è
 quella delle stazioni, che presenta una chiave primaria (Key), un nome con
 cui è conosciuta, l'indirizzo cioè il nome della via nella quale risiede, la
@@ -45,7 +48,8 @@ utilizzare l'app per conoscere la posizioni di stazioni senza mai inserirne ness
     \label{schemaEr}
 \end{figure} 
 
-\subsubsection{Schema Logico}
+\subsection{Schema Logico}
+% \subsubsection{Schema Logico}
 Data la semplicità dello schema Entità-Relazione la fase di progettazione logica
 è stata anch'essa priva di ostacoli. Si è posta particolare attenzione alle
 relazioni "Inserimento" e "Tipologia" perchè sarebbero potute diventare delle
@@ -60,7 +64,8 @@ esterne (figura \ref{schemaLogico}).
     \label{schemaLogico}
 \end{figure} 
 
-\subsection{Gestione dati in Firebase}
+\section{Gestione dati in Firebase}
+% \subsection{Gestione dati in Firebase}
 Quando si crea un progetto nella propria Firebase Console una delle prime
 importanti operazioni è quella di scegliere la tipologia di database. Il
 servizio Google infatti offre due possibili alternative: il Realtime Database
@@ -93,14 +98,16 @@ risultato e non dell'intera struttura. A seguito di queste considerazioni si è
 quindi deciso, benchè il progetto non presenti strutture particolarmente
 complesse, di utilizzare Cloud Firestore. 
 
-\subsection{Utilizzare il Cloud Firestore}
+\section{Utilizzare il Cloud Firestore}
+% \subsection{Utilizzare il Cloud Firestore}
 In questa sezione verranno prese in considerazione le modalità con cui si sono
 svolte le query all'interno dell'applicazione. Prima di tutto è doveroso dire
 che per effettuare interrgoazioni al proprio database è necessario importare nel
 proprio progetto il pacchetto \textit{cloud\_firestore}. Grazie a questo si ha
 accesso all'oggetto Firestore che permette all'app di comunicare con il database
 realtime sul cloud.
-\subsubsection{Ottenere tutti gli elementi di una collezione}
+\subsection{Ottenere tutti gli elementi di una collezione}
+% \subsubsection{Ottenere tutti gli elementi di una collezione}
 Quando si visualizza la pagina della mappa, è necessario visualizzare tutte le
 stazioni presenti nel database senza applicare dei filtri. Bisogna quindi
 effettuare il corrispettivo di una SELECT ALL nel linguaggio SQL. 
@@ -128,7 +135,8 @@ visualizzabile nella mappa e si ordinano poi le stazioni in base alla vicinanza
 dalla posizione attuale dell'utente tramite una classe (Utilities) creata per
 sfruttare funzioni quali l'ordinamento o il controllo di alcuni campi.
 
-\subsubsection{Ottenere dati filtrati da una collezione}
+\subsection{Ottenere dati filtrati da una collezione}
+% \subsubsection{Ottenere dati filtrati da una collezione}
 Ci sono diversi casi all'interno dell'applicazione in cui è necessario ottenere
 uno specificio documento o un gruppo selezionato da una collezione. Per esempio
 per ottenere la preferenza dell'utente rispetto alla tipologia di mappa che

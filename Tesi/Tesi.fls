@@ -3,10 +3,10 @@ INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.tex
 OUTPUT /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.log
-INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
-INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texmf-dist/tex/latex/base/book.cls
+INPUT /usr/share/texmf-dist/tex/latex/base/book.cls
+INPUT /usr/share/texmf-dist/tex/latex/base/bk12.clo
+INPUT /usr/share/texmf-dist/tex/latex/base/bk12.clo
 INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
@@ -137,6 +137,7 @@ INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/copertina2.pdf
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/copertina2.pdf
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/copertina2.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsl12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.toc
@@ -166,9 +167,11 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT /home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.toc
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/chapters/introduzione/introduzione.tex
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/chapters/introduzione/introduzione.tex
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/chapters/sist_operativi/sis_operativi.tex
 INPUT /home/viga211/Scrivania/TesiTriennale/Tesi/chapters/sist_operativi/sis_operativi.tex
@@ -292,6 +295,7 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb

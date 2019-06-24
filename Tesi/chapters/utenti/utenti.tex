@@ -1,9 +1,11 @@
-\section{Gestione degli utenti}
+\chapter{Gestione degli utenti}
+% \section{Gestione degli utenti}
 Per gestire al meglio la procedura di autenticazione dell'applicazione, la
 registrazione e le preferenze dei singoli utenti, si è scelto di utilizzare
 Firebase, servizio di database basato sul cloud appartenente a Google.
 
-\subsection{Firebase}
+\section{Firebase}
+% \subsection{Firebase}
 Firebase è un ottimo servizio di backend che rende disponibili, tramite API,
 numerosi servizi tra cui lo storage dei dati, l'autenticazione, notifiche push e
 molto altro. Una delle caratteristiche più utili di questo servizio è la
@@ -23,7 +25,8 @@ L'ultimo è il Blaze Plan nel quale ogni servizio possiede un costo unitario
 relativamente basso e funziona con una politica \textit{pay as you go}. Per le
 esigenze del progetto il primo piano (Spark) era più che sufficiente.
 
-\subsection{Schermata di avvio, tipologia di Utente e pagina Profilo}
+\section{Schermata di avvio, tipologia di Utente e pagina Profilo}
+% \subsection{Schermata di avvio, tipologia di Utente e pagina Profilo}
 Nella schermata d'avvio (figura \ref{login}) l'utente può scegliere di accedere
 all'applicazione in tre modi diversi: tramite accesso standard (utente
 standard), tramite il pulsante \textit{Accedi con Google} (utente Google) o
@@ -60,7 +63,8 @@ pagina di Login. Se l'utente è di tipo standard, è presente un ulteriore
 pulsante con scritto "Cambia Password": esso permette grazie a un'API di
 Firebase di cambiare la propria password nel caso in cui si sia dimenticata.
 
-\subsection{Registrazione}
+\section{Registrazione}
+% \subsection{Registrazione}
 Nel caso in cui l'utente effettui il primo accesso oppure desideri creare un
 nuovo utente, deve solo premere il pulsante "Registrati", per andare nella
 pagina di registrazione. Essa mostra tre campi di testo dove bisogna inserire la
@@ -85,7 +89,8 @@ dello stato della sessione del particolare account.
     \label{authentication}
 \end{figure}
 
-\subsection{Utente anonimo}
+\section{Utente anonimo}
+% \subsection{Utente anonimo}
 Nella pagina di login è anche possibile premere il tasto "Accedi come Ospite" in
 fondo allo schermo, e questo pulsante permette di accedere all'applicazione
 senza dover registrare nessun account. La struttura dell'app cambia radicalmente
@@ -99,4 +104,4 @@ fatto accesso all'applicazione almeno una volta indicando la data di ultima
 visita, la data di creazione e l'id dell'utente. Inoltre ne viene indicato anche
 il tipo, sia esso standard, Google o un utente anonimo.
 
-\subsection{Codifica}
+\section{Codifica}

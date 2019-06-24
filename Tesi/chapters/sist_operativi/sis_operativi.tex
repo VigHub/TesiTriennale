@@ -1,11 +1,13 @@
-\section{Sistemi Operativi per smartphone: \\ Android e iOS}
+% \section{Sistemi Operativi per smartphone: \\ Android e iOS}
+\chapter{Sistemi Operativi per smartphone: \\ Android e iOS}
 L'applicazione è stata realizzata tramite il framework Flutter (a cui sarà
 dedicato l'intero prossimo capitolo), in modo tale da poter sviluppare lo stesso
 progetto per i due maggiori sistemi operativi per smartphone, Android di
 proprietà di Google e iOS dell'azienda Apple. In questo capitolo si prendono in
 considerazione tali sistemi focalizzandosi soprattutto sul funzionamento.
 
-\subsection{Android}
+\section{Android}
+% \subsection{Android}
 Android è un sistema operativo mobile, realizzato per dispositivi mobili
 touchscreen, ed è stato sviluppato inizialmente dall'azienda Android Inc., che
 nel 2005 è stata acquistata da Google. [inserisci fonte] \\
@@ -22,7 +24,8 @@ memoria, in modo tale che sull'esaurirsi della memoria volatile il sistema inizi
 automaticamente a chiudere i processi, partendo da quelli che sono rimasti
 inattivi per il periodo di tempo più lungo.
 
-\subsubsection{Kernel Linux e Architettura}
+\subsection{Kernel Linux e Architettura}
+% \subsubsection{Kernel Linux e Architettura}
 Un kernel può essere considerato come un ponte tra hardware e software, e può comunicare con
 l’hardware tramite i driver che sono inclusi al suo interno. In questo modo, quando
 un’applicazione vuole rispondere a un comando, può inoltrare le istruzioni al
@@ -55,7 +58,8 @@ paragrafo).
     \label{kernel}
 \end{figure}
 
-\subsubsection{ART Virtual Machine e Dalvik Virtual Machine}
+\subsection{ART Virtual Machine e Dalvik Virtual Machine}
+% \subsubsection{ART Virtual Machine e Dalvik Virtual Machine}
 La VM, Virtual Machine, è in Android il software all’interno del
 quale vengono eseguite le applicazioni. Le applicazioni Android vengono scritte in
 linguaggio Java, il quale viene poi compilato in Bytecode
@@ -75,7 +79,8 @@ l'esecuzione stessa del software. Questo permette di avere un vantaggio in
 termine di prestazioni, anche se incide sul tempo di installazione delle
 applicazioni.
 
-\subsubsection{Sviluppo applicazioni in Android}
+\subsection{Sviluppo applicazioni in Android}
+% \subsubsection{Sviluppo applicazioni in Android}
 In aiuto ai programmatori per la scrittura di applicazioni Android esiste un
 kit di sviluppo software  chiamato SDK. L’SDK  comprende un numeroso set di
 strumenti di sviluppo, tra cui: librerie software, debugger, documentazione e
@@ -113,7 +118,8 @@ terze parti. Esistono infine anche un certo numero di store di app di terze
 parti, che forniscono servizi che non possono essere offerti dallo store
 ufficiale a causa di violazioni di particolari norme.
 
-\subsection{iOS}
+\section{iOS}
+% \subsection{iOS}
 Il sistema operativo creato da Apple è esclusivo dei propri device, in quanto
 solo gli iPhone presentano questo software. Nonostante questo è però il secondo
 sistema operativo mobile più popolare al mondo. Inoltre, a differenza di Android, Apple
@@ -134,7 +140,8 @@ della documentazione per sviluppatori di Apple e con un Interface Builder integr
 grafiche) Al suo interno è anche presente un simulatore in grado di creare un
 iPhone virtuale all'interno del proprio Mac su cui poi testare le applicazioni
 sviluppate.
-\subsubsection{Architettura}
+\subsection{Architettura}
+% \subsubsection{Architettura}
 Le app interagiscono con l’hardware attraverso una serie di interfacce di
 sistema. Queste interfacce semplificano la scrittura di applicazioni per i
 dispositivi Apple. I livelli inferiori forniscono servizi di base a cui tutte le
@@ -164,7 +171,8 @@ che definiscono l’aspetto dell’app. Esso fornisce anche l'infrastruttura di 
 applicazioni e supporto per tecnologie importanti come multitasking, touch,
 notifiche push e per altri aspetti di alto livello.
 
-\subsubsection{Kernel XNU}
+\subsection{Kernel XNU}
+% \subsubsection{Kernel XNU}
 Il kernel XNU, come detto precedentemente, fa da mediatore tra il software
 e l’hardware, ed è il primo programma ad essere caricato in memoria
 all’accensione del dispositivo. XNU è utilizzato nel sistema operativo open source
