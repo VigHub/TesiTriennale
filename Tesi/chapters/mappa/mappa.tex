@@ -100,7 +100,7 @@ verifica sempre più di rado negli ultimi tempi.
 Nelle immagini precedenti si è forse notato un pulsante nella parte inferiore
 dello schermo verso destra. Se premuto (figura \ref{4puls}), quest'ultimo mostra una serie di
 pulsanti con diverse funzionalità. 
-\begin{figure}
+\begin{figure}[!h]
     \centering
     \includegraphics[width=7cm]{MapFun.jpg}
     \caption{Premuto il pulsante, vengono mostrati i 4 FloatingActionButton e il quinto (con la X) per tornare indietro}
@@ -127,7 +127,7 @@ al tocco della scheda. In seguito all'interazione dell'utilizzatore con una
 specifica Card, la mappa ruota e cambia il proprio centro mostrando l'icona
 indicante quella stazione che si è toccata. In questo modo l'utente risparmia
 tempo poichè viene direttamente condotto alla stazione di interesse.
-\begin{figure}[h!]
+\begin{figure}[!h]
     \centering
     \begin{subfigure}{0.3\linewidth}
         \includegraphics[width=\linewidth, height=9cm]{MapFunFavourite.jpg}
@@ -158,7 +158,7 @@ chiamata alla funzione di auto-completamento. Si è quindi deciso di introdurre
 un limite mensile al numero di volte che l'app può far uso di questa API, in
 corrispondenza del numero massimo di chiamate che si possono fare senza dover
 pagare direttamente Google.
-\begin{figure}[h!]
+\begin{figure}[!h]
     \centering
     \begin{subfigure}{0.33\linewidth}
         \includegraphics[width=\linewidth, height=9cm]{MapFunSearch1.jpg}
@@ -246,7 +246,7 @@ all'utilizzatore di accedere sia alla fotocamera che alle immagini presenti nell
 interno del proprio device. Caricata l'immagine, è possibile vedere la propria
 scelta all'interno della pagina e premendo la X rossa che compare a schermo,
 eliminarla e prenderne in considerazione altre.
-\begin{figure}[!h]
+\begin{figure}
     \centering
     \includegraphics[width=0.33\linewidth]{AddStation5.jpg}
     \caption{Pagina con immagine caricata dalla galleria}
@@ -269,3 +269,62 @@ operazione la stazione diventa visibile per tutti gli utenti come in figura
 \end{figure}
 
 \section{Codifica}
+Data la quantità di codice che è stato sviluppato per fornire la mappa di tutte
+le sue funzionalità, nel seguito verranno solo indicati gli aspetti principali. \\
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=10cm]{MapCode.png}
+    \caption{Il widget GoogleMap}
+    \label{mapcode1}
+\end{figure}
+Nella figura \ref{mapcode1} si può notare come la mappa venga creata mediante
+l'oggetto \verb|GoogleMap|, presente all'interno del pacchetto
+\textit{google\_maps\_flutter}. Il suo costruttore ha a disposizione numerosi
+argomenti per personalizzare ciò che si vuole visualizzare. Nel caso in cui
+alcuni attributi non vengano indicati, l'oggetto provvederà a definirli con casi
+standard (come la tipologia Normale per il tipo di mappa). Seguendo la figura, è
+possibile indicare il minimo e il massimo zoom applicabile alla schermata
+(ottenibile avvicinando o allontanando le dita), indicare i marker, cioè i punti
+di interesse (ognuno con il proprio colore, titolo e descrizione), e permettere
+o meno la rotazione della visuale. Si può poi indicare il tipo di mappa,
+visualizzare a schermo la propria posizione e introdurre dei limiti invalicabili
+indicati tramite coordinate geografiche. In particolare, data la natura
+dell'app, si è scelto di porre come vincolo a SudOvest la posizione della città
+di Genova, e come vincolo a NordEst la città di Udine. Infine è possibile
+indicare la posizione iniziale della \textit{camera} (dove è la visuale) della
+mappa e indicare quale meteodo debba essere eseguito nel momento in cui il
+widget è stato creato e caricato correttamente. Nello specifico, il metodo
+onMapCreated del progetto consiste nell'assegnare alla mappa un controller di
+tipo \verb|GoogleMapController|. Questo permette di spostare la visuale e di
+aggiungere ed eliminare marker dalla mappa, creando un vero e proprio oggetto in
+grado di controllare il widget. Si osservi la figura \ref{mapcode2}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=13cm]{MapCode2.png}
+    \caption{Metodo per zoomare nella località indicata da uno specifico marker}
+    \label{mapcode2}
+\end{figure} 
+che mostra il metodo \verb|zoomInMarker| che aumenta lo zoom della visuale a
+seguito della pressione da parte dell'utente del titolo di uno specifico marker,
+il tutto con un gradevole effetto dovuto alla rotazione. Questo è reso possibile
+dall'oggetto mapController che, tramite il metodo \verb|animateCamera| (il quale prende
+in input un oggetto di tipo \verb|CameraUpdate|), porta la visuale al nuovo
+target specificato, sempre usando la latitudine e la longitudine. \\
+Si noti poi la figura \ref{mapcode3} che mostra la funzione
+\verb|searchAndNavigate|. Come indica il nome, questa porzione di codice prende
+in input una stringa di testo, cioè l'indirizzo cercato dall'utente, e allo
+stesso modo di prima porta la visuale della mappa nella località indicata
+convertendo i caratteri in coordinate geografiche. Questo processo è dovuto
+al metodo \verb|Geolocator().placemarkFromAddress()| ottenibile dal
+pacchetto \textit{geolocator}. Il risultato dell'operazione è di tipo Future e
+per questo è utilizzabile solo con un metodo then (chiamata asincrona). L'output
+è dunque un vettore contenente per ogni elemento una località con diversi
+attributi (nella figura si possono notare i campi name, locality e position, che
+a sua volta possiede latitude e longitude). L'ultimo passaggio è il medesimo
+visto nel caso precedente spostando la visuale con l'oggetto mapController.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=13cm]{MapCode3.png}
+    \caption{Metodo per convertire un indirizzo testuale in coordinate geografiche}
+    \label{mapcode3}
+\end{figure}

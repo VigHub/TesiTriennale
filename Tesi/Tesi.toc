@@ -39,6 +39,6 @@
 \contentsline {section}{\numberline {6.1}Scelta del servizio API}{35}% 
 \contentsline {section}{\numberline {6.2}MapPage}{36}% 
 \contentsline {section}{\numberline {6.3}Funzionalit\IeC {\`a}}{38}% 
-\contentsline {section}{\numberline {6.4}Aggiungere una Stazione}{41}% 
-\contentsline {section}{\numberline {6.5}Codifica}{44}% 
+\contentsline {section}{\numberline {6.4}Aggiungere una Stazione}{40}% 
+\contentsline {section}{\numberline {6.5}Codifica}{45}% 
 \contentsline {chapter}{\numberline {7}Conclusioni}{47}% 
