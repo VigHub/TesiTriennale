@@ -199,7 +199,7 @@
 		argomenti per mostare sulla schermata Drawer, SnackBar e BottomSheets,
 		descritte di seguito. 
 		\item \textbf{AppBar} \newline
-		Un'AppBar consiste in una linea orizzontale, solitamente posizionata in
+		Un'AppBar consiste in un riquadro orizzontale, solitamente posizionato in
 		alto sulla schermo, che contiene diverse azioni (IconButtons) seguite da
 		un menù a comparsa (PopUpMenu). In questo modo si possono inserire in un
 		unico luogo tutte le scorciatoie per passare da una schermata ad
@@ -219,13 +219,14 @@
 		\end{figure}
 		\item \textbf{BottomNavigationBar} \newline
 		\'E un material widget disposto in fondo allo schermo per selezionare un
-		piccolo numero di schermate, solitamente tra le tre e le cinque.
+		piccolo numero di schermate, da un minimo di tre a un massimo di cinque.
 		Si costruisce tramite diversi strumenti quali widget di testo, icone o
 		entrambi. Se gli elementi figli sono minori di quattro, la grandezza di
 		ogni item è fissa, mentre se superiore la grandezza si adatta al numero
 		di widget contenuti.
 		\item \textbf{Drawer} \newline
-		Consiste in un pannello che entra in orizzontale sullo schermo
+		Consiste in un pannello orizzontale trascinabile dall'utente che entra
+		in orizzontale sullo schermo
 		solitamente dal lato sinistro della Scaffold. Come figlio è solito avere
 		una ListView (particolare tipo di Column che gestisce anche lo scroll
 		verticale), in modo da mostrare all'utente utili link per la navigazione
@@ -233,11 +234,11 @@
 		vuoto con la classica icona dei menù a comparsa se non viene specificato
 		nulla nel suo costruttore.
 		\item \textbf{SnackBar} \newline
-		Formato da un messaggio con un'azione opzionale visualizzato brevemente
+		Formato da un messaggio visualizzato brevemente
 		nella parte inferiore dello schermo, viene utlizzato per comunicare
 		all'utente una particolare informazione come l'attesa per un caricamento
 		o il manifestarsi di un problema a seguito di un errore, come la
-		mancanaza di una connessione internet.
+		mancanza di una connessione internet.
 		\item \textbf{FlatButton e IconButton} \newline
 		Sono entrambi pulsanti che si differenziano per ciò che contengono. Il
 		primo è solitamente formato da un rettangolo (i cui angoli possono
@@ -271,8 +272,8 @@
 		conferma di un'operazione. Inoltre ha un titolo opzionale e un
 		elenco opzionale di azioni. Il titolo viene visualizzato in alto e le
 		azioni vengono visualizzate sotto il contenuto dell’AlertDialog. Si può
-		anche scegliere che se l'utente tocca al di fuori dell'area dedicata a
-		questo widget esso sparisca, oppure si può decidere che l'AlertDialog si
+		anche scegliere di far sparire il widget se l'utente tocca al di fuori dell'area a
+		lui dedicata, oppure si può decidere che l'AlertDialog si
 		dissolva solo a seguito della pressione di un particolare tasto.
 		\item \textbf{BottomSheet} \newline
 		Il BottomSheet è un particolare widget che appare nella parte inferiore

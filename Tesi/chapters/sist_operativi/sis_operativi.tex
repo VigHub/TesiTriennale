@@ -1,5 +1,5 @@
 % \section{Sistemi Operativi per smartphone: \\ Android e iOS}
-\chapter{Sistemi Operativi per smartphone: \\ Android e iOS}
+\chapter{S.O. per smartphone:\\Android e iOS}
 L'applicazione è stata realizzata tramite il framework Flutter (a cui sarà
 dedicato l'intero prossimo capitolo), in modo tale da poter sviluppare lo stesso
 progetto per i due maggiori sistemi operativi per smartphone, Android di
@@ -10,7 +10,7 @@ considerazione tali sistemi focalizzandosi soprattutto sul funzionamento.
 % \subsection{Android}
 Android è un sistema operativo mobile, realizzato per dispositivi mobili
 touchscreen, ed è stato sviluppato inizialmente dall'azienda Android Inc., che
-nel 2005 è stata acquistata da Google. [inserisci fonte] \\
+nel 2005 è stata acquistata da Google.\\
 Una delle caratteristiche più importanti di questo sistema operativo è che
 detiene una licenza open source. Questo tipo di licenza consente a
 qualsiasi utente di modificare e distribuire liberamente il codice
@@ -31,7 +31,7 @@ l’hardware tramite i driver che sono inclusi al suo interno. In questo modo, q
 un’applicazione vuole rispondere a un comando, può inoltrare le istruzioni al
 kernel e quest’ultimo può utilizzare i driver dell’hardware che vogliamo
 controllare per ottenere il comportamento desiderato. In particolare, Android si
-appoggia al kernel Linux (fig. \ref{kernel}). Esso fornisce
+appoggia al kernel Linux. Esso fornisce
 tutte le funzioni essenziali per il sistema, tra cui la gestione della memoria
 primaria e la gestione delle risorse hardware del sistema e delle periferiche.
 Il suo incarico quindi è quello di gestire
@@ -44,10 +44,11 @@ introdotto qualche variazione. Una di queste è la funzionalità di gestione
 del risparmio, chiamata “wakelocks”, che impedisce al telefono di lavorare a
 basso consumo. Nel kernel Linux non c’è un’implementazione completa della
 Libreria Standard del linguaggio C++ (STL), dato che le applicazioni Android si
-basano sul linguaggio di programmazione Java, dunque ciò che è scritto in codice
-C/C++ deve essere richiamato da codice java. Questo porta al fatto che tutte le chiamate a
-sistema fatte in C/C++ devono chiamare la Java Virtual Machine. Oltre al
-kernel Linux, Android è formato anche da  middleware, Librerie e API scritte in C/C++. Le
+basano sul linguaggio di programmazione Java. Da questo segue che per svolgere
+la propria funzione tutte le chiamate a
+sistema fatte in C/C++ devono richiamare la Java Virtual Machine. Oltre al
+kernel Linux, Android è formato anche da  middleware, Librerie e API scritte in
+C/C++ (fig. \ref{kernel}). Le
 ultime versioni di Android usano ART Virtual Machine, mentre nelle vecchie versioni
 veniva utilizzata la Dalvik Virtual Machine (entrambe considerate nel prossimo
 paragrafo).
@@ -101,7 +102,7 @@ dichiarato dell’applicazione. Una volta scritta e concluso il progetto, il
 codice java e il codice XML vengono compilati generando un file con estensione
 .apk (l’eseguibile delle applicazioni Android). Esso contiene il bytecode che verrà
 eseguito dalla Virtual Machine. Le applicazioni Android sono pilotate
-dagli eventi (Event Driven), cioè azioni che vengono causate da hardware o da altri
+dagli eventi (Event Driven), causati da hardware o da altri
 componenti. Il programmatore quindi sviluppa per ogni hardware routine
 indipendenti, permettendo al sistema operativo di rinunciare al caricamento di
 componenti che non si andranno a utilizzare, facendo uso solo di quelli che sono
@@ -121,10 +122,10 @@ ufficiale a causa di violazioni di particolari norme.
 \section{iOS}
 % \subsection{iOS}
 Il sistema operativo creato da Apple è esclusivo dei propri device, in quanto
-solo gli iPhone presentano questo software. Nonostante questo è però il secondo
-sistema operativo mobile più popolare al mondo. Inoltre, a differenza di Android, Apple
-non concede licenze per l’installazione di iOS su hardware diverso da quello
-proprietario. \\
+solo gli iPhone presentano questo software poichè l'azienda, a differenza di
+Android, non concede licenze per l’installazione di iOS su hardware diverso da quello
+proprietario. Nonostante questo è però il secondo
+sistema operativo mobile più popolare al mondo. \\
 Per lo sviluppo di queste applicazioni viene messo a disposizione un SDK apposito,
 disponibile unicamente per PC Mac. L’SDK contiene diversi strumenti che
 consentono ai programmatori di utilizzare le varie funzioni e servizi dei
@@ -159,7 +160,7 @@ utilizzabili dagli sviluppatori.
 \end{figure}
 
 Il livello più basso di iOS è costituito dal kernel di cui si parlerà nel
-prossimo paragrafo. Al di sopra del kernel, abbiamo il Core OS,
+prossimo paragrafo. Al di sopra del kernel, si ha il Core OS,
 responsabile della gestione della memoria, delle attività del file system, della
 rete e delle attività del sistema operativo ed interagisce anche con l’hardware.
 Al livello successivo è presente il Core Services, il quale fornisce servizi Peer-to-Peer,

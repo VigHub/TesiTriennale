@@ -43,7 +43,7 @@ Se l'utente è gia registrato in modo standard, può inserire la propria mail
 quelli presenti nel database degli utenti si fa accesso alla pagina della mappa
 che verrà descritta in un prossimo capitolo. Se invece non c'è corrispondenza
 con un utente già registrato viene mostrato a video un messaggio di errore che
-spiega cosa è successo. \newline
+mostra in modo chiaro e comprensibile quale sia il problema. \newline
 Si può anche fare accesso all'applicazione utilizzando i servizi Google che
 permettono di autenticarsi mediante gmail, con il proprio
 account Google. In questo caso si apre una nuova finestra (codificata grazie ad
@@ -68,8 +68,8 @@ Firebase di cambiare la propria password nel caso in cui si sia dimenticata.
 Nel caso in cui l'utente effettui il primo accesso oppure desideri creare un
 nuovo utente, deve solo premere il pulsante "Registrati", per andare nella
 pagina di registrazione. Essa mostra tre campi di testo dove bisogna inserire la
-propria mail, la password, e confermare quest'ultima reinserendo la stessa
-password. Vengono effettuati dei controlli di integrità dei dati (così come
+propria mail, la password, e confermare quest'ultima reinserendola nuovamente.
+Vengono effettuati dei controlli di integrità dei dati (così come
 nella pagina di login): infatti tramite una \textit{regular expression} si
 controlla che la mail inserita possa esistere, cioè presenti almeno una
 lettera seguita da una \MVAt, almeno due ulteriori lettere, un punto e almeno un'altra
@@ -95,14 +95,14 @@ Nella pagina di login è anche possibile premere il tasto "Accedi come Ospite" i
 fondo allo schermo, e questo pulsante permette di accedere all'applicazione
 senza dover registrare nessun account. La struttura dell'app cambia radicalmente
 se si esegue questo tipo di accesso. Innanzitutto sono presenti solo due pagine
-accessibili (e non più tre come nel caso standard e Google) e consistono in una
+accessibili (e non più tre come nel caso di utente standard o Google) e consistono in una
 pagina mappa con funzionalità estremamente ridotte e una pagina di Upgrade nella
 quale si mostra all'utente i posibili privilegi raggiungibili al momento di
 un'autenticazione registrata. Nella sezione \textit{Authentication} del servizo
 online di Firebase (figura \ref{authentication}) è possibile prendere visione di tutti gli utenti che hanno
 fatto accesso all'applicazione almeno una volta indicando la data di ultima
 visita, la data di creazione e l'id dell'utente. Inoltre ne viene indicato anche
-il tipo, sia esso standard, Google o un utente anonimo.
+il tipo, sia esso account standard, account Google o un utente anonimo.
 
 \section{Codifica}
 All'interno del progetto il primo file da cui ha inizio l'esecuzione del codice è il

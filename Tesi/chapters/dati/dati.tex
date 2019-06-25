@@ -10,11 +10,11 @@ appropriato l'ambiente nel quale risiede il progetto.
 \subsection{Schema Concettuale}
 % \subsubsection{Schema Concettuale}
  La tabella principale e da cui si è partiti è
-quella delle stazioni, che presenta una chiave primaria (Key), un nome con
-cui è conosciuta, l'indirizzo cioè il nome della via nella quale risiede, la
-posizione, formata da due coordinate geografiche di latitudine e longitudine che
-sono realizzate mediante due variabili double, e
-può ma non è costretta a possedere una descrizione formata da un testo. La
+quella delle stazioni, che presenta una chiave primaria (Key), un nome che
+identifica la stazione, l'indirizzo cioè il nome della via nella quale risiede, la
+posizione (formata da due coordinate geografiche di latitudine e longitudine che
+sono realizzate mediante due variabili double), e
+una descrizione opzionale formata da un testo. La
 stazione possiede poi una Tipologia. Tramite colloquio con il commitente dott.
 Marco  Aceti si è appreso come le stazioni di ricarica possono essere
 raggruppate
@@ -26,7 +26,7 @@ stazione, formata dalla combinazione dei diversi servizi appena descritti, in
 quanto ovviamente esistono negozi che propongono più servizi contemporaneamente.
 Ogni istanza di questa tabella oltre a possedere una chiave che la identifica,
 è caratterizzata dal nome (cioè la tipologia) e da un numero intero chiamato
-Colore che viene utilizzato all'interno dell'applicazione per fornire un colore
+\textit{Colore} che viene utilizzato all'interno dell'applicazione per fornire un colore
 diverso a ogni tipologia in modo da rendere più semplice agli utenti
 l'identiticazione di ciò che può interessare loro. Nello schema deve poi essere
 presente una tabella che tenga traccia degli utenti. Si presti attenzione che
@@ -52,7 +52,7 @@ utilizzare l'app per conoscere la posizioni di stazioni senza mai inserirne ness
 % \subsubsection{Schema Logico}
 Data la semplicità dello schema Entità-Relazione la fase di progettazione logica
 è stata anch'essa priva di ostacoli. Si è posta particolare attenzione alle
-relazioni "Inserimento" e "Tipologia" perchè sarebbero potute diventare delle
+relazioni \textit{Inserimento} e \textit{Tipologia} perchè sarebbero potute diventare delle
 tabelle ma dato che entrambe sono del tipo (1,1) verso (0,n) si è scelto di
 renderle degli attributi della tabella Stazione, diventando quindi chiavi
 esterne (figura \ref{schemaLogico}). 
@@ -84,7 +84,7 @@ soprattutto se di ridotte dimensioni, ma nel momento in cui la grandezza e
 complessità del database non sono più banali diventa difficile organizzare una
 struttura gerarchica. La tipologia Cloud immagazzina invece i dati in documenti
 chiamati \textit{collections}, ne segue quindi che essa fa parte delle cosiddette
-basi di dati oreientate al documento. Strutture dati modeste sono molto facili
+basi di dati orientate al documento. Strutture dati modeste sono molto facili
 da inserire (in modo simile al metodo visto prima tramite JSON) e se queste
 diventano complesse e di grandi dimensioni usando collezioni e sotto-collezioni si
 può facilmente organizzare il tutto senza perdere in efficienza. Considerando
@@ -102,7 +102,7 @@ complesse, di utilizzare Cloud Firestore.
 % \subsection{Utilizzare il Cloud Firestore}
 In questa sezione verranno prese in considerazione le modalità con cui si sono
 svolte le query all'interno dell'applicazione. Prima di tutto è doveroso dire
-che per effettuare interrgoazioni al proprio database è necessario importare nel
+che per effettuare interrogazioni al proprio database è necessario importare nel
 proprio progetto il pacchetto \textit{cloud\_firestore}. Grazie a questo si ha
 accesso all'oggetto Firestore che permette all'app di comunicare con il database
 realtime sul cloud.
@@ -154,8 +154,8 @@ anche precedentemente, ciò che cambia è che ora si introduce anche il metodo
 campo su cui si vuole effettuare la selezione, e un secondo argomento che indica
 il tipo di confronto che si vuole fare, in questo caso un \textit{isEqualTo}
 (tra gli altri sono presenti anche \textit{isGreaterThan} e
-\textit{isLessThan}). Una volta ottenuto l'utente che ha lo stesso id
-dell'utser attuale si può quindi accedere al suo campo \verb|tipoMappa| e
+\textit{isLessThan}). Una volta ottenuto l'utente che ha lo stesso \textit{id}
+dell'user attuale si può quindi accedere al suo campo \verb|tipoMappa| e
 tramite un metodo apposito convertire la stringa ottenuta nella tipologia di
 mappa desiderata. Si noti anche il metodo \verb|catchError()| che è sucessivo al
 \verb|then()| relativo ai documenti della collezione: in caso di un qualunque errore di
