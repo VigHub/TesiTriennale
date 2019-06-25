@@ -2,7 +2,7 @@
 \chapter{S.O. per smartphone:\\Android e iOS}
 L'applicazione è stata realizzata tramite il framework Flutter (a cui sarà
 dedicato l'intero prossimo capitolo), in modo tale da poter sviluppare lo stesso
-progetto per i due maggiori sistemi operativi per smartphone, Android di
+progetto per i due maggiori sistemi operativi per smartphone: Android di
 proprietà di Google e iOS dell'azienda Apple. In questo capitolo si prendono in
 considerazione tali sistemi focalizzandosi soprattutto sul funzionamento.
 
@@ -29,7 +29,7 @@ inattivi per il periodo di tempo più lungo.
 Un kernel può essere considerato come un ponte tra hardware e software, e può comunicare con
 l’hardware tramite i driver che sono inclusi al suo interno. In questo modo, quando
 un’applicazione vuole rispondere a un comando, può inoltrare le istruzioni al
-kernel e quest’ultimo può utilizzare i driver dell’hardware che vogliamo
+kernel e quest’ultimo può utilizzare i driver dell’hardware che si vuole
 controllare per ottenere il comportamento desiderato. In particolare, Android si
 appoggia al kernel Linux. Esso fornisce
 tutte le funzioni essenziali per il sistema, tra cui la gestione della memoria
@@ -41,7 +41,7 @@ tecnologie embedded più rilevanti, e quindi ha avuto molto successo nel campo
 delle tecnologie portatili.
 Esso è inoltre utilizzato dal sistema operativo Android, sebbene Google abbia
 introdotto qualche variazione. Una di queste è la funzionalità di gestione
-del risparmio, chiamata “wakelocks”, che impedisce al telefono di lavorare a
+del risparmio, chiamata \textit{wakelocks}, che impedisce al telefono di lavorare a
 basso consumo. Nel kernel Linux non c’è un’implementazione completa della
 Libreria Standard del linguaggio C++ (STL), dato che le applicazioni Android si
 basano sul linguaggio di programmazione Java. Da questo segue che per svolgere
