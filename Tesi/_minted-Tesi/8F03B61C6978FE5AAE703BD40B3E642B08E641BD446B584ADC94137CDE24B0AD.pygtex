@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}[}\PYG{err}{!}\PYG{n}{h}\PYG{p}{]}
+    \PYGZbs{}\PYG{n}{centering}
+    \PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{13}\PYG{n}{cm}\PYG{p}{]\PYGZob{}}\PYG{n}{MapCode3}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Metodo} \PYG{n}{per} \PYG{n}{convertire} \PYG{n}{un} \PYG{n}{indirizzo} \PYG{n}{testuale} \PYG{o+ow}{in} \PYG{n}{coordinate} \PYG{n}{geografiche}\PYG{p}{\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{label}\PYG{p}{\PYGZob{}}\PYG{n}{mapcode3}\PYG{p}{\PYGZcb{}}
+\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,45 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{k+kn}{import} \PYG{l+s+s1}{\PYGZsq{}package:flutter/material.dart\PYGZsq{}}
+		\PYG{n}{main}\PYG{p}{(}\PYG{n}{List}\PYG{o}{\PYGZlt{}}\PYG{n}{String}\PYG{o}{\PYGZgt{}} \PYG{n}{args}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+			\PYG{n}{runApp}\PYG{p}{(}\PYG{n}{MyApp}\PYG{p}{());}
+		\PYG{p}{\PYGZcb{}}
+		\PYG{k}{class} \PYG{n+nc}{MyApp} \PYG{n}{extends} \PYG{n}{StatelessWidget} \PYG{p}{\PYGZob{}}
+			\PYG{n+nd}{@override}
+			\PYG{n}{Widget} \PYG{n}{build}\PYG{p}{(}\PYG{n}{BuildContext} \PYG{n}{context}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+				\PYG{k}{return} \PYG{n}{MaterialApp}\PYG{p}{(}
+					\PYG{n}{home}\PYG{p}{:} \PYG{n}{Scaffold}\PYG{p}{(}
+						\PYG{n}{body}\PYG{p}{:} \PYG{n}{Home}\PYG{p}{(),}
+					\PYG{p}{)} \PYG{o}{//} \PYG{n}{Scaffold}
+				\PYG{p}{);} \PYG{o}{//} \PYG{n}{MaterialApp}
+			\PYG{p}{\PYGZcb{}}
+		\PYG{p}{\PYGZcb{}}
+		\PYG{k}{class} \PYG{n+nc}{Home} \PYG{n}{extends} \PYG{n}{StatefulWidget}\PYG{p}{\PYGZob{}}
+			\PYG{n+nd}{@override}
+			\PYG{n}{\PYGZus{}HomeState} \PYG{n}{createState}\PYG{p}{()} \PYG{o}{=\PYGZgt{}} \PYG{n}{\PYGZus{}HomeState}\PYG{p}{();}
+		\PYG{p}{\PYGZcb{}}
+		\PYG{k}{class} \PYG{n+nc}{\PYGZus{}HomeState} \PYG{n}{extends} \PYG{n}{State}\PYG{o}{\PYGZlt{}}\PYG{n}{Home}\PYG{o}{\PYGZgt{}} \PYG{p}{\PYGZob{}}
+			\PYG{n+nb}{int} \PYG{n}{\PYGZus{}counter} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+			\PYG{n}{void} \PYG{n}{buttonPressed}\PYG{p}{()\PYGZob{}}
+				\PYG{n}{setState}\PYG{p}{(()\PYGZob{}}
+					\PYG{n}{\PYGZus{}counter}\PYG{o}{++}\PYG{p}{;}
+				\PYG{p}{\PYGZcb{});}
+			\PYG{p}{\PYGZcb{}}
+			\PYG{n+nd}{@override}
+			\PYG{n}{Widget} \PYG{n}{build}\PYG{p}{(}\PYG{n}{BuildContext} \PYG{n}{context}\PYG{p}{)\PYGZob{}}
+				\PYG{k}{return} \PYG{n}{Scaffold}\PYG{p}{(}
+					\PYG{n}{body}\PYG{p}{:} \PYG{n}{Center}\PYG{p}{(}
+						\PYG{n}{child}\PYG{p}{:} \PYG{n}{Container}\PYG{p}{(}
+							\PYG{n}{child}\PYG{p}{:} \PYG{n}{Text}\PYG{p}{(}
+								\PYG{l+s+s1}{\PYGZsq{}Hai premuto \PYGZdl{}\PYGZus{}counter volte il pulsante\PYGZsq{}}\PYG{p}{,}
+								\PYG{n}{style}\PYG{p}{:} \PYG{n}{TextStyle}\PYG{p}{(}\PYG{n}{fontSize}\PYG{p}{:} \PYG{l+m+mi}{25}\PYG{p}{),}
+							\PYG{p}{),} \PYG{o}{//} \PYG{n}{Text}
+						\PYG{p}{),} \PYG{o}{//} \PYG{n}{Container}
+					\PYG{p}{),} \PYG{o}{//} \PYG{n}{Center}
+					\PYG{n}{floatingActionButton}\PYG{p}{:} \PYG{n}{FloatingActionButton}\PYG{p}{(}
+						\PYG{n}{child}\PYG{p}{:} \PYG{n}{Icon}\PYG{p}{(}\PYG{n}{Icons}\PYG{o}{.}\PYG{n}{add}\PYG{p}{),}
+						\PYG{n}{onPressed} \PYG{n}{buttonPressed}\PYG{p}{,}
+				\PYG{p}{),} \PYG{o}{//} \PYG{n}{FloatingActionButton}
+			\PYG{p}{);} \PYG{o}{//} \PYG{n}{Scaffold}
+			\PYG{p}{\PYGZcb{}}
+		\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

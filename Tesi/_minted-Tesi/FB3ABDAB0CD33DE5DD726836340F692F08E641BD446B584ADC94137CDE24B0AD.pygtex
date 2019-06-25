@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{void} \PYG{n}{populateStations}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n}{Firestore}\PYG{o}{.}\PYG{n}{instance}\PYG{o}{.}\PYG{n}{collection}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}stazioni\PYGZsq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{getDocuments}\PYG{p}{()}\PYG{o}{.}\PYG{n}{then}\PYG{p}{((}\PYG{n}{docs}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{docs}\PYG{o}{.}\PYG{n}{documents}\PYG{o}{.}\PYG{n}{isNotEmpty}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{setState}\PYG{p}{(()} \PYG{p}{\PYGZob{}}
+            \PYG{n}{stazioniToggle} \PYG{o}{=} \PYG{n}{true}\PYG{p}{;}
+            \PYG{k}{for} \PYG{p}{(}\PYG{n+nb}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{docs}\PYG{o}{.}\PYG{n}{documents}\PYG{o}{.}\PYG{n}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{var} \PYG{n}{d} \PYG{o}{=} \PYG{n}{docs}\PYG{o}{.}\PYG{n}{documents}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{.}\PYG{n}{data}\PYG{p}{;}
+            \PYG{n}{Stazione} \PYG{n}{s} \PYG{o}{=} \PYG{n}{Stazione}\PYG{p}{(}
+                \PYG{n+nb}{id}\PYG{p}{:} \PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}id\PYGZsq{}}\PYG{p}{],}
+                \PYG{n}{indirizzo}\PYG{p}{:} \PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}indirizzo\PYGZsq{}}\PYG{p}{],}
+                \PYG{n}{descrizione}\PYG{p}{:} \PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}descrizione\PYGZsq{}}\PYG{p}{],}
+                \PYG{n}{nome}\PYG{p}{:} \PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}nome\PYGZsq{}}\PYG{p}{],}
+                \PYG{n}{marcaBici}\PYG{p}{:} \PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}marcaBici\PYGZsq{}}\PYG{p}{],}
+                \PYG{n}{coords}\PYG{p}{:}
+                    \PYG{n}{LatLng}\PYG{p}{(}\PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}posizione\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{latitude}\PYG{p}{,} \PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}posizione\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{longitude}\PYG{p}{));}
+            \PYG{n}{\PYGZus{}stations}\PYG{o}{.}\PYG{n}{add}\PYG{p}{(}\PYG{n}{s}\PYG{p}{);}
+            \PYG{n}{initMarker}\PYG{p}{(}\PYG{n}{s}\PYG{p}{);}
+            \PYG{p}{\PYGZcb{}}
+            \PYG{n}{\PYGZus{}markers} \PYG{o}{=} \PYG{n}{\PYGZus{}markersFissi}\PYG{o}{.}\PYG{n}{toSet}\PYG{p}{();}
+            \PYG{n}{\PYGZus{}stations}\PYG{o}{.}\PYG{n}{sort}\PYG{p}{((}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)} \PYG{o}{=\PYGZgt{}} \PYG{n}{Utilities}\PYG{p}{()}
+                \PYG{o}{.}\PYG{n}{getDistance}\PYG{p}{(}\PYG{n}{a}\PYG{o}{.}\PYG{n}{coords}\PYG{p}{,} \PYG{n}{currentLocation}\PYG{p}{)}
+                \PYG{o}{.}\PYG{n}{compareTo}\PYG{p}{(}\PYG{n}{Utilities}\PYG{p}{()}\PYG{o}{.}\PYG{n}{getDistance}\PYG{p}{(}\PYG{n}{b}\PYG{o}{.}\PYG{n}{coords}\PYG{p}{,} \PYG{n}{currentLocation}\PYG{p}{)));}
+        \PYG{p}{\PYGZcb{});}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{});}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

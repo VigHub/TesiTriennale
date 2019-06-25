@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{void} \PYG{n}{searchAndNavigate}\PYG{p}{(}\PYG{n}{String} \PYG{n}{testo}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{Geolocator}\PYG{p}{()}\PYG{o}{.}\PYG{n}{placemarkFromAddress}\PYG{p}{(}\PYG{n}{testo}\PYG{p}{)}\PYG{o}{.}\PYG{n}{then}\PYG{p}{((}\PYG{n}{result}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{searchController}\PYG{o}{.}\PYG{n}{text} \PYG{o}{=} \PYG{n}{result}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{name} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}, \PYGZsq{}} \PYG{o}{+} \PYG{n}{result}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{locality}\PYG{p}{;}
+        \PYG{n}{mapController}\PYG{o}{.}\PYG{n}{animateCamera}\PYG{p}{(}\PYG{n}{CameraUpdate}\PYG{o}{.}\PYG{n}{newCameraPosition}\PYG{p}{(}\PYG{n}{CameraPosition}\PYG{p}{(}
+        \PYG{n}{target}\PYG{p}{:}
+            \PYG{n}{LatLng}\PYG{p}{(}\PYG{n}{result}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{position}\PYG{o}{.}\PYG{n}{latitude}\PYG{p}{,} \PYG{n}{result}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{position}\PYG{o}{.}\PYG{n}{longitude}\PYG{p}{),}
+        \PYG{n}{zoom}\PYG{p}{:} \PYG{l+m+mf}{15.0}\PYG{p}{,}
+        \PYG{p}{)));}
+    \PYG{p}{\PYGZcb{});}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

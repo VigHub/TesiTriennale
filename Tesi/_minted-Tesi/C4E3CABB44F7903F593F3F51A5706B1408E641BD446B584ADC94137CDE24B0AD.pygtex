@@ -1,0 +1,59 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}[}\PYG{err}{!}\PYG{n}{h}\PYG{p}{]}
+    \PYGZbs{}\PYG{n}{centering}
+    \PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{n}{cm}\PYG{p}{]\PYGZob{}}\PYG{n}{MapCode}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Il} \PYG{n}{widget} \PYG{n}{GoogleMap}\PYG{p}{\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{label}\PYG{p}{\PYGZob{}}\PYG{n}{mapcode1}\PYG{p}{\PYGZcb{}}
+\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+\PYG{n}{Nella} \PYG{n}{figura} \PYGZbs{}\PYG{n}{ref}\PYG{p}{\PYGZob{}}\PYG{n}{mapcode1}\PYG{p}{\PYGZcb{}} \PYG{n}{si} \PYG{n}{può} \PYG{n}{notare} \PYG{n}{come} \PYG{n}{la} \PYG{n}{mappa} \PYG{n}{venga} \PYG{n}{creata} \PYG{n}{mediante}
+\PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}oggetto }\PYG{l+s+se}{\PYGZbs{}v}\PYG{l+s+s1}{erb|GoogleMap|, presente all\PYGZsq{}}\PYG{n}{interno} \PYG{k}{del} \PYG{n}{pacchetto}
+\PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{google}\PYGZbs{}\PYG{n}{\PYGZus{}maps}\PYGZbs{}\PYG{n}{\PYGZus{}flutter}\PYG{p}{\PYGZcb{}}\PYG{o}{.} \PYG{n}{Il} \PYG{n}{suo} \PYG{n}{costruttore} \PYG{n}{ha} \PYG{n}{a} \PYG{n}{disposizione} \PYG{n}{numerosi}
+\PYG{n}{argomenti} \PYG{n}{per} \PYG{n}{personalizzare} \PYG{n}{ciò} \PYG{n}{che} \PYG{n}{si} \PYG{n}{vuole} \PYG{n}{visualizzare}\PYG{o}{.} \PYG{n}{Nel} \PYG{n}{caso} \PYG{o+ow}{in} \PYG{n}{cui}
+\PYG{n}{alcuni} \PYG{n}{attributi} \PYG{n}{non} \PYG{n}{vengano} \PYG{n}{indicati}\PYG{p}{,} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}oggetto provvederà a definirli con casi}
+\PYG{n}{standard} \PYG{p}{(}\PYG{n}{come} \PYG{n}{la} \PYG{n}{tipologia} \PYG{n}{Normale} \PYG{n}{per} \PYG{n}{il} \PYG{n}{tipo} \PYG{n}{di} \PYG{n}{mappa}\PYG{p}{)}\PYG{o}{.} \PYG{n}{Seguendo} \PYG{n}{la} \PYG{n}{figura}\PYG{p}{,} \PYG{err}{è}
+\PYG{n}{possibile} \PYG{n}{indicare} \PYG{n}{il} \PYG{n}{minimo} \PYG{n}{e} \PYG{n}{il} \PYG{n}{massimo} \PYG{n}{zoom} \PYG{n}{applicabile} \PYG{n}{alla} \PYG{n}{schermata}
+\PYG{p}{(}\PYG{n}{ottenibile} \PYG{n}{avvicinando} \PYG{n}{o} \PYG{n}{allontanando} \PYG{n}{le} \PYG{n}{dita}\PYG{p}{),} \PYG{n}{indicare} \PYG{n}{i} \PYG{n}{marker}\PYG{p}{,} \PYG{n}{cioè} \PYG{n}{i} \PYG{n}{punti}
+\PYG{n}{di} \PYG{n}{interesse} \PYG{p}{(}\PYG{n}{ognuno} \PYG{n}{con} \PYG{n}{il} \PYG{n}{proprio} \PYG{n}{colore}\PYG{p}{,} \PYG{n}{titolo} \PYG{n}{e} \PYG{n}{descrizione}\PYG{p}{),} \PYG{n}{e} \PYG{n}{permettere}
+\PYG{n}{o} \PYG{n}{meno} \PYG{n}{la} \PYG{n}{rotazione} \PYG{n}{della} \PYG{n}{visuale}\PYG{o}{.} \PYG{n}{Si} \PYG{n}{può} \PYG{n}{poi} \PYG{n}{indicare} \PYG{n}{il} \PYG{n}{tipo} \PYG{n}{di} \PYG{n}{mappa}\PYG{p}{,}
+\PYG{n}{visualizzare} \PYG{n}{a} \PYG{n}{schermo} \PYG{n}{la} \PYG{n}{propria} \PYG{n}{posizione} \PYG{n}{e} \PYG{n}{introdurre} \PYG{n}{dei} \PYG{n}{limiti} \PYG{n}{invalicabili}
+\PYG{n}{indicati} \PYG{n}{tramite} \PYG{n}{coordinate} \PYG{n}{geografiche}\PYG{o}{.} \PYG{n}{In} \PYG{n}{particolare}\PYG{p}{,} \PYG{n}{data} \PYG{n}{la} \PYG{n}{natura}
+\PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}app, si è scelto di porre come vincolo a SudOvest la posizione della città}
+\PYG{n}{di} \PYG{n}{Genova}\PYG{p}{,} \PYG{n}{e} \PYG{n}{come} \PYG{n}{vincolo} \PYG{n}{a} \PYG{n}{NordEst} \PYG{n}{la} \PYG{n}{città} \PYG{n}{di} \PYG{n}{Udine}\PYG{o}{.} \PYG{n}{Infine} \PYG{err}{è} \PYG{n}{possibile}
+\PYG{n}{indicare} \PYG{n}{la} \PYG{n}{posizione} \PYG{n}{iniziale} \PYG{n}{della} \PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{camera}\PYG{p}{\PYGZcb{}} \PYG{p}{(}\PYG{n}{visuale}\PYG{p}{)} \PYG{n}{della}
+\PYG{n}{mappa} \PYG{n}{e} \PYG{n}{indicare} \PYG{n}{quale} \PYG{n}{meteodo} \PYG{n}{debba} \PYG{n}{essere} \PYG{n}{eseguito} \PYG{n}{nel} \PYG{n}{momento} \PYG{o+ow}{in} \PYG{n}{cui} \PYG{n}{il}
+\PYG{n}{widget} \PYG{err}{è} \PYG{n}{stato} \PYG{n}{creato} \PYG{n}{e} \PYG{n}{caricato} \PYG{n}{correttamente}\PYG{o}{.} \PYG{n}{Nello} \PYG{n}{specifico}\PYG{p}{,} \PYG{n}{il} \PYG{n}{metodo}
+\PYG{n}{onMapCreated} \PYG{k}{del} \PYG{n}{progetto} \PYG{n}{consiste} \PYG{n}{nell}\PYG{l+s+s1}{\PYGZsq{}assegnare alla mappa un controller di}
+\PYG{n}{tipo} \PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{GoogleMapController}\PYG{o}{|.} \PYG{n}{Questo} \PYG{n}{permette} \PYG{n}{di} \PYG{n}{spostare} \PYG{n}{la} \PYG{n}{visuale} \PYG{n}{e} \PYG{n}{di}
+\PYG{n}{aggiungere} \PYG{n}{ed} \PYG{n}{eliminare} \PYG{n}{marker} \PYG{n}{dalla} \PYG{n}{mappa}\PYG{p}{,} \PYG{n}{creando} \PYG{n}{un} \PYG{n}{vero} \PYG{n}{e} \PYG{n}{proprio} \PYG{n}{oggetto} \PYG{o+ow}{in}
+\PYG{n}{grado} \PYG{n}{di} \PYG{n}{controllare} \PYG{n}{il} \PYG{n}{widget}\PYG{o}{.} \PYG{n}{Si} \PYG{n}{osservi} \PYG{n}{la} \PYG{n}{figura} \PYGZbs{}\PYG{n}{ref}\PYG{p}{\PYGZob{}}\PYG{n}{mapcode2}\PYG{p}{\PYGZcb{}}
+\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}[}\PYG{err}{!}\PYG{n}{h}\PYG{p}{]}
+    \PYGZbs{}\PYG{n}{centering}
+    \PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{13}\PYG{n}{cm}\PYG{p}{]\PYGZob{}}\PYG{n}{MapCode2}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Metodo} \PYG{n}{per} \PYG{n}{zoomare} \PYG{n}{nella} \PYG{n}{località} \PYG{n}{indicata} \PYG{n}{da} \PYG{n}{uno} \PYG{n}{specifico} \PYG{n}{marker}\PYG{p}{\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{label}\PYG{p}{\PYGZob{}}\PYG{n}{mapcode2}\PYG{p}{\PYGZcb{}}
+\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+\PYG{n}{che} \PYG{n}{mostra} \PYG{n}{il} \PYG{n}{metodo} \PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{zoomInMarker}\PYG{o}{|} \PYG{n}{che} \PYG{n}{aumenta} \PYG{n}{lo} \PYG{n}{zoom} \PYG{n}{della} \PYG{n}{visuale} \PYG{n}{a}
+\PYG{n}{seguito} \PYG{n}{della} \PYG{n}{pressione} \PYG{n}{da} \PYG{n}{parte} \PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}utente del titolo di uno specifico marker,}
+\PYG{n}{il} \PYG{n}{tutto} \PYG{n}{con} \PYG{n}{un} \PYG{n}{gradevole} \PYG{n}{effetto} \PYG{n}{dovuto} \PYG{n}{alla} \PYG{n}{rotazione}\PYG{o}{.} \PYG{n}{Questo} \PYG{err}{è} \PYG{n}{reso} \PYG{n}{possibile}
+\PYG{n}{dall}\PYG{l+s+s1}{\PYGZsq{}oggetto mapController che, tramite il metodo }\PYG{l+s+se}{\PYGZbs{}v}\PYG{l+s+s1}{erb|animateCamera| (il quale prende}
+\PYG{o+ow}{in} \PYG{n+nb}{input} \PYG{n}{un} \PYG{n}{oggetto} \PYG{n}{di} \PYG{n}{tipo} \PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{CameraUpdate}\PYG{o}{|}\PYG{p}{),} \PYG{n}{porta} \PYG{n}{la} \PYG{n}{visuale} \PYG{n}{al} \PYG{n}{nuovo}
+\PYG{n}{target} \PYG{n}{specificato}\PYG{p}{,} \PYG{n}{sempre} \PYG{n}{usando} \PYG{n}{la} \PYG{n}{latitudine} \PYG{n}{e} \PYG{n}{la} \PYG{n}{longitudine}\PYG{o}{.} \PYGZbs{}\PYGZbs{}
+\PYG{n}{Si} \PYG{n}{noti} \PYG{n}{poi} \PYG{n}{la} \PYG{n}{figura} \PYGZbs{}\PYG{n}{ref}\PYG{p}{\PYGZob{}}\PYG{n}{mapcode3}\PYG{p}{\PYGZcb{}} \PYG{n}{che} \PYG{n}{mostra} \PYG{n}{la} \PYG{n}{funzione}
+\PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{searchAndNavigate}\PYG{o}{|.} \PYG{n}{Come} \PYG{n}{indica} \PYG{n}{il} \PYG{n}{nome}\PYG{p}{,} \PYG{n}{questa} \PYG{n}{porzione} \PYG{n}{di} \PYG{n}{codice} \PYG{n}{prende}
+\PYG{o+ow}{in} \PYG{n+nb}{input} \PYG{n}{una} \PYG{n}{stringa} \PYG{n}{di} \PYG{n}{testo}\PYG{p}{,} \PYG{n}{cioè} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}indirizzo cercato dall\PYGZsq{}}\PYG{n}{utente}\PYG{p}{,} \PYG{n}{e} \PYG{n}{allo}
+\PYG{n}{stesso} \PYG{n}{modo} \PYG{n}{di} \PYG{n}{prima} \PYG{n}{porta} \PYG{n}{la} \PYG{n}{visuale} \PYG{n}{della} \PYG{n}{mappa} \PYG{n}{nella} \PYG{n}{località} \PYG{n}{indicata}
+\PYG{n}{convertendo} \PYG{n}{i} \PYG{n}{caratteri} \PYG{o+ow}{in} \PYG{n}{coordinate} \PYG{n}{geografiche}\PYG{o}{.} \PYG{n}{Questo} \PYG{n}{processo} \PYG{err}{è} \PYG{n}{dovuto}
+\PYG{n}{al} \PYG{n}{metodo} \PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{Geolocator}\PYG{p}{()}\PYG{o}{.}\PYG{n}{placemarkFromAddress}\PYG{p}{()}\PYG{o}{|} \PYG{n}{ottenibile} \PYG{n}{dal}
+\PYG{n}{pacchetto} \PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{geolocator}\PYG{p}{\PYGZcb{}}\PYG{o}{.} \PYG{n}{Il} \PYG{n}{risultato} \PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}operazione è di tipo Future e}
+\PYG{n}{per} \PYG{n}{questo} \PYG{err}{è} \PYG{n}{utilizzabile} \PYG{n}{solo} \PYG{n}{con} \PYG{n}{un} \PYG{n}{metodo} \PYG{n}{then} \PYG{p}{(}\PYG{n}{chiamata} \PYG{n}{asincrona}\PYG{p}{)}\PYG{o}{.} \PYG{n}{L}\PYG{l+s+s1}{\PYGZsq{}output}
+\PYG{err}{è} \PYG{n}{dunque} \PYG{n}{un} \PYG{n}{vettore} \PYG{n}{contenente} \PYG{n}{per} \PYG{n}{ogni} \PYG{n}{elemento} \PYG{n}{una} \PYG{n}{località} \PYG{n}{con} \PYG{n}{diversi}
+\PYG{n}{attributi} \PYG{p}{(}\PYG{n}{nella} \PYG{n}{figura} \PYG{n}{si} \PYG{n}{possono} \PYG{n}{notare} \PYG{n}{i} \PYG{n}{campi} \PYG{n}{name}\PYG{p}{,} \PYG{n}{locality} \PYG{n}{e} \PYG{n}{position}\PYG{p}{,} \PYG{n}{che}
+\PYG{n}{a} \PYG{n}{sua} \PYG{n}{volta} \PYG{n}{possiede} \PYG{n}{latitude} \PYG{n}{e} \PYG{n}{longitude}\PYG{p}{)}\PYG{o}{.} \PYG{n}{L}\PYG{l+s+s1}{\PYGZsq{}ultimo passaggio è il medesimo}
+\PYG{n}{visto} \PYG{n}{nel} \PYG{n}{caso} \PYG{n}{precedente} \PYG{n}{spostando} \PYG{n}{la} \PYG{n}{visuale} \PYG{n}{con} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}oggetto mapController.}
+\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}[}\PYG{err}{!}\PYG{n}{h}\PYG{p}{]}
+    \PYGZbs{}\PYG{n}{centering}
+    \PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{13}\PYG{n}{cm}\PYG{p}{]\PYGZob{}}\PYG{n}{MapCode3}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Metodo} \PYG{n}{per} \PYG{n}{convertire} \PYG{n}{un} \PYG{n}{indirizzo} \PYG{n}{testuale} \PYG{o+ow}{in} \PYG{n}{coordinate} \PYG{n}{geografiche}\PYG{p}{\PYGZcb{}}
+    \PYGZbs{}\PYG{n}{label}\PYG{p}{\PYGZob{}}\PYG{n}{mapcode3}\PYG{p}{\PYGZcb{}}
+\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

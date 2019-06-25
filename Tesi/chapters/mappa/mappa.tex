@@ -202,11 +202,11 @@ per l'integrità dei dati. Infatti, se l'utilizzatore preme il tasto
 fuorchè la descrizione) si avrà la situazione mostrata in figura \ref{addStation2}.
 \begin{figure}[!h]
     \centering
-    \begin{subfigure}{0.3\linewidth}
-        \includegraphics[width=\linewidth,height=9cm]{AddStation2.jpg}
+    \begin{subfigure}{0.36\linewidth}
+        \includegraphics[width=\linewidth,height=10cm]{AddStation2.jpg}
     \end{subfigure}
-    \begin{subfigure}{0.3\linewidth}
-        \includegraphics[width=\linewidth,height=9cm]{AddStation3.jpg}
+    \begin{subfigure}{0.36\linewidth}
+        \includegraphics[width=\linewidth,height=10cm]{AddStation3.jpg}
     \end{subfigure}
     \caption{Poichè la funzione onSubmit ha restituito False in almeno un campo,
     lo stato della Form è in Errore, anche se basta cominciare a scrivere
@@ -254,6 +254,12 @@ eliminarla e prenderne in considerazione altre.
     \caption{Pagina con immagine caricata dalla galleria}
     \label{addStation5}
 \end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.33\linewidth]{AddStation7.jpg}
+    \caption{Nuova stazione inserita che ha superato tutti i controlli}
+    \label{addStation7}
+\end{figure}
 Una volta caricata l'immagine e aver confermato che tutti i dati inseriti
 abbiano superato il controllo della Form, la stazione è aggiunta nel database
 dell'applicazione. Per prevenire che utenti malintenzionati inseriscano stazioni
@@ -263,23 +269,30 @@ dell'app che periodicamente controlla le nuove aggiunte verificare la
 veridicità dei dati inseriti e impostare a True il campo flag. Dopo questa
 operazione la stazione diventa visibile per tutti gli utenti come in figura
 \ref{addStation7}.
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.33\linewidth]{AddStation7.jpg}
-    \caption{Nuova stazione inserita che ha superato tutti i controlli}
-    \label{addStation7}
-\end{figure}
 
 \section{Codifica}
 Data la quantità di codice che è stato sviluppato per fornire la mappa di tutte
-le sue funzionalità, nel seguito verranno solo indicati gli aspetti principali. \\
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=10cm]{MapCode.png}
-    \caption{Il widget GoogleMap}
-    \label{mapcode1}
-\end{figure}
-Nella figura \ref{mapcode1} si può notare come la mappa venga creata mediante
+le sue funzionalità, nel seguito verranno solo indicati gli aspetti principali.
+\begin{minted}[	frame=lines, framesep=2mm, baselinestretch=1.2,
+    fontsize=\footnotesize, linenos 	] {python}
+GoogleMap(
+    minMaxZoomPreference: MinMaxZoomPreference(5.0, 20.0),
+    markers: _markers,
+    compassEnabled: true,
+    mapType: _tipoMappa,
+    myLocationEnabled: true,
+    cameraTargetBounds: CameraTargetBounds(LatLngBounds(
+        southwest: LatLng(44.4264, 8.91519),
+        northeast: LatLng(46.0693, 13.23715))),
+    initialCameraPosition: CameraPosition(
+        zoom: 15.0,
+        target: LatLng(
+            currentLocation.latitude, currentLocation.longitude),
+    ),
+    onMapCreated: onMapCreated,
+),
+\end{minted}
+Nel frammento di codice della pagina precedente si può notare come la mappa venga creata mediante
 l'oggetto \verb|GoogleMap|, presente all'interno del pacchetto
 \textit{google\_maps\_flutter}. Il suo costruttore ha a disposizione numerosi
 argomenti per personalizzare ciò che si vuole visualizzare. Nel caso in cui
@@ -299,20 +312,26 @@ widget è stato creato e caricato correttamente. Nello specifico, il metodo
 onMapCreated del progetto consiste nell'assegnare alla mappa un controller di
 tipo \verb|GoogleMapController|. Questo permette di spostare la visuale e di
 aggiungere ed eliminare marker dalla mappa, creando un vero e proprio oggetto in
-grado di controllare il widget. Si osservi la figura \ref{mapcode2}
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=13cm]{MapCode2.png}
-    \caption{Metodo per zoomare nella località indicata da uno specifico marker}
-    \label{mapcode2}
-\end{figure} 
-che mostra il metodo \verb|zoomInMarker| che aumenta lo zoom della visuale a
+grado di controllare il widget. \\
+\begin{minted}[	frame=lines, framesep=2mm, baselinestretch=1.2,
+    fontsize=\footnotesize, linenos 	] {python}
+void zoomInMarker(Stazione stazione) {
+    mapController.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
+        target: LatLng(
+            stazione.coords.latitude,
+            stazione.coords.longitude),
+        zoom: 14.0,
+        bearing: 90.0,
+        tilt: 45.0)));
+}
+\end{minted} 
+Il codice sopra riportato mostra il metodo \verb|zoomInMarker| che aumenta lo zoom della visuale a
 seguito della pressione da parte dell'utente del titolo di uno specifico marker,
 il tutto con un gradevole effetto dovuto alla rotazione. Questo è reso possibile
 dall'oggetto mapController che, tramite il metodo \verb|animateCamera| (il quale prende
 in input un oggetto di tipo \verb|CameraUpdate|), porta la visuale al nuovo
 target specificato, sempre usando la latitudine e la longitudine. \\
-Si noti poi la figura \ref{mapcode3} che mostra la funzione
+Si noti infine il codice nella pagina successiva che mostra la funzione
 \verb|searchAndNavigate|. Come indica il nome, questa porzione di codice prende
 in input una stringa di testo, cioè l'indirizzo cercato dall'utente, e allo
 stesso modo di prima porta la visuale della mappa nella località indicata
@@ -323,10 +342,17 @@ per questo è utilizzabile solo con un metodo then (chiamata asincrona). L'outpu
 è dunque un vettore contenente per ogni elemento una località con diversi
 attributi (nella figura si possono notare i campi name, locality e position, che
 a sua volta possiede latitude e longitude). L'ultimo passaggio è il medesimo
-visto nel caso precedente spostando la visuale con l'oggetto mapController.
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=13cm]{MapCode3.png}
-    \caption{Metodo per convertire un indirizzo testuale in coordinate geografiche}
-    \label{mapcode3}
-\end{figure}
+visto nel caso precedente spostando la visuale con l'oggetto mapController. \\ \\
+\begin{minted}[	frame=lines, framesep=2mm, baselinestretch=1.2,
+    fontsize=\footnotesize, linenos 	] {python}
+void searchAndNavigate(String testo) {
+    Geolocator().placemarkFromAddress(testo).then((result) {
+        searchController.text = result[0].name + ', ' + result[0].locality;
+        mapController.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
+        target:
+            LatLng(result[0].position.latitude, result[0].position.longitude),
+        zoom: 15.0,
+        )));
+    });
+}
+\end{minted}

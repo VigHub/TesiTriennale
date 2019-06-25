@@ -110,17 +110,37 @@ All'interno del progetto il primo file da cui ha inizio l'esecuzione del codice 
 prende come argomento l'oggetto che sta a indicare l'intera applicazione e lo esegue.
 Per capire lo stato attuale dell'utente all'avvio, cioè per definire se si è già
 loggati all'interno dell'app o se è necessario presentare la pagina di login.
-Nella figura \ref{user1} si può vedere come sia stata implementata tale funzione.
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=10cm]{user1.png}
-    \caption{}
-    \label{user1}
-\end{figure}
+Nella seziona di codice seguente si può vedere come sia stata implementata tale
+funzione.
+\begin{minted}[	frame=lines, framesep=2mm, baselinestretch=1.2,
+    fontsize=\footnotesize, linenos	] {python}
+@override
+void initState() {
+super.initState();
+if (auth.googleCurrentUser() != null) {
+    setState(() {
+    _authState = AuthState.signedIn;
+    });
+} else {
+    auth.currentUser().then((user) {
+    print(user);
+    setState(() {
+        if (user == null) {
+        _authState = AuthState.notSignedIn;
+        } else if (user.isAnonymous) {
+        _authState = AuthState.notSignedIn;
+        } else {
+        _authState = AuthState.signedIn;
+        }
+    });
+    });
+}
+}
+\end{minted}
 Tutto il codice è all'interno di initState, la prima funzione
 richiamata quando si inizializza l'app. Tramite la variabile \verb|auth| di tipo
 Auth (classe implementata all'interno del progetto per rendere facilmente
-accessibili le funzionalità dei pachetti flutter \textit{firebase\_auth} e
+accessibili le funzionalità dei pacchetti flutter \textit{firebase\_auth} e
 \textit{google\_sign\_in}), si controlla subito se l'utente si è gia autenticato
 precedentemente con Google. Questo è possibile verificando l'output del metodo
 \verb|googleCurrentUser| che restituisce un puntatore all'utente in caso di accesso o

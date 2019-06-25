@@ -110,17 +110,40 @@ realtime sul cloud.
 % \subsubsection{Ottenere tutti gli elementi di una collezione}
 Quando si visualizza la pagina della mappa, è necessario visualizzare tutte le
 stazioni presenti nel database senza applicare dei filtri. Bisogna quindi
-effettuare il corrispettivo di una SELECT ALL nel linguaggio SQL. 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=13cm]{query1.png}
-    \caption{La funzione populateStations che permette di ottenere tutte le stazioni presenti nel database}
-    \label{query1}
-\end{figure}
-In figura \ref{query1} si può quindi vedere il metodo populateStations che viene
+effettuare il corrispettivo di una SELECT ALL nel linguaggio SQL.
+\begin{minted}[	frame=lines, framesep=2mm, baselinestretch=1.2,
+    fontsize=\footnotesize, linenos 	] {python}
+void populateStations() {
+    Firestore.instance.collection('stazioni').getDocuments().then((docs) {
+        if (docs.documents.isNotEmpty) {
+        setState(() {
+            stazioniToggle = true;
+            for (int i = 0; i < docs.documents.length; i++) {
+            var d = docs.documents[i].data;
+            Stazione s = Stazione(
+                id: d['id'],
+                indirizzo: d['indirizzo'],
+                descrizione: d['descrizione'],
+                nome: d['nome'],
+                marcaBici: d['marcaBici'],
+                coords:
+                    LatLng(d['posizione'].latitude, d['posizione'].longitude));
+            _stations.add(s);
+            initMarker(s);
+            }
+            _markers = _markersFissi.toSet();
+            _stations.sort((a, b) => Utilities()
+                .getDistance(a.coords, currentLocation)
+                .compareTo(Utilities().getDistance(b.coords, currentLocation)));
+        });
+        }
+    });
+}
+\end{minted} 
+Nella precedente sezione di codice si può quindi vedere il metodo populateStations che viene
 chiamato nel momento in cui l'utente termina la propria autenticazione e
-raggiunge la pagina della mappa. Sulla firebase console del progetto è presente
-la collezione \textit{stazioni}, a cui si fa accesso alla linea 81 tramite il
+raggiunge la pagina della mappa. \\ Sulla firebase console del progetto è presente
+la collezione \textit{stazioni}, a cui si fa accesso tramite il
 metodo \verb|Firestore.instance.collection('stazioni').getDocuments()|. Questo
 metodo è di tipo Future (si rimanda al capitolo su Flutter e Dart), e quindi
 necessita del metodo \verb|then()| per accedere ai dati inviati in modo
@@ -141,14 +164,24 @@ Ci sono diversi casi all'interno dell'applicazione in cui è necessario ottenere
 uno specificio documento o un gruppo selezionato da una collezione. Per esempio
 per ottenere la preferenza dell'utente rispetto alla tipologia di mappa che
 vuole visualizzare bisogna ottenere uno e un solo documento nella collezione
-users. \\
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=12cm]{query2.png}
-    \caption{}
-    \label{query2}
-\end{figure}
-Nella figura \ref{query2} si accede alla collezione users nel solito modo visto
+users. 
+\begin{minted}[	frame=lines, framesep=2mm, baselinestretch=1.2,
+    fontsize=\footnotesize, linenos 	] {python}
+Firestore.instance
+    .collection('/users')
+    .where('uid', isEqualTo: u.uid)
+    .getDocuments()
+    .then((docs) {
+  setState(() {
+    _tipoMappa = getTipoMappa(docs.documents[0].data['tipoMappa']);
+    mapToggle = true;
+    print(mapToggle.toString() + " " + markerToggle.toString());
+  });
+}).catchError((e) {
+  print(e.toString());
+});
+\end{minted}
+Nella sezione di codice di cui sopra si accede alla collezione users nel solito modo visto
 anche precedentemente, ciò che cambia è che ora si introduce anche il metodo
 \verb|where()| che prende come primo argomento una stringa indicante il nome del
 campo su cui si vuole effettuare la selezione, e un secondo argomento che indica

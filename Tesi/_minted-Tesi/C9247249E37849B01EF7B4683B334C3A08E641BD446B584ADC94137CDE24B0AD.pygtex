@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Nella} \PYG{n}{figura} \PYGZbs{}\PYG{n}{ref}\PYG{p}{\PYGZob{}}\PYG{n}{query2}\PYG{p}{\PYGZcb{}} \PYG{n}{si} \PYG{n}{accede} \PYG{n}{alla} \PYG{n}{collezione} \PYG{n}{users} \PYG{n}{nel} \PYG{n}{solito} \PYG{n}{modo} \PYG{n}{visto}
+\PYG{n}{anche} \PYG{n}{precedentemente}\PYG{p}{,} \PYG{n}{ciò} \PYG{n}{che} \PYG{n}{cambia} \PYG{err}{è} \PYG{n}{che} \PYG{n}{ora} \PYG{n}{si} \PYG{n}{introduce} \PYG{n}{anche} \PYG{n}{il} \PYG{n}{metodo}
+\PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{where}\PYG{p}{()}\PYG{o}{|} \PYG{n}{che} \PYG{n}{prende} \PYG{n}{come} \PYG{n}{primo} \PYG{n}{argomento} \PYG{n}{una} \PYG{n}{stringa} \PYG{n}{indicante} \PYG{n}{il} \PYG{n}{nome} \PYG{k}{del}
+\PYG{n}{campo} \PYG{n}{su} \PYG{n}{cui} \PYG{n}{si} \PYG{n}{vuole} \PYG{n}{effettuare} \PYG{n}{la} \PYG{n}{selezione}\PYG{p}{,} \PYG{n}{e} \PYG{n}{un} \PYG{n}{secondo} \PYG{n}{argomento} \PYG{n}{che} \PYG{n}{indica}
+\PYG{n}{il} \PYG{n}{tipo} \PYG{n}{di} \PYG{n}{confronto} \PYG{n}{che} \PYG{n}{si} \PYG{n}{vuole} \PYG{n}{fare}\PYG{p}{,} \PYG{o+ow}{in} \PYG{n}{questo} \PYG{n}{caso} \PYG{n}{un} \PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{isEqualTo}\PYG{p}{\PYGZcb{}}
+\PYG{p}{(}\PYG{n}{tra} \PYG{n}{gli} \PYG{n}{altri} \PYG{n}{sono} \PYG{n}{presenti} \PYG{n}{anche} \PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{isGreaterThan}\PYG{p}{\PYGZcb{}} \PYG{n}{e}
+\PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{isLessThan}\PYG{p}{\PYGZcb{})}\PYG{o}{.} \PYG{n}{Una} \PYG{n}{volta} \PYG{n}{ottenuto} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}utente che ha lo stesso }\PYG{l+s+se}{\PYGZbs{}t}\PYG{l+s+s1}{extit\PYGZob{}id\PYGZcb{}}
+\PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}user attuale si può quindi accedere al suo campo }\PYG{l+s+se}{\PYGZbs{}v}\PYG{l+s+s1}{erb|tipoMappa| e}
+\PYG{n}{tramite} \PYG{n}{un} \PYG{n}{metodo} \PYG{n}{apposito} \PYG{n}{convertire} \PYG{n}{la} \PYG{n}{stringa} \PYG{n}{ottenuta} \PYG{n}{nella} \PYG{n}{tipologia} \PYG{n}{di}
+\PYG{n}{mappa} \PYG{n}{desiderata}\PYG{o}{.} \PYG{n}{Si} \PYG{n}{noti} \PYG{n}{anche} \PYG{n}{il} \PYG{n}{metodo} \PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{catchError}\PYG{p}{()}\PYG{o}{|} \PYG{n}{che} \PYG{err}{è} \PYG{n}{sucessivo} \PYG{n}{al}
+\PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{then}\PYG{p}{()}\PYG{o}{|} \PYG{n}{relativo} \PYG{n}{ai} \PYG{n}{documenti} \PYG{n}{della} \PYG{n}{collezione}\PYG{p}{:} \PYG{o+ow}{in} \PYG{n}{caso} \PYG{n}{di} \PYG{n}{un} \PYG{n}{qualunque} \PYG{n}{errore} \PYG{n}{di}
+\PYG{n}{connessione} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}app non smette di funzionare ma cattura l\PYGZsq{}}\PYG{n}{eccezione} \PYG{n}{ottenuta} \PYG{n}{e} \PYG{n}{va}
+\PYG{n}{avanti} \PYG{n}{nell}\PYG{l+s+s1}{\PYGZsq{}esecuzione di codice. Se si volesse effettuare filtraggio di dati su}
+\PYG{n}{più} \PYG{n}{campi} \PYG{n}{sarebbe} \PYG{n}{necessario} \PYG{n}{banalmente} \PYG{n}{continuare} \PYG{n}{ad} \PYG{n}{aggiungere} \PYG{n}{metodi}
+\PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{where}\PYG{o}{|} \PYG{n}{ai} \PYG{n}{documenti} \PYG{n}{ottenuti} \PYG{n}{indicando} \PYG{n}{i} \PYG{n}{nomi} \PYG{n}{dei} \PYG{n}{campi} \PYG{n}{e} \PYG{n}{la} \PYG{n}{condizione}
+\PYG{n}{che} \PYG{n}{si} \PYG{n}{vuole} \PYG{n}{applicare}\PYG{o}{.}
+\end{Verbatim}

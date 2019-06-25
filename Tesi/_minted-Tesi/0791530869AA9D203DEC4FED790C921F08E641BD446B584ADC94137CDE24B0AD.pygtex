@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{GoogleMap}\PYG{p}{(}
+    \PYG{n}{minMaxZoomPreference}\PYG{p}{:} \PYG{n}{MinMaxZoomPreference}\PYG{p}{(}\PYG{l+m+mf}{5.0}\PYG{p}{,} \PYG{l+m+mf}{20.0}\PYG{p}{),}
+    \PYG{n}{markers}\PYG{p}{:} \PYG{n}{\PYGZus{}markers}\PYG{p}{,}
+    \PYG{n}{compassEnabled}\PYG{p}{:} \PYG{n}{true}\PYG{p}{,}
+    \PYG{n}{mapType}\PYG{p}{:} \PYG{n}{\PYGZus{}tipoMappa}\PYG{p}{,}
+    \PYG{n}{myLocationEnabled}\PYG{p}{:} \PYG{n}{true}\PYG{p}{,}
+    \PYG{n}{cameraTargetBounds}\PYG{p}{:} \PYG{n}{CameraTargetBounds}\PYG{p}{(}\PYG{n}{LatLngBounds}\PYG{p}{(}
+        \PYG{n}{southwest}\PYG{p}{:} \PYG{n}{LatLng}\PYG{p}{(}\PYG{l+m+mf}{44.4264}\PYG{p}{,} \PYG{l+m+mf}{8.91519}\PYG{p}{),}
+        \PYG{n}{northeast}\PYG{p}{:} \PYG{n}{LatLng}\PYG{p}{(}\PYG{l+m+mf}{46.0693}\PYG{p}{,} \PYG{l+m+mf}{13.23715}\PYG{p}{))),}
+    \PYG{n}{initialCameraPosition}\PYG{p}{:} \PYG{n}{CameraPosition}\PYG{p}{(}
+        \PYG{n}{zoom}\PYG{p}{:} \PYG{l+m+mf}{15.0}\PYG{p}{,}
+        \PYG{n}{target}\PYG{p}{:} \PYG{n}{LatLng}\PYG{p}{(}
+            \PYG{n}{currentLocation}\PYG{o}{.}\PYG{n}{latitude}\PYG{p}{,} \PYG{n}{currentLocation}\PYG{o}{.}\PYG{n}{longitude}\PYG{p}{),}
+    \PYG{p}{),}
+    \PYG{n}{onMapCreated}\PYG{p}{:} \PYG{n}{onMapCreated}\PYG{p}{,}
+\PYG{p}{),}
+\end{Verbatim}

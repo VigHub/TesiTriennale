@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{k}{import} \PYG{l+s+s1}{\PYGZsq{}package:flutter/material.dart\PYGZsq{}}
+		\PYG{n}{main}\PYG{err}{(}\PYG{n}{List}\PYG{err}{\PYGZlt{}}\PYG{n}{String}\PYG{err}{\PYGZgt{}} \PYG{n}{args}\PYG{err}{)} \PYG{err}{\PYGZob{}}
+			\PYG{n}{runApp}\PYG{err}{(}\PYG{n}{MyApp}\PYG{err}{())}\PYG{p}{;}
+		\PYG{p}{\PYGZcb{}}
+
+		\PYG{k+kd}{class} \PYG{n+nc}{MyApp} \PYG{k+kd}{extends} \PYG{n}{StatelessWidget} \PYG{p}{\PYGZob{}}
+			\PYG{err}{@}\PYG{n}{override}
+			\PYG{n}{Widget} \PYG{n}{build}\PYG{p}{(}\PYG{n}{BuildContext} \PYG{n}{context}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+				\PYG{k}{return}
+			\PYG{p}{\PYGZcb{}}
+		\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

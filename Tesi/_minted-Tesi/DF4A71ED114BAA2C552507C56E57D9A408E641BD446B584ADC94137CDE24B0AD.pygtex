@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nd}{@override}
+\PYG{n}{void} \PYG{n}{initState}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+\PYG{n+nb}{super}\PYG{o}{.}\PYG{n}{initState}\PYG{p}{();}
+\PYG{k}{if} \PYG{p}{(}\PYG{n}{auth}\PYG{o}{.}\PYG{n}{googleCurrentUser}\PYG{p}{()} \PYG{o}{!=} \PYG{n}{null}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n}{setState}\PYG{p}{(()} \PYG{p}{\PYGZob{}}
+    \PYG{n}{\PYGZus{}authState} \PYG{o}{=} \PYG{n}{AuthState}\PYG{o}{.}\PYG{n}{signedIn}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{});}
+\PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+    \PYG{n}{auth}\PYG{o}{.}\PYG{n}{currentUser}\PYG{p}{()}\PYG{o}{.}\PYG{n}{then}\PYG{p}{((}\PYG{n}{user}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{print}\PYG{p}{(}\PYG{n}{user}\PYG{p}{);}
+    \PYG{n}{setState}\PYG{p}{(()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{user} \PYG{o}{==} \PYG{n}{null}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{\PYGZus{}authState} \PYG{o}{=} \PYG{n}{AuthState}\PYG{o}{.}\PYG{n}{notSignedIn}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{k}{if} \PYG{p}{(}\PYG{n}{user}\PYG{o}{.}\PYG{n}{isAnonymous}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{\PYGZus{}authState} \PYG{o}{=} \PYG{n}{AuthState}\PYG{o}{.}\PYG{n}{notSignedIn}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+        \PYG{n}{\PYGZus{}authState} \PYG{o}{=} \PYG{n}{AuthState}\PYG{o}{.}\PYG{n}{signedIn}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{});}
+    \PYG{p}{\PYGZcb{});}
+\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

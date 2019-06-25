@@ -18,27 +18,27 @@
 \contentsline {subsection}{\numberline {2.2.2}Kernel XNU}{10}% 
 \contentsline {chapter}{\numberline {3}Flutter}{13}% 
 \contentsline {section}{\numberline {3.1}Stateless e Statefull Widget}{14}% 
-\contentsline {section}{\numberline {3.2}Principali Widget}{17}% 
-\contentsline {section}{\numberline {3.3}Material Design}{18}% 
-\contentsline {section}{\numberline {3.4}Animation}{22}% 
-\contentsline {chapter}{\numberline {4}Gestione degli utenti}{23}% 
-\contentsline {section}{\numberline {4.1}Firebase}{23}% 
-\contentsline {section}{\numberline {4.2}Schermata di avvio, tipologia di Utente e pagina Profilo}{24}% 
-\contentsline {section}{\numberline {4.3}Registrazione}{25}% 
-\contentsline {section}{\numberline {4.4}Utente anonimo}{26}% 
-\contentsline {section}{\numberline {4.5}Codifica}{27}% 
-\contentsline {chapter}{\numberline {5}Gestione e struttura del database}{29}% 
-\contentsline {section}{\numberline {5.1}Progettazione iniziale}{29}% 
-\contentsline {subsection}{\numberline {5.1.1}Schema Concettuale}{29}% 
-\contentsline {subsection}{\numberline {5.1.2}Schema Logico}{31}% 
-\contentsline {section}{\numberline {5.2}Gestione dati in Firebase}{31}% 
-\contentsline {section}{\numberline {5.3}Utilizzare il Cloud Firestore}{32}% 
-\contentsline {subsection}{\numberline {5.3.1}Ottenere tutti gli elementi di una collezione}{32}% 
-\contentsline {subsection}{\numberline {5.3.2}Ottenere dati filtrati da una collezione}{33}% 
-\contentsline {chapter}{\numberline {6}Mappa e sue funzionalit\IeC {\`a}}{35}% 
-\contentsline {section}{\numberline {6.1}Scelta del servizio API}{35}% 
-\contentsline {section}{\numberline {6.2}MapPage}{36}% 
-\contentsline {section}{\numberline {6.3}Funzionalit\IeC {\`a}}{38}% 
-\contentsline {section}{\numberline {6.4}Aggiungere una Stazione}{40}% 
-\contentsline {section}{\numberline {6.5}Codifica}{45}% 
-\contentsline {chapter}{\numberline {7}Conclusioni}{47}% 
+\contentsline {section}{\numberline {3.2}Principali Widget}{18}% 
+\contentsline {section}{\numberline {3.3}Material Design}{20}% 
+\contentsline {section}{\numberline {3.4}Animation}{23}% 
+\contentsline {chapter}{\numberline {4}Gestione degli utenti}{25}% 
+\contentsline {section}{\numberline {4.1}Firebase}{25}% 
+\contentsline {section}{\numberline {4.2}Schermata di avvio, tipologia di Utente e pagina Profilo}{26}% 
+\contentsline {section}{\numberline {4.3}Registrazione}{27}% 
+\contentsline {section}{\numberline {4.4}Utente anonimo}{28}% 
+\contentsline {section}{\numberline {4.5}Codifica}{29}% 
+\contentsline {chapter}{\numberline {5}Gestione e struttura del database}{31}% 
+\contentsline {section}{\numberline {5.1}Progettazione iniziale}{31}% 
+\contentsline {subsection}{\numberline {5.1.1}Schema Concettuale}{31}% 
+\contentsline {subsection}{\numberline {5.1.2}Schema Logico}{33}% 
+\contentsline {section}{\numberline {5.2}Gestione dati in Firebase}{33}% 
+\contentsline {section}{\numberline {5.3}Utilizzare il Cloud Firestore}{34}% 
+\contentsline {subsection}{\numberline {5.3.1}Ottenere tutti gli elementi di una collezione}{34}% 
+\contentsline {subsection}{\numberline {5.3.2}Ottenere dati filtrati da una collezione}{36}% 
+\contentsline {chapter}{\numberline {6}Mappa e sue funzionalit\IeC {\`a}}{37}% 
+\contentsline {section}{\numberline {6.1}Scelta del servizio API}{37}% 
+\contentsline {section}{\numberline {6.2}MapPage}{38}% 
+\contentsline {section}{\numberline {6.3}Funzionalit\IeC {\`a}}{40}% 
+\contentsline {section}{\numberline {6.4}Aggiungere una Stazione}{42}% 
+\contentsline {section}{\numberline {6.5}Codifica}{46}% 
+\contentsline {chapter}{\numberline {7}Conclusioni}{51}% 

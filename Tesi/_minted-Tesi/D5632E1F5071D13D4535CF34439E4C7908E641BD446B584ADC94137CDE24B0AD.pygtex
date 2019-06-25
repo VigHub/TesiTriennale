@@ -1,0 +1,215 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{k+kn}{import} \PYG{l+s+s1}{\PYGZsq{}package:flutter/material.dart\PYGZsq{}}
+		\PYG{n}{main}\PYG{p}{(}\PYG{n}{List}\PYG{o}{\PYGZlt{}}\PYG{n}{String}\PYG{o}{\PYGZgt{}} \PYG{n}{args}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+			\PYG{n}{runApp}\PYG{p}{(}\PYG{n}{MyApp}\PYG{p}{());}
+		\PYG{p}{\PYGZcb{}}
+		\PYG{k}{class} \PYG{n+nc}{MyApp} \PYG{n}{extends} \PYG{n}{StatelessWidget} \PYG{p}{\PYGZob{}}
+			\PYG{n+nd}{@override}
+			\PYG{n}{Widget} \PYG{n}{build}\PYG{p}{(}\PYG{n}{BuildContext} \PYG{n}{context}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+				\PYG{k}{return} \PYG{n}{MaterialApp}\PYG{p}{(}
+					\PYG{n}{home}\PYG{p}{:} \PYG{n}{Scaffold}\PYG{p}{(}
+						\PYG{n}{body}\PYG{p}{:} \PYG{n}{Home}\PYG{p}{(),}
+					\PYG{p}{)} \PYG{o}{//} \PYG{n}{Scaffold}
+				\PYG{p}{);} \PYG{o}{//} \PYG{n}{MaterialApp}
+			\PYG{p}{\PYGZcb{}}
+		\PYG{p}{\PYGZcb{}}
+	
+	\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}[}\PYG{n}{h}\PYG{err}{!}\PYG{p}{]}
+		\PYGZbs{}\PYG{n}{centering}
+		\PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Esempio} \PYG{n}{di} \PYG{n}{codice} \PYG{n}{di} \PYG{n}{widget} \PYG{n}{statefull}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{scale}\PYG{o}{=}\PYG{l+m+mf}{0.35}\PYG{p}{]\PYGZob{}}\PYG{n}{StateFullApp}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}\PYGZbs{}\PYG{n}{label}\PYG{p}{\PYGZob{}}\PYG{n}{statefull}\PYG{p}{\PYGZcb{}\PYGZcb{}}
+	\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+
+	\PYGZbs{}\PYG{n}{section}\PYG{p}{\PYGZob{}}\PYG{n}{Principali} \PYG{n}{Widget}\PYG{p}{\PYGZcb{}}
+	\PYG{o}{\PYGZpc{}} \PYGZbs{}\PYG{n}{subsection}\PYG{p}{\PYGZob{}}\PYG{n}{Principali} \PYG{n}{Widget}\PYG{p}{\PYGZcb{}}
+	\PYG{n}{Di} \PYG{n}{seguito} \PYG{n}{vengono} \PYG{n}{riportati} \PYG{n}{i} \PYG{n}{widget} \PYG{n}{di} \PYG{n}{cui} \PYG{n}{si} \PYG{err}{è} \PYG{n}{fatto} \PYG{n}{maggiore} \PYG{n}{uso}
+	\PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}interno dell\PYGZsq{}}\PYG{n}{applicazione}\PYG{o}{.}
+	
+	\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{trivlist}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{Text}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Questo} \PYG{n}{widget} \PYG{n}{permette} \PYG{n}{di} \PYG{n}{mostrare} \PYG{n}{a} \PYG{n}{schermo} \PYG{n}{le} \PYG{n}{stringhe} \PYG{n}{fornite} \PYG{n}{come}
+		\PYG{n}{primo} \PYG{n}{argomento} \PYG{n}{al} \PYG{n}{suo} \PYG{n}{costruttore} \PYG{p}{(}\PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{Text}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Testo da mostrare\PYGZdq{}}\PYG{p}{)}\PYG{o}{|}\PYG{p}{)}\PYG{o}{.}
+		\PYG{n}{Il} \PYG{n}{testo} \PYG{n}{può} \PYG{n}{svilupparsi} \PYG{n}{su} \PYG{n}{più} \PYG{n}{righe} \PYG{n}{o} \PYG{n}{su} \PYG{n}{una} \PYG{n}{sola} \PYG{n}{a} \PYG{n}{seconda} \PYG{n}{delle}
+		\PYG{n}{costanti} \PYG{n}{di} \PYG{n}{layout} \PYG{n}{della} \PYG{n}{particolare} \PYG{n}{schermata} \PYG{n}{nella} \PYG{n}{quale} \PYG{n}{risiede} \PYG{n}{il}
+		\PYG{n}{widget}\PYG{o}{.} \PYG{n}{Nel} \PYG{n}{costruttore} \PYG{n}{possono} \PYG{n}{essere} \PYG{n}{indicati} \PYG{n}{diversi} \PYG{n}{argomenti}
+		\PYG{n}{opzionali}\PYG{p}{,} \PYG{n}{tra} \PYG{n}{cui} \PYG{n}{lo} \PYG{n}{stile}\PYG{o}{.} \PYG{n}{Se} \PYG{n}{si} \PYG{n}{vuole} \PYG{n}{indicare} \PYG{n}{un} \PYG{n}{particolare} \PYG{n}{stile}
+		\PYG{n}{al} \PYG{n}{proprio} \PYG{n}{testo} \PYG{n}{bisogna} \PYG{n}{inserire} \PYG{n}{un} \PYG{n}{TextStyle}\PYG{p}{,} \PYG{n}{cioè} \PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}ulteriore classe}
+		\PYG{n}{che} \PYG{n}{gestisce} \PYG{n}{il} \PYG{n}{font}\PYG{p}{,} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}inserimento del grassetto o del corsivo e la}
+		\PYG{n}{formattazione} \PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}intero testo (giustificato, allineato a sinistra o a}
+		\PYG{n}{destra} \PYG{n}{e} \PYG{n}{centrale}\PYG{p}{)}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{Row}\PYG{p}{,} \PYG{n}{Column}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Questi} \PYG{n}{widget} \PYG{n}{vengono} \PYG{n}{spesso} \PYG{n}{utilizzati} \PYG{n}{per} \PYG{n}{ottenere} \PYG{n}{schermate} \PYG{n}{ordinate}
+		\PYG{n}{e} \PYG{n}{gradevoli} \PYG{n}{dal} \PYG{n}{punto} \PYG{n}{di} \PYG{n}{vista} \PYG{n}{estetico} \PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}utilizzatore. Il parametro}
+		\PYG{n}{principale} \PYG{n}{di} \PYG{n}{entrambe} \PYG{err}{è} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}argomento }\PYG{l+s+se}{\PYGZbs{}v}\PYG{l+s+s1}{erb|children| (e non }\PYG{l+s+se}{\PYGZbs{}v}\PYG{l+s+s1}{erb|child| come}
+		\PYG{n}{spesso} \PYG{n}{accade} \PYG{n}{per} \PYG{n}{altre} \PYG{n}{classi}\PYG{p}{),} \PYG{n}{proprio} \PYG{n}{perchè} \PYG{n}{sono} \PYG{n}{pensati} \PYG{n}{per}
+		\PYG{n}{contenere} \PYG{n}{diversi} \PYG{n}{widget} \PYG{n}{disposti} \PYG{n}{rispettivamente} \PYG{o+ow}{in} \PYG{n}{orizzontale} \PYG{n}{o} \PYG{o+ow}{in}
+		\PYG{n}{verticale}\PYG{o}{.} \PYG{n}{La} \PYG{n}{loro} \PYG{n}{grandezza} \PYG{o+ow}{in} \PYG{n}{pixel} \PYG{n}{sarà} \PYG{n}{formata} \PYG{n}{dalla} \PYG{n}{somma} \PYG{n}{della}
+		\PYG{n}{dimensioni} \PYG{n}{di} \PYG{n}{ciò} \PYG{n}{che} \PYG{n}{contengono} \PYG{n}{e} \PYG{n}{si} \PYG{n}{possono} \PYG{n}{ancora} \PYG{n}{una} \PYG{n}{volta} \PYG{n}{inserire} \PYG{n}{diverse}
+		\PYG{n}{preferenze} \PYG{n}{di} \PYG{n}{stile} \PYG{n}{come} \PYG{n}{la} \PYG{n}{posizione} \PYG{n}{rispetto} \PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}asse principale o}
+		\PYG{n}{secondario}\PYG{o}{.} \PYG{n}{Nella} \PYG{n}{figura} \PYGZbs{}\PYG{n}{ref}\PYG{p}{\PYGZob{}}\PYG{n}{rowColumn}\PYG{p}{\PYGZcb{}} \PYG{n}{si} \PYG{n}{possono} \PYG{n}{vedere} \PYG{n}{i} \PYG{n}{due} \PYG{n}{widget}
+		\PYG{n}{che} \PYG{n}{possiedono} \PYG{n}{quattro} \PYG{n}{Container} \PYG{n}{figli} \PYG{n}{di} \PYG{n}{diverso} \PYG{n}{colore}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}[}\PYG{n}{h}\PYG{err}{!}\PYG{p}{]}
+			\PYGZbs{}\PYG{n}{centering}
+			\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{subfigure}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{l+m+mf}{0.3}\PYGZbs{}\PYG{n}{linewidth}\PYG{p}{\PYGZcb{}}
+				\PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYGZbs{}\PYG{n}{linewidth}\PYG{p}{]\PYGZob{}}\PYG{n}{Row}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+				\PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Row}\PYG{p}{\PYGZcb{}}
+			\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{subfigure}\PYG{p}{\PYGZcb{}}
+			\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{subfigure}\PYG{p}{\PYGZcb{}\PYGZob{}}\PYG{l+m+mf}{0.3}\PYGZbs{}\PYG{n}{linewidth}\PYG{p}{\PYGZcb{}}
+				\PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYGZbs{}\PYG{n}{linewidth}\PYG{p}{]\PYGZob{}}\PYG{n}{Column}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}
+				\PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Column}\PYG{p}{\PYGZcb{}}
+			\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{subfigure}\PYG{p}{\PYGZcb{}}
+			\PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}\PYGZcb{}}
+			\PYGZbs{}\PYG{n}{label}\PYG{p}{\PYGZob{}}\PYG{n}{rowColumn}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{Stack}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYGZbs{}\PYG{l+s+s1}{\PYGZsq{}E simile ai due precedenti in quanto anch\PYGZsq{}}\PYG{n}{esso} \PYG{n}{contiene} \PYG{n}{diversi} \PYG{n}{widget}
+		\PYG{n}{figli}\PYG{o}{.} \PYG{n}{Se} \PYG{n}{ne} \PYG{n}{differenzia} \PYG{o+ow}{in} \PYG{n}{quanto} \PYG{n}{non} \PYG{n}{privilegia} \PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}unica direzione di}
+		\PYG{n}{posizionamento}\PYG{p}{,} \PYG{n}{ma} \PYG{n}{si} \PYG{n}{può} \PYG{n}{indicare} \PYG{n}{per} \PYG{n}{ogni} \PYG{n}{figlio} \PYG{n}{la} \PYG{n}{posiziona} \PYG{n}{esatta}
+		\PYG{o+ow}{in} \PYG{n}{pixel} \PYG{n}{che} \PYG{n}{dovrà} \PYG{n}{avere} \PYG{n}{sullo} \PYG{n}{schermo}\PYG{o}{.} \PYG{n}{Questo} \PYG{n}{passaggio} \PYG{n}{viene}
+		\PYG{n}{effettuato} \PYG{n}{racchiudendo} \PYG{n}{il} \PYG{n}{widget} \PYG{n}{che} \PYG{n}{si} \PYG{n}{vuole} \PYG{n}{inserire} \PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}interno di}
+		\PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}istanza della classe Positioned (che sarà uno dei figli dello Stack)}
+		\PYG{n}{e} \PYG{n}{indicando} \PYG{n}{gli} \PYG{n}{esatti} \PYG{n}{pixel} \PYG{n}{nel} \PYG{n}{suo} \PYG{n}{costruttore}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{Container}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Crea} \PYG{n}{un} \PYG{n}{elemento} \PYG{n}{rettangolare} \PYG{n}{che} \PYG{n}{avrà} \PYG{n}{come} \PYG{n}{altezza} \PYG{n}{e} \PYG{n}{lunghezza} \PYG{n}{le}
+		\PYG{n}{minime} \PYG{n}{dimensioni} \PYG{n}{per} \PYG{n}{poter} \PYG{n}{contenere} \PYG{n}{il} \PYG{n}{widget} \PYG{n}{indicato} \PYG{n}{come} \PYG{n}{child}\PYG{o}{.} \PYGZbs{}\PYG{l+s+s1}{\PYGZsq{}E}
+		\PYG{n}{molto} \PYG{n}{utilizzato} \PYG{n}{nel} \PYG{n}{momento} \PYG{o+ow}{in} \PYG{n}{cui} \PYG{n}{si} \PYG{n}{vuole} \PYG{n}{migliorare} \PYG{n}{graficamente} \PYG{n}{una}
+		\PYG{n}{schermata} \PYG{o+ow}{in} \PYG{n}{quanto} \PYG{n}{tramite} \PYG{n}{il} \PYG{n}{parametro} \PYG{n}{opzionale} \PYG{n}{decoration} \PYG{n}{si} \PYG{n}{può}
+		\PYG{n}{introdurre} \PYG{n}{una} \PYG{n}{nuova} \PYG{n}{classe} \PYG{n}{chiamata} \PYG{n}{BoxDecoration} \PYG{n}{che} \PYG{n}{gestisce} \PYG{n}{un}
+		\PYG{n}{grande} \PYG{n}{insieme} \PYG{n}{di} \PYG{n}{aspetti} \PYG{n}{grafici} \PYG{n}{come} \PYG{n}{i} \PYG{n}{contorni} \PYG{p}{(}\PYG{n}{angoli} \PYG{n}{e}
+		\PYG{n}{ombre}\PYG{p}{)} \PYG{n}{o} \PYG{n}{riempire} \PYG{n}{con} \PYG{n}{un} \PYG{n}{colore} \PYG{n}{o} \PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}immagine il Container.}
+	\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{trivlist}\PYG{p}{\PYGZcb{}}
+
+	\PYGZbs{}\PYG{n}{section}\PYG{p}{\PYGZob{}}\PYG{n}{Material} \PYG{n}{Design}\PYG{p}{\PYGZcb{}}
+	\PYG{o}{\PYGZpc{}} \PYGZbs{}\PYG{n}{subsection}\PYG{p}{\PYGZob{}}\PYG{n}{Material} \PYG{n}{Design}\PYG{p}{\PYGZcb{}}
+	\PYG{n}{Il} \PYG{n}{Material} \PYG{n}{Design} \PYG{err}{è} \PYG{n}{un} \PYG{n}{linguaggio} \PYG{n}{visuale} \PYG{n}{che} \PYG{n}{unisce} \PYG{n}{i} \PYG{n}{classici} \PYG{n}{principi} \PYG{n}{di}
+	\PYG{n}{un} \PYG{n}{buon} \PYG{n}{design} \PYG{n}{con} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}innovazione della tecnologia e della scienza.}
+	\PYGZbs{}\PYG{n}{cite}\PYG{p}{\PYGZob{}}\PYG{n}{material}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+	\PYG{n}{Tale} \PYG{n}{design} \PYG{err}{è} \PYG{n}{interamente} \PYG{n}{sviluppato} \PYG{n}{da} \PYG{n}{Google} \PYG{n}{e} \PYG{n}{fa} \PYG{n}{uso} \PYG{n}{di} \PYG{n}{layout} \PYG{n}{basati} \PYG{n}{su}
+	\PYG{n}{una} \PYG{n}{griglia}\PYG{p}{,} \PYG{n}{animazioni} \PYG{n}{e} \PYG{n}{transizioni}\PYG{o}{.} \PYG{n}{Si} \PYG{n}{prendono} \PYG{n}{ora} \PYG{o+ow}{in} \PYG{n}{cosiderazione} \PYG{n}{i}
+	\PYG{n}{widget} \PYG{n}{più} \PYG{n}{comuni} \PYG{n}{appartenenti} \PYG{n}{a} \PYG{n}{questo} \PYG{n}{particolare} \PYG{n}{design}\PYG{o}{.}
+	\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{trivlist}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{Scaffold}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Implementa} \PYG{n}{la} \PYG{n}{struttura} \PYG{p}{(}\PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{impalcatura}\PYG{p}{\PYGZcb{})} \PYG{k}{del} \PYG{n}{layout} \PYG{n}{visuale} \PYG{n}{di}
+		\PYG{n}{base} \PYG{k}{del} \PYG{n}{material} \PYG{n}{design}\PYG{o}{.} \PYG{n}{Si} \PYG{n}{espande} \PYG{n}{fino} \PYG{n}{a} \PYG{n}{occupare} \PYG{n}{tutto} \PYG{n}{lo} \PYG{n}{spazio}
+		\PYG{n}{disponibile} \PYG{n}{sullo} \PYG{n}{schermo}\PYG{p}{,} \PYG{n}{inoltre} \PYG{n}{quando} \PYG{n}{appare} \PYG{n}{una} \PYG{n}{tastiera} \PYG{n}{a} \PYG{n}{seguito}
+		\PYG{n}{di} \PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}interazione con l\PYGZsq{}}\PYG{n}{utente} \PYG{n}{la} \PYG{n}{grandezza} \PYG{n}{di} \PYG{n}{questo} \PYG{n}{widget} \PYG{n}{cambia} \PYG{o+ow}{in}
+		\PYG{n}{base} \PYG{n}{alle} \PYG{n}{dimensioni} \PYG{n}{di} \PYG{n}{quest}\PYG{l+s+s1}{\PYGZsq{}ultima. Presenta nel proprio costruttore}
+		\PYG{n}{argomenti} \PYG{n}{per} \PYG{n}{mostare} \PYG{n}{sulla} \PYG{n}{schermata} \PYG{n}{Drawer}\PYG{p}{,} \PYG{n}{SnackBar} \PYG{n}{e} \PYG{n}{BottomSheets}\PYG{p}{,}
+		\PYG{n}{descritte} \PYG{n}{di} \PYG{n}{seguito}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{AppBar}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Un}\PYG{l+s+s1}{\PYGZsq{}AppBar consiste in un riquadro orizzontale, solitamente posizionato in}
+		\PYG{n}{alto} \PYG{n}{sulla} \PYG{n}{schermo}\PYG{p}{,} \PYG{n}{che} \PYG{n}{contiene} \PYG{n}{diverse} \PYG{n}{azioni} \PYG{p}{(}\PYG{n}{IconButtons}\PYG{p}{)} \PYG{n}{seguite} \PYG{n}{da}
+		\PYG{n}{un} \PYG{n}{menù} \PYG{n}{a} \PYG{n}{comparsa} \PYG{p}{(}\PYG{n}{PopUpMenu}\PYG{p}{)}\PYG{o}{.} \PYG{n}{In} \PYG{n}{questo} \PYG{n}{modo} \PYG{n}{si} \PYG{n}{possono} \PYG{n}{inserire} \PYG{o+ow}{in} \PYG{n}{un}
+		\PYG{n}{unico} \PYG{n}{luogo} \PYG{n}{tutte} \PYG{n}{le} \PYG{n}{scorciatoie} \PYG{n}{per} \PYG{n}{passare} \PYG{n}{da} \PYG{n}{una} \PYG{n}{schermata} \PYG{n}{ad}
+		\PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}altra oppure si possono accorpare funzionalità utili a portata di}
+		\PYG{n}{mano} \PYG{n}{per} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}utente. Bisogna inserire come argomenti il titolo dell\PYGZsq{}}\PYG{n}{AppBar}
+		\PYG{n}{e} \PYG{n}{inoltre} \PYG{n}{una} \PYG{n}{serie} \PYG{n}{di} \PYG{n}{azioni} \PYG{p}{(}\PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{actions}\PYG{p}{\PYGZcb{})} \PYG{n}{sottoforma} \PYG{n}{di} \PYG{n}{una} \PYG{n}{lista}
+		\PYG{n}{di} \PYG{n}{widget}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+			\PYGZbs{}\PYG{n}{centering}
+			\PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYG{l+m+mf}{0.9}\PYGZbs{}\PYG{n}{linewidth}\PYG{p}{]\PYGZob{}}\PYG{n}{Scaffold}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}			
+			\PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Nell}\PYG{l+s+s1}{\PYGZsq{}esempio viene mostrata una Scaffold, che fa da widget}
+			\PYG{n}{genitore} \PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}AppBar posizionata in alto, al Drawer in alto a}
+			\PYG{n}{sinistra} \PYG{n}{e} \PYG{n}{alla} \PYG{n}{BottomNavigationBar} \PYG{o+ow}{in} \PYG{n}{basso} \PYG{n}{con} \PYG{n}{tre} \PYG{n}{icone} \PYG{n}{con}
+			\PYG{n}{titolo}\PYG{o}{.} \PYG{n}{Si} \PYG{n}{noti} \PYG{n}{inoltre} \PYG{n}{come} \PYG{n}{venga} \PYG{n}{gestita} \PYG{o+ow}{in} \PYG{n}{automatico} \PYG{n}{la}
+			\PYG{n}{possibilità} \PYG{n}{di} \PYG{n}{ruotare} \PYG{n}{il} \PYG{n}{proprio} \PYG{n}{dispositivo}\PYG{p}{,} \PYG{n}{cambiando}
+			\PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}orientazione della schermata.\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{BottomNavigationBar}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYGZbs{}\PYG{l+s+s1}{\PYGZsq{}E un material widget disposto in fondo allo schermo per selezionare un}
+		\PYG{n}{piccolo} \PYG{n}{numero} \PYG{n}{di} \PYG{n}{schermate}\PYG{p}{,} \PYG{n}{da} \PYG{n}{un} \PYG{n}{minimo} \PYG{n}{di} \PYG{n}{tre} \PYG{n}{a} \PYG{n}{un} \PYG{n}{massimo} \PYG{n}{di} \PYG{n}{cinque}\PYG{o}{.}
+		\PYG{n}{Si} \PYG{n}{costruisce} \PYG{n}{tramite} \PYG{n}{diversi} \PYG{n}{strumenti} \PYG{n}{quali} \PYG{n}{widget} \PYG{n}{di} \PYG{n}{testo}\PYG{p}{,} \PYG{n}{icone} \PYG{n}{o}
+		\PYG{n}{entrambi}\PYG{o}{.} \PYG{n}{Se} \PYG{n}{gli} \PYG{n}{elementi} \PYG{n}{figli} \PYG{n}{sono} \PYG{n}{minori} \PYG{n}{di} \PYG{n}{quattro}\PYG{p}{,} \PYG{n}{la} \PYG{n}{grandezza} \PYG{n}{di}
+		\PYG{n}{ogni} \PYG{n}{item} \PYG{err}{è} \PYG{n}{fissa}\PYG{p}{,} \PYG{n}{mentre} \PYG{n}{se} \PYG{n}{superiore} \PYG{n}{la} \PYG{n}{grandezza} \PYG{n}{si} \PYG{n}{adatta} \PYG{n}{al} \PYG{n}{numero}
+		\PYG{n}{di} \PYG{n}{widget} \PYG{n}{contenuti}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{Drawer}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Consiste} \PYG{o+ow}{in} \PYG{n}{un} \PYG{n}{pannello} \PYG{n}{orizzontale} \PYG{n}{trascinabile} \PYG{n}{dall}\PYG{l+s+s1}{\PYGZsq{}utente che entra}
+		\PYG{o+ow}{in} \PYG{n}{orizzontale} \PYG{n}{sullo} \PYG{n}{schermo}
+		\PYG{n}{solitamente} \PYG{n}{dal} \PYG{n}{lato} \PYG{n}{sinistro} \PYG{n}{della} \PYG{n}{Scaffold}\PYG{o}{.} \PYG{n}{Come} \PYG{n}{figlio} \PYG{err}{è} \PYG{n}{solito} \PYG{n}{avere}
+		\PYG{n}{una} \PYG{n}{ListView} \PYG{p}{(}\PYG{n}{particolare} \PYG{n}{tipo} \PYG{n}{di} \PYG{n}{Column} \PYG{n}{che} \PYG{n}{gestisce} \PYG{n}{anche} \PYG{n}{lo} \PYG{n}{scroll}
+		\PYG{n}{verticale}\PYG{p}{),} \PYG{o+ow}{in} \PYG{n}{modo} \PYG{n}{da} \PYG{n}{mostrare} \PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}utente utili link per la navigazione}
+		\PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}interno dell\PYGZsq{}}\PYG{n}{applicazione}\PYG{o}{.} \PYG{n}{L}\PYG{l+s+s1}{\PYGZsq{}AppBar mostra in automatico un Drawer}
+		\PYG{n}{vuoto} \PYG{n}{con} \PYG{n}{la} \PYG{n}{classica} \PYG{n}{icona} \PYG{n}{dei} \PYG{n}{menù} \PYG{n}{a} \PYG{n}{comparsa} \PYG{n}{se} \PYG{n}{non} \PYG{n}{viene} \PYG{n}{specificato}
+		\PYG{n}{nulla} \PYG{n}{nel} \PYG{n}{suo} \PYG{n}{costruttore}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{SnackBar}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Formato} \PYG{n}{da} \PYG{n}{un} \PYG{n}{messaggio} \PYG{n}{visualizzato} \PYG{n}{brevemente}
+		\PYG{n}{nella} \PYG{n}{parte} \PYG{n}{inferiore} \PYG{n}{dello} \PYG{n}{schermo}\PYG{p}{,} \PYG{n}{viene} \PYG{n}{utlizzato} \PYG{n}{per} \PYG{n}{comunicare}
+		\PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}utente una particolare informazione come l\PYGZsq{}}\PYG{n}{attesa} \PYG{n}{per} \PYG{n}{un} \PYG{n}{caricamento}
+		\PYG{n}{o} \PYG{n}{il} \PYG{n}{manifestarsi} \PYG{n}{di} \PYG{n}{un} \PYG{n}{problema} \PYG{n}{a} \PYG{n}{seguito} \PYG{n}{di} \PYG{n}{un} \PYG{n}{errore}\PYG{p}{,} \PYG{n}{come} \PYG{n}{la}
+		\PYG{n}{mancanza} \PYG{n}{di} \PYG{n}{una} \PYG{n}{connessione} \PYG{n}{internet}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{FlatButton} \PYG{n}{e} \PYG{n}{IconButton}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Sono} \PYG{n}{entrambi} \PYG{n}{pulsanti} \PYG{n}{che} \PYG{n}{si} \PYG{n}{differenziano} \PYG{n}{per} \PYG{n}{ciò} \PYG{n}{che} \PYG{n}{contengono}\PYG{o}{.} \PYG{n}{Il}
+		\PYG{n}{primo} \PYG{err}{è} \PYG{n}{solitamente} \PYG{n}{formato} \PYG{n}{da} \PYG{n}{un} \PYG{n}{rettangolo} \PYG{p}{(}\PYG{n}{i} \PYG{n}{cui} \PYG{n}{angoli} \PYG{n}{possono}
+		\PYG{n}{essere} \PYG{n}{smussati} \PYG{n}{a} \PYG{n}{piacere}\PYG{p}{)} \PYG{n}{al} \PYG{n}{cui} \PYG{n}{interno} \PYG{n}{risiede} \PYG{n}{un} \PYG{n}{testo} \PYG{n}{esplicativo}
+		\PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}azione che verrà eseguita a seguito di un tocco da parte}
+		\PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}utente. Il secondo è invece circolare e contiene un\PYGZsq{}}\PYG{n}{icona} \PYG{n}{che}
+		\PYG{n}{dovrebbe} \PYG{n}{mostrare} \PYG{n}{direttamente} \PYG{n}{quale} \PYG{n}{sarà} \PYG{n}{la} \PYG{n}{sua} \PYG{n}{funzione}\PYG{o}{.} \PYG{n}{Entrambi} \PYG{n}{sono}
+		\PYG{n}{widget} \PYG{n}{di} \PYG{n}{tipo} \PYG{n}{Statefull}\PYG{p}{,} \PYG{o+ow}{in} \PYG{n}{quanto} \PYG{n}{il} \PYG{n}{loro} \PYG{n}{colore} \PYG{n}{o} \PYG{n}{la} \PYG{n}{loro} \PYG{n}{forma} \PYG{n}{può}
+		\PYG{n}{cambiare} \PYG{n}{a} \PYG{n}{seguito} \PYG{n}{di} \PYG{n}{pressioni} \PYG{n}{sullo} \PYG{n}{schermo}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{TextField}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Consente} \PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}utente di inserire del testo, attraverso l\PYGZsq{}}\PYG{n}{uso} \PYG{n}{della}
+		\PYG{n}{tastiera} \PYG{n}{che} \PYG{n}{appare} \PYG{n}{sullo} \PYG{n}{schermo}\PYG{o}{.} \PYG{n}{Il} \PYG{n}{widget} \PYG{n}{chiama} \PYG{n}{la} \PYG{n}{funzione}
+		\PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{onChanged}\PYG{p}{\PYGZcb{}} \PYG{n}{ogni} \PYG{n}{volta} \PYG{n}{che} \PYG{n}{viene} \PYG{n}{modificato} \PYG{n}{il} \PYG{n}{testo} \PYG{n}{nel} \PYG{n}{campo}\PYG{o}{.} \PYG{n}{Se}
+		\PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}utente indica di aver finito di digitare (ad esempio}
+		\PYG{n}{premendo} \PYG{n}{il} \PYG{n}{pulsante} \PYG{n}{di} \PYG{n}{invio}\PYG{p}{),} \PYG{n}{si} \PYG{n}{attiva}
+		\PYG{n}{la} \PYG{n}{funzione} \PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{onSubmitted}\PYG{p}{\PYGZcb{}}\PYG{o}{.} \PYG{n}{Per} \PYG{n}{controllare} \PYG{n}{il} \PYG{n}{testo} \PYG{n}{visualizzato} \PYG{n}{nel}
+		\PYG{n}{TextField} \PYG{n}{si} \PYG{n}{può} \PYG{n}{utilizzare} \PYG{n}{una} \PYG{n}{particolare} \PYG{n}{classe} \PYG{n}{chiamata}
+		\PYGZbs{}\PYG{n}{verb}\PYG{o}{|}\PYG{n}{TextEditingController}\PYG{o}{|}\PYG{p}{,} \PYG{n}{ad} \PYG{n}{esempio} \PYG{n}{per} \PYG{n}{impostare}
+		\PYG{n}{un} \PYG{n}{valore} \PYG{n}{iniziale} \PYG{n}{già} \PYG{n}{presente} \PYG{n+nb}{all}\PYG{l+s+s1}{\PYGZsq{}avvio della schermata o per inserire}
+		\PYG{n}{i} \PYG{n}{caratteri} \PYG{n}{scritti} \PYG{n}{dall}\PYG{l+s+s1}{\PYGZsq{}utente in un\PYGZsq{}}\PYG{n}{altra} \PYG{n}{variabile}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+			\PYGZbs{}\PYG{n}{centering}
+			\PYGZbs{}\PYG{n}{includegraphics}\PYG{p}{[}\PYG{n}{width}\PYG{o}{=}\PYG{l+m+mf}{0.4}\PYGZbs{}\PYG{n}{linewidth}\PYG{p}{]\PYGZob{}}\PYG{n}{AlertDialog}\PYG{o}{.}\PYG{n}{png}\PYG{p}{\PYGZcb{}}			
+			\PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Nell}\PYG{l+s+s1}{\PYGZsq{}esempio viene mostrata una Scaffold che contiene}
+			\PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}AlertDialog. Quest\PYGZsq{}}\PYG{n}{ultima} \PYG{n}{presenta} \PYG{n}{un} \PYG{n}{titolo}\PYG{p}{,} \PYG{n}{un} \PYG{n}{contenuto}
+			\PYG{n}{formato} \PYG{n}{da} \PYG{n}{una} \PYG{n}{TextForm} \PYG{n}{per} \PYG{n}{inserire} \PYG{k}{del} \PYG{n}{testo}\PYG{p}{,} \PYG{n}{e} \PYG{n}{due} \PYG{n}{pulsanti}\PYG{p}{,}
+			\PYG{n}{quello} \PYG{n}{a} \PYG{n}{sinistra} \PYG{err}{è} \PYG{n}{un} \PYG{n}{FlatButton} \PYG{n}{mentre} \PYG{n}{quello} \PYG{n}{a} \PYG{n}{destra} \PYG{err}{è} \PYG{n}{un} \PYG{n}{IconButton}\PYG{o}{.}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{figure}\PYG{p}{\PYGZcb{}}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{AlertDialog}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Una} \PYG{n}{AlertDialog} \PYG{n}{informa} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}utente sulle situazioni che richiedono una}
+		\PYG{n}{conferma} \PYG{n}{di} \PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}operazione. Inoltre ha un titolo opzionale e un}
+		\PYG{n}{elenco} \PYG{n}{opzionale} \PYG{n}{di} \PYG{n}{azioni}\PYG{o}{.} \PYG{n}{Il} \PYG{n}{titolo} \PYG{n}{viene} \PYG{n}{visualizzato} \PYG{o+ow}{in} \PYG{n}{alto} \PYG{n}{e} \PYG{n}{le}
+		\PYG{n}{azioni} \PYG{n}{vengono} \PYG{n}{visualizzate} \PYG{n}{sotto} \PYG{n}{il} \PYG{n}{contenuto} \PYG{n}{dell}\PYG{err}{’}\PYG{n}{AlertDialog}\PYG{o}{.} \PYG{n}{Si} \PYG{n}{può}
+		\PYG{n}{anche} \PYG{n}{scegliere} \PYG{n}{di} \PYG{n}{far} \PYG{n}{sparire} \PYG{n}{il} \PYG{n}{widget} \PYG{n}{se} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}utente tocca al di fuori dell\PYGZsq{}}\PYG{n}{area} \PYG{n}{a}
+		\PYG{n}{lui} \PYG{n}{dedicata}\PYG{p}{,} \PYG{n}{oppure} \PYG{n}{si} \PYG{n}{può} \PYG{n}{decidere} \PYG{n}{che} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}AlertDialog si}
+		\PYG{n}{dissolva} \PYG{n}{solo} \PYG{n}{a} \PYG{n}{seguito} \PYG{n}{della} \PYG{n}{pressione} \PYG{n}{di} \PYG{n}{un} \PYG{n}{particolare} \PYG{n}{tasto}\PYG{o}{.}
+		\PYGZbs{}\PYG{n}{item} \PYGZbs{}\PYG{n}{textbf}\PYG{p}{\PYGZob{}}\PYG{n}{BottomSheet}\PYG{p}{\PYGZcb{}} \PYGZbs{}\PYG{n}{newline}
+		\PYG{n}{Il} \PYG{n}{BottomSheet} \PYG{err}{è} \PYG{n}{un} \PYG{n}{particolare} \PYG{n}{widget} \PYG{n}{che} \PYG{n}{appare} \PYG{n}{nella} \PYG{n}{parte} \PYG{n}{inferiore}
+		\PYG{n}{dello} \PYG{n}{schermo} \PYG{n}{e} \PYG{n}{occupa} \PYG{n}{spazio} \PYG{o+ow}{in} \PYG{n}{base} \PYG{n}{alla} \PYG{n}{grandezza} \PYG{k}{del} \PYG{n}{proprio} \PYG{n}{figlio}
+		\PYG{p}{(}\PYG{n}{solitamente} \PYG{n}{una} \PYG{n}{Column} \PYG{n}{o} \PYG{n}{una} \PYG{n}{ListView}\PYG{p}{)}\PYG{o}{.} \PYG{n}{Esistono} \PYG{n}{due} \PYG{n}{tipologie}\PYG{p}{:} \PYG{n}{fisso} \PYG{n}{e}
+		\PYG{n}{dinamico}\PYG{o}{.} \PYG{n}{La} \PYG{n}{prima} \PYG{n}{rimane} \PYG{n}{visibile} \PYG{n}{anche} \PYG{n}{quando} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}utente interagisce con}
+		\PYG{n}{altre} \PYG{n}{parti} \PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}app. Può essere creato e visualizzato  con}
+		\PYG{n}{la} \PYG{n}{funzione} \PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{ScaffoldState}\PYG{o}{.}\PYG{n}{showBottomSheet}\PYG{p}{\PYGZcb{}}\PYG{o}{.} \PYG{n}{La} \PYG{n}{seconda} \PYG{n}{tipologia}
+		\PYG{err}{è} \PYG{n}{un}\PYG{l+s+s1}{\PYGZsq{}alternativa a un menù o a una AlertDialog e impedisce all\PYGZsq{}}\PYG{n}{utente} \PYG{n}{di}
+		\PYG{n}{interagire} \PYG{n}{con} \PYG{n}{il} \PYG{n}{resto} \PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}app. I BottomSheet di questo tipo possono}
+		\PYG{n}{essere} \PYG{n}{creati} \PYG{n}{e} \PYG{n}{visualizzati} \PYG{n}{con}
+		\PYG{n}{la} \PYG{n}{funzione} \PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{showModalBottomSheet}\PYG{p}{\PYGZcb{}}\PYG{o}{.}
+	\PYGZbs{}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{trivlist}\PYG{p}{\PYGZcb{}}
+
+	\PYGZbs{}\PYG{n}{section}\PYG{p}{\PYGZob{}}\PYG{n}{Animation}\PYG{p}{\PYGZcb{}}
+	\PYG{o}{\PYGZpc{}} \PYGZbs{}\PYG{n}{subsection}\PYG{p}{\PYGZob{}}\PYG{n}{Animation}\PYG{p}{\PYGZcb{}}
+	\PYG{n}{Le} \PYG{n}{Animation} \PYG{n}{rendono} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}interfaccia più intuitiva, contribuiscono a}
+	\PYG{n}{rendere} \PYG{n}{elegante}
+	\PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}aspetto di un\PYGZsq{}}\PYG{n}{app} \PYG{n}{e} \PYG{n}{migliorano} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}esperienza dell\PYGZsq{}}\PYG{n}{utente}\PYG{o}{.} \PYG{n}{Il}
+	\PYG{n}{supporto} \PYG{n}{di} \PYG{n}{Flutter} \PYG{n}{semplifica} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}implementazione di una grande varietà di tipi di}
+	\PYG{n}{animazioni}\PYG{o}{.} \PYG{n}{Molti} \PYG{n}{widget}\PYG{p}{,} \PYG{o+ow}{in} \PYG{n}{particolare} \PYG{n}{i} \PYG{n}{Material} \PYG{n}{Widget}\PYG{p}{,} \PYG{n}{hanno}
+	\PYG{n}{animazioni} \PYG{n}{standard} \PYG{n}{definite} \PYG{n}{nelle} \PYG{n}{loro} \PYG{n}{specifiche} \PYG{n}{di} \PYG{n}{progettazione}\PYG{p}{,}
+	\PYG{n}{anche} \PYG{n}{se} \PYG{n}{il} \PYG{n}{programmatore} \PYG{n}{può} \PYG{n}{crearne} \PYG{n}{di} \PYG{n}{nuove} \PYG{n}{personalizzando} \PYG{n}{quelle} \PYG{n}{già} \PYG{n}{esistenti}\PYG{o}{.} \PYGZbs{}\PYGZbs{}
+	\PYG{n}{Sono} \PYG{n}{implementati} \PYG{n}{due} \PYG{n}{tipi} \PYG{n}{di} \PYG{n}{animazioni}\PYG{p}{:} \PYG{n}{Tween} \PYG{n}{e} \PYG{n}{Physic}\PYG{o}{\PYGZhy{}}\PYG{n}{based}\PYG{o}{.} \PYG{n}{Nella} \PYG{n}{prima} \PYG{n}{tipologia}
+	\PYG{p}{(}\PYG{n}{che} \PYG{err}{è} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}abbreviazione di }\PYG{l+s+se}{\PYGZbs{}t}\PYG{l+s+s1}{extit\PYGZob{}in\PYGZhy{}betweening\PYGZcb{}, traducibile come \PYGZdq{}nel frattempo,}
+	\PYG{o+ow}{in} \PYG{n}{mezzo}\PYG{l+s+s2}{\PYGZdq{}), vengono definiti l\PYGZsq{}aspetto e la forma iniziali e finali del}
+	\PYG{n}{widget}\PYG{p}{,} \PYG{n}{insieme} \PYG{n}{alla} \PYG{n}{durata} \PYG{n}{e} \PYG{n}{alla} \PYG{n}{velocità} \PYG{n}{dell}\PYG{l+s+s1}{\PYGZsq{}animazione. Il framework}
+	\PYG{n}{calcola} \PYG{n}{poi} \PYG{n}{automaticamente} \PYG{n}{come} \PYG{n}{effettuare} \PYG{n}{la} \PYG{n}{transizione} \PYG{o+ow}{in} \PYG{n}{base} \PYG{n}{ai} \PYG{n}{dati}
+	\PYG{n}{che} \PYG{n}{vengono} \PYG{n}{forniti} \PYG{n}{al} \PYG{n}{costruttore} \PYG{n}{della} \PYG{n}{particolare} \PYG{n}{Animation}\PYG{o}{.} \PYG{n}{La} \PYG{n}{seconda}
+	\PYG{n}{tipologia} \PYG{n}{cerca} \PYG{n}{invece} \PYG{n}{di} \PYG{n}{gestire} \PYG{n}{quegli} \PYG{n}{elementi} \PYG{n}{che} \PYG{n}{vogliono} \PYG{n}{rappresentare}
+	\PYG{n}{comportamenti} \PYG{k}{del} \PYG{n}{mondo} \PYG{n}{reale}\PYG{p}{,} \PYG{n}{cercando} \PYG{n}{di} \PYG{n}{modellare} \PYG{n}{i} \PYG{n}{movimenti} \PYG{n}{e} \PYG{n}{le}
+	\PYG{n}{dinamiche} \PYG{n}{di} \PYG{n}{oggetti} \PYG{n}{concreti}\PYG{o}{.} \PYG{n}{Per} \PYG{n}{esempio} \PYG{n}{per} \PYG{n}{muovere} \PYG{n}{una} \PYG{n}{piccola} \PYG{n}{sfera} \PYG{n}{la}
+	\PYG{n}{velocità} \PYG{n}{con} \PYG{n}{cui} \PYG{n}{essa} \PYG{n}{rimbalzerà} \PYG{n}{dipenderà} \PYG{n}{dalla} \PYG{n}{spinta} \PYG{n}{iniziale} \PYG{n}{che} \PYG{n}{le} \PYG{err}{è}
+	\PYG{n}{stata} \PYG{n}{posta} \PYG{n}{mentre} \PYG{n}{l}\PYG{l+s+s1}{\PYGZsq{}altezza del salto dipenderà invece da quanto essa sia lontana dal terreno.}
+	\PYG{n}{Nello} \PYG{n}{specifico} \PYG{n}{esiste} \PYG{n}{una} \PYG{n}{classe} \PYG{n}{chiamata} \PYG{n}{AnimationController} \PYG{n}{che} \PYG{n}{possiede}
+	\PYG{n}{il} \PYG{n}{metodo} \PYGZbs{}\PYG{n}{textit}\PYG{p}{\PYGZob{}}\PYG{n}{animateWith}\PYG{p}{\PYGZcb{}} \PYG{n}{e} \PYG{n}{inoltre} \PYG{err}{è} \PYG{n}{possibile} \PYG{n}{simulare} \PYG{n}{il}
+	\PYG{n}{comportamento} \PYG{n}{di} \PYG{n}{una} \PYG{n}{molla} \PYG{n}{con} \PYG{n}{la} \PYG{n}{classe} \PYG{n}{SpringSimulator}\PYG{o}{.}
+	
+
+
+	
+\end{Verbatim}

@@ -81,21 +81,42 @@
 	struttura del codice flutter assuma \textit{graficamente} un'indentazione
 	naturale, con una gerarchia ad albero in cui c'è un padre iniziale e da cui
 	seguono numerosi figli, padri di successivi widget.
-
-	\begin{figure}[h!]
+	\begin{minted}
+		[	frame=topline, framesep=2mm, baselinestretch=1.2,
+		fontsize=\footnotesize, linenos	]
+		{python}
+import 'package:flutter/material.dart'
+main(List<String> args) {
+	runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+	@override
+	Widget build(BuildContext context) {
+		return MaterialApp(
+			home: Scaffold(
+				body: Home(),
+			) // Scaffold
+		); // MaterialApp
+}
+}
+class Home extends StatelessWidget {
+	@override
+	Widget build(BuildContext context){
+		return Center(
+			child: Container(
+				child: Text('Hello World!',
+				style: TextStyle(fontSize:35.0),),
+			), // Container
+		); // Center
+	}
+}
+	\end{minted}
+	\begin{figure}[!h]
 		\centering
-		\begin{subfigure}{0.6\linewidth}
-			\includegraphics[width=\linewidth, height=7cm]{StateLessApp.png}
-			\caption{Esempio di codice di widget stateless}
-		\end{subfigure}
-		\begin{subfigure}{0.3\linewidth}
-			\includegraphics[width=\linewidth, height=7cm]{StateLessScreen.png}
-			\caption{Risultato}
-		\end{subfigure}
-		\caption{}
+		\includegraphics[width=0.33\linewidth, height=7cm]{StateLessScreen.png}
+		\caption{Risultato del codice precedente}
 		\label{stateless1}
 	\end{figure} 
-
 	Nell'immagine \ref{statefull} viene mostrato invece un widget di tipo
 	Statefull. Si può notare come la prima parte del codice sia identica, con la
 	classe MyApp che è ancora un widget senza stato. Ciò che cambia è la classe
@@ -115,11 +136,58 @@
 	Nell'esempio è presente un pulsante (FloatingActionButton) che aumenta il
 	valore della variabile counter, che viene stampato a schermo. Da notare
 	infine come si possa accedere al metodo toString di un oggetto in dart
-	anteponendo al suo nome il carattere \$.
-
+	anteponendo al suo nome il carattere \$. \newpage
+	\begin{minted}
+		[	frame=topline, framesep=2mm, baselinestretch=1.2,
+		fontsize=\footnotesize, linenos	]
+		{python}
+import 'package:flutter/material.dart'
+main(List<String> args) {
+	runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+	@override
+	Widget build(BuildContext context) {
+		return MaterialApp(
+			home: Scaffold(
+				body: Home(),
+			) // Scaffold
+		); // MaterialApp
+	}
+}
+class Home extends StatefulWidget{
+	@override
+	_HomeState createState() => _HomeState();
+}
+class _HomeState extends State<Home> {
+	int _counter = 0;
+	void buttonPressed(){
+		setState((){
+			_counter++;
+		});
+	}
+	@override
+	Widget build(BuildContext context){
+		return Scaffold(
+			body: Center(
+				child: Container(
+					child: Text(
+					'Hai premuto $_counter volte il pulsante',
+					style: TextStyle(fontSize: 25),
+					), // Text
+				), // Container
+			), // Center
+			floatingActionButton: FloatingActionButton(
+				child: Icon(Icons.add),
+				onPressed buttonPressed,
+			), // FloatingActionButton
+		); // Scaffold
+	}
+}
+	\end{minted}
 	\begin{figure}[h!]
 		\centering
-		\caption{Esempio di codice di widget statefull}{\includegraphics[scale=0.35]{StateFullApp.png}\label{statefull}}
+		\caption{Esempio di codice di widget statefull}{\includegraphics[scale=0.55]{StateFullApp.png}\label{statefull}}
 	\end{figure}
 
 	\section{Principali Widget}
