@@ -35,7 +35,7 @@
 \contentsline {section}{\numberline {5.3}Utilizzare il Cloud Firestore}{34}% 
 \contentsline {subsection}{\numberline {5.3.1}Ottenere tutti gli elementi di una collezione}{34}% 
 \contentsline {subsection}{\numberline {5.3.2}Ottenere dati filtrati da una collezione}{36}% 
-\contentsline {chapter}{\numberline {6}Mappa e sue funzionalit\IeC {\`a}}{37}% 
+\contentsline {chapter}{\numberline {6}Mappa e funzionalit\IeC {\`a}}{37}% 
 \contentsline {section}{\numberline {6.1}Scelta del servizio API}{37}% 
 \contentsline {section}{\numberline {6.2}MapPage}{38}% 
 \contentsline {section}{\numberline {6.3}Funzionalit\IeC {\`a}}{40}% 

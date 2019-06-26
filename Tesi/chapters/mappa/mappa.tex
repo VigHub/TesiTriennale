@@ -1,4 +1,4 @@
-\chapter{Mappa e sue funzionalità}
+\chapter{Mappa e funzionalità}
 % \section{Mappa e sue funzionalità}
 La pagina della mappa è stata la sezione dell'applicazione più difficile da
 implementare, perchè al suo interno risiedono numerosi servizi e funzioni che
@@ -85,7 +85,7 @@ visualizzata.
 Grazie al pacchetto \textit{googlemap} di flutter si è riusciti a implementare un oggetto
 GoogleMap (che verrà descritto in un successivo paragrafo) con cui è molto
 facile interagire. In particolare, l'utente può aumentare o diminuire lo zoom
-della mappa con i classici gesti di allontanamento o avvicinamento delle dita, e
+della mappa mediante gesture e
 può spostarsi in diverse zona semplicemente trascinando verso la direzione
 desiderata. Con una buona o anche solo media connessione internet i tempi di
 latenza sono pressochè nulli, così che non si riesca a vedere i riquadri grigi
@@ -97,9 +97,9 @@ verifica sempre più di rado negli ultimi tempi.
 
 \section{Funzionalità}
 % \subsection{Funzionalità}
-Nelle immagini precedenti si è forse notato un pulsante nella parte inferiore
+Nelle immagini precedenti viene inoltre mostrato un pulsante nella parte inferiore
 dello schermo verso destra. Se premuto (figura \ref{4puls}), quest'ultimo mostra una serie di
-pulsanti con diverse funzionalità. 
+pulsanti con diverse funzionalità.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=7cm]{MapFun.jpg}
@@ -260,7 +260,7 @@ eliminarla e prenderne in considerazione altre.
     \caption{Nuova stazione inserita che ha superato tutti i controlli}
     \label{addStation7}
 \end{figure}
-Una volta caricata l'immagine e aver confermato che tutti i dati inseriti
+Terminato il passo precedente e dopo aver confermato che tutti i dati inseriti
 abbiano superato il controllo della Form, la stazione è aggiunta nel database
 dell'applicazione. Per prevenire che utenti malintenzionati inseriscano stazioni
 che in realtà non esistono o inseriscano dati non coerenti, ogni stazione appena

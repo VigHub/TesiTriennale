@@ -21,7 +21,7 @@ raggruppate
 in diversi insiemi dovuti al servizio vero e proprio che viene fornito oltre a
 quello della ricarica. Esistono stazioni nelle quali è possibile noleggiare bici
 elettriche e altre dove si può portare la propria bici per effettuare della manutenzione.
-Dunque la tabella TipoStazione contiene per ogni riga una diversa tipologia di
+Dunque la tabella \texttt{TipoStazione} contiene per ogni riga una diversa tipologia di
 stazione, formata dalla combinazione dei diversi servizi appena descritti, in
 quanto ovviamente esistono negozi che propongono più servizi contemporaneamente.
 Ogni istanza di questa tabella oltre a possedere una chiave che la identifica,
@@ -145,8 +145,8 @@ chiamato nel momento in cui l'utente termina la propria autenticazione e
 raggiunge la pagina della mappa. \\ Sulla firebase console del progetto è presente
 la collezione \textit{stazioni}, a cui si fa accesso tramite il
 metodo \verb|Firestore.instance.collection('stazioni').getDocuments()|. Questo
-metodo è di tipo Future (si rimanda al capitolo su Flutter e Dart), e quindi
-necessita del metodo \verb|then()| per accedere ai dati inviati in modo
+metodo è di tipo Future, 
+necessita cioè del metodo \verb|then()| per accedere ai dati inviati in modo
 asincrono. Una volta connessi al database e ottenuti i documenti, si controlla
 che essi non siano di lunghezza nulla (tramite il campo
 \verb|docs.document.isNotEmpty|). Se si è ottenuta almeno una stazione si
@@ -183,8 +183,8 @@ Firestore.instance
 \end{minted}
 Nella sezione di codice di cui sopra si accede alla collezione users nel solito modo visto
 anche precedentemente, ciò che cambia è che ora si introduce anche il metodo
-\verb|where()| che prende come primo argomento una stringa indicante il nome del
-campo su cui si vuole effettuare la selezione, e un secondo argomento che indica
+\verb|where()| che riceve come primo argomento una stringa indicante il nome del
+campo su cui si vuole effettuare la selezione, e come secondo argomento bisogna indicare
 il tipo di confronto che si vuole fare, in questo caso un \textit{isEqualTo}
 (tra gli altri sono presenti anche \textit{isGreaterThan} e
 \textit{isLessThan}). Una volta ottenuto l'utente che ha lo stesso \textit{id}

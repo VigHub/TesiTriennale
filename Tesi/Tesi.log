@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.22)  25 JUN 2019 23:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.22)  26 JUN 2019 13:40
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -536,13 +536,13 @@ Capitolo 3.
  (./_minted-Tesi/default-pyg-prefix.pygstyle) (./_minted-Tesi/default.pygstyle) (./_minted-Tesi/5481399B8507D5B6AFEFA5B8BF31457D08E641BD446B584ADC94137CDE24B0AD.pygtex [14]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
-)
-<images/StateLessScreen.png, id=100, 1084.05pt x 1927.2pt>
+ [15])
+<images/StateLessScreen.png, id=106, 1084.05pt x 1927.2pt>
 File: images/StateLessScreen.png Graphic file (type png)
 <use images/StateLessScreen.png>
 Package pdftex.def Info: images/StateLessScreen.png  used on input line 116.
 (pdftex.def)             Requested size: 140.8322pt x 199.14194pt.
- [15] [16 <./images/StateLessScreen.png>]
+ [16 <./images/StateLessScreen.png>]
 \openout3 = `Tesi.pyg'.
 
  (./_minted-Tesi/4AF7EFACCC2758DF0AB29455DD5A7EA908E641BD446B584ADC94137CDE24B0AD.pygtex)
@@ -589,15 +589,15 @@ Capitolo 4.
 <images/Login.png, id=150, 1084.05pt x 1927.2pt>
 File: images/Login.png Graphic file (type png)
 <use images/Login.png>
-Package pdftex.def Info: images/Login.png  used on input line 37.
+Package pdftex.def Info: images/Login.png  used on input line 38.
 (pdftex.def)             Requested size: 162.60048pt x 289.06754pt.
  [26 <./images/Login.png>]
-LaTeX Font Info:    Try loading font information for U+mvs on input line 75.
+LaTeX Font Info:    Try loading font information for U+mvs on input line 76.
  (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd) [27]
 <images/Authentication.png, id=160, 704.6325pt x 335.00156pt>
 File: images/Authentication.png Graphic file (type png)
 <use images/Authentication.png>
-Package pdftex.def Info: images/Authentication.png  used on input line 87.
+Package pdftex.def Info: images/Authentication.png  used on input line 88.
 (pdftex.def)             Requested size: 384.1122pt x 182.61568pt.
 \openout3 = `Tesi.pyg'.
 
@@ -615,11 +615,11 @@ Package pdftex.def Info: images/ERTesi.png  used on input line 46.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32 <./images/ERTesi.png>]
-<images/LogicoTesi.png, id=177, 491.58656pt x 91.84312pt>
+<images/LogicoTesi.png, id=177, 447.17062pt x 97.11281pt>
 File: images/LogicoTesi.png Graphic file (type png)
 <use images/LogicoTesi.png>
 Package pdftex.def Info: images/LogicoTesi.png  used on input line 62.
-(pdftex.def)             Requested size: 426.79134pt x 79.74028pt.
+(pdftex.def)             Requested size: 426.79134pt x 92.68932pt.
  [33 <./images/LogicoTesi.png (PNG copy)>]
 \openout3 = `Tesi.pyg'.
 
@@ -803,15 +803,15 @@ runsystem(rm Tesi.pyg)...executed.
 ### semi simple group (level 1) entered at line 23 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9371 strings out of 492623
- 152905 string characters out of 6135669
+ 9372 strings out of 492623
+ 152913 string characters out of 6135669
  293770 words of memory out of 5000000
- 13005 multiletter control sequences out of 15000+600000
+ 13006 multiletter control sequences out of 15000+600000
  12166 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,842b,4211s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on Tesi.pdf (57 pages, 5656093 bytes).
+Output written on Tesi.pdf (57 pages, 5655145 bytes).
 PDF statistics:
  299 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams

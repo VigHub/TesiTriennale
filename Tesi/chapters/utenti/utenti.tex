@@ -23,7 +23,8 @@ di immagini e file. Il secondo è il Flame Plan nel quale aumentano i limiti (50
 GB per lo storage e fino a 2,5 GB per i dati) al costo di 25\$ al mese.
 L'ultimo è il Blaze Plan nel quale ogni servizio possiede un costo unitario
 relativamente basso e funziona con una politica \textit{pay as you go}. Per le
-esigenze del progetto il primo piano (Spark) era più che sufficiente.
+esigenze del progetto le funzionalità offerte da Spark sarebbero state
+sufficienti.
 
 \section{Schermata di avvio, tipologia di Utente e pagina Profilo}
 % \subsection{Schermata di avvio, tipologia di Utente e pagina Profilo}
@@ -147,7 +148,7 @@ precedentemente con Google. Questo è possibile verificando l'output del metodo
 \verb|null| se non è presente nessun utilizzatore. In questo secondo caso, si
 verifica quindi che non ci sia già loggati tramite procedura standard tramite
 \verb|auth.currentUser|, dal funzionamento molto simile al metodo precedente,
-con l'unica differenza che ciò che restituisce è di tipo Future e quindi
+con l'unica differenza che ciò che restituisce è di tipo \emph{Future} e quindi
 necessita del metodo then (chiamata asincrona). In base quindi a ciò che viene
 restituito si cambia quindi il valore del campo \verb|_authState| tramite un
 Enum definito a inizio file con gli unici due stati di loggato (signedIn) e non

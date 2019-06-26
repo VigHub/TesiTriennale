@@ -7,7 +7,7 @@
 	caratteristiche principali che differenzia Flutter dagli altri framework è il
 	“reactive development”. Esso infatti permette di aggiornare in modo automatico il
 	contenuto dell’interfaccia senza utilizzare tecnologie ausiliarie, comunicando
-	direttamente con la piattaforma nativa usando il linguaggio Dart. Questo è un
+	direttamente con la piattaforma nativa usando il linguaggio Dart. Quest'ultimo è un
 	linguaggio orientato agli oggetti anch’esso di proprietà Google, che utilizza tecniche di
 	compilazione Ahead-of-Time, accelerando notevolmente il tempo di avvio
 	dell’app, permettendo prestazioni migliori rispetto ad altri framework
@@ -205,8 +205,8 @@ class _HomeState extends State<Home> {
 		opzionali, tra cui lo stile. Se si vuole indicare un particolare stile
 		al proprio testo bisogna inserire un TextStyle, cioè un'ulteriore classe
 		che gestisce il font, l'inserimento del grassetto o del corsivo e la
-		formattazione dell'intero testo (giustificato, allineato a sinistra o a
-		destra e centrale).  
+		formattazione dell'intero testo (giustificato, allineato a sinistra,
+		destra oppure centralmente).  
 		\item \textbf{Row, Column} \newline
 		Questi widget vengono spesso utilizzati per ottenere schermate ordinate
 		e gradevoli dal punto di vista estetico all'utilizzatore. Il parametro
@@ -237,7 +237,7 @@ class _HomeState extends State<Home> {
 		posizionamento, ma si può indicare per ogni figlio la posiziona esatta
 		in pixel che dovrà avere sullo schermo. Questo passaggio viene
 		effettuato racchiudendo il widget che si vuole inserire all'interno di
-		un'istanza della classe Positioned (che sarà uno dei figli dello Stack)
+		un'istanza della classe \verb|Positioned| (che sarà uno dei figli dello Stack)
 		e indicando gli esatti pixel nel suo costruttore. 
 		\item \textbf{Container} \newline
 		Crea un elemento rettangolare che avrà come altezza e lunghezza le
@@ -252,8 +252,8 @@ class _HomeState extends State<Home> {
 	\section{Material Design}
 	% \subsection{Material Design}
 	Il Material Design è un linguaggio visuale che unisce i classici principi di
-	un buon design con l'innovazione della tecnologia e della scienza. 
-	\cite{material} \newline
+	un buon design con l'innovazione della tecnologia e della scienza 
+	\cite{material}. \newline
 	Tale design è interamente sviluppato da Google e fa uso di layout basati su
 	una griglia, animazioni e transizioni. Si prendono ora in cosiderazione i
 	widget più comuni appartenenti a questo particolare design.
@@ -306,7 +306,7 @@ class _HomeState extends State<Home> {
 		nella parte inferiore dello schermo, viene utlizzato per comunicare
 		all'utente una particolare informazione come l'attesa per un caricamento
 		o il manifestarsi di un problema a seguito di un errore, come la
-		mancanza di una connessione internet.
+		mancanza della connessione.
 		\item \textbf{FlatButton e IconButton} \newline
 		Sono entrambi pulsanti che si differenziano per ciò che contengono. Il
 		primo è solitamente formato da un rettangolo (i cui angoli possono
@@ -379,7 +379,7 @@ class _HomeState extends State<Home> {
 	Nello specifico esiste una classe chiamata AnimationController che possiede
 	il metodo \textit{animateWith} e inoltre è possibile simulare il
 	comportamento di una molla con la classe SpringSimulator.
-	
+
 
 
 	
