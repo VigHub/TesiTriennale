@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.22)  27 JUN 2019 23:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.6.22)  28 JUN 2019 00:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -782,27 +782,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--1
 
 ]
 Capitolo 7.
-) [51] [52] (./Tesi.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-[]\OT1/cmr/m/n/12 Wikipedia, ``An-droid --- wi-ki-pe-dia, l'en-ci-clo-pe-dia li-be-ra,''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-\OT1/cmr/m/n/12 https://it.wikipedia.org/wiki/Android, 2019, [On-li-ne; con-trol-la-ta il
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--40
-[]\OT1/cmr/m/n/12 Wikipedia, ``ios --- wi-ki-pe-dia, l'en-ci-clo-pe-dia li-be-ra,''
- []
-
-
-Overfull \hbox (33.73026pt too wide) in paragraph at lines 42--44
-[]\OT1/cmr/m/n/12 A. Inc., ``ios ar-chi-tec-tu-re,'' https://developer.apple.com/library/archivedocumentation,
- []
-
-) [53
+) [51] [52] (./Tesi.bbl) [53
 
 ] (./Tesi.aux)
 runsystem(rm Tesi.pyg)...executed.
@@ -821,7 +801,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  42i,18n,43p,842b,4211s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on Tesi.pdf (57 pages, 5655196 bytes).
+Output written on Tesi.pdf (57 pages, 5655129 bytes).
 PDF statistics:
  299 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams
