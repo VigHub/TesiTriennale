@@ -22,26 +22,31 @@
 \BIBdecl
 
 \bibitem{1}
-\BIBentryALTinterwordspacing
 G.~Lombardo, ``Ecco i dati ufficiali ancma 2017: l’e-bike vola anche in
-  italia e segna un ulteriore +19\%,'' 2018. [Online]. Available:
-  \url{https://www.bicitech.it}
-\BIBentrySTDinterwordspacing
+  italia e segna un ulteriore +19\%,'' https://www.bicitech.it, 2018.
 
 \bibitem{3}
-\BIBentryALTinterwordspacing
-Wikipedia, ``Android --- wikipedia{,} l'enciclopedia libera,'' 2019, [Online;
-  controllata il 22-giugno-2019]. [Online]. Available:
-  \url{\url{https://it.wikipedia.org/wiki/Android}}
-\BIBentrySTDinterwordspacing
+Wikipedia, ``Android --- wikipedia{,} l'enciclopedia libera,''
+  \url{https://it.wikipedia.org/wiki/Android}, 2019, [Online; controllata il
+  22-giugno-2019].
 
 \bibitem{4}
 Smieh, \emph{Anatomy Physiology of an Android}, 2012.
 
+\bibitem{5}
+Wikipedia, ``ios --- wikipedia{,} l'enciclopedia libera,''
+  \url{https://it.wikipedia.org/wiki/iOS}, 2019, [Online; controllata il
+  6-giugno-2019].
+
+\bibitem{huhuh}
+A.~Inc., ``ios architecture,''
+  https://developer.apple.com/library/archivedocumentation, 2015.
+
+\bibitem{xnu}
+{Min(Spark) Zeng, Xiaolong Bai, Hunter Alibaba Orion Security Lab},
+  \emph{Eternal War in XNU Kernel Objects}, 2018.
+
 \bibitem{2}
-\BIBentryALTinterwordspacing
-Material, ``Material design,'' 2019. [Online]. Available:
-  \url{https://material.io/design/introduction}
-\BIBentrySTDinterwordspacing
+Material, ``Material design,'' https://material.io/design/introduction, 2019.
 
 \end{thebibliography}

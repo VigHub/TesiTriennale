@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex Tesi"] 1561665964 "Tesi.aux" "Tesi.bbl" "Tesi" 1561665967
+["bibtex Tesi"] 1561672773 "Tesi.aux" "Tesi.bbl" "Tesi" 1561672776
   "/usr/share/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1557556964 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "Tesi.aux" 1561665967 10863 10b7dc3675b5f7a418decd2cebfe14ca "pdflatex"
-  "bibliografia.bib" 1561665513 618 dd285c51f87d48a6bcb3c2d6321c50d8 ""
+  "Tesi.aux" 1561672776 11019 0102684b9e8302b1c1d1147df08614c5 "pdflatex"
+  "bibliografia.bib" 1561672770 1180 e0d6f1c401cf0b0db74341941342161d ""
   (generated)
   "Tesi.bbl"
   "Tesi.blg"
-["pdflatex"] 1561665964 "/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1561665967
+["pdflatex"] 1561672773 "/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.tex" "Tesi.pdf" "Tesi" 1561672776
   "/dev/null" 1561663956 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.tex" 1561665960 1554 62a5b667fbef57abe322ce476a0c5dae ""
+  "/home/viga211/Scrivania/TesiTriennale/Tesi/Tesi.tex" 1561669099 1554 62a5b667fbef57abe322ce476a0c5dae ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1557554374 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1557554374 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1557554374 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -117,10 +117,10 @@
   "/usr/share/texmf/tex/latex/minted/minted.sty" 1504428290 47165 6a3e43a8d03bd86910a1dbf68d6c3645 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1561493175 3106380 436fef8c2e0ca660ce1dd89198cfa583 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1561194988 7979416 b8fde4383a7fa409290bf135ab612eb3 ""
-  "Tesi.aux" 1561665967 10863 10b7dc3675b5f7a418decd2cebfe14ca "pdflatex"
-  "Tesi.bbl" 1561665964 1621 485dd8cd2b453fa6320b3ab60e9c56e6 "bibtex Tesi"
-  "Tesi.tex" 1561665960 1554 62a5b667fbef57abe322ce476a0c5dae ""
-  "Tesi.toc" 1561665967 3012 5534feaada284d16c05b06ddaa585b36 "pdflatex"
+  "Tesi.aux" 1561672776 11019 0102684b9e8302b1c1d1147df08614c5 "pdflatex"
+  "Tesi.bbl" 1561672773 1775 cbbed40959a49aabc26f9f40ebcfa656 "bibtex Tesi"
+  "Tesi.tex" 1561669099 1554 62a5b667fbef57abe322ce476a0c5dae ""
+  "Tesi.toc" 1561672776 3012 5534feaada284d16c05b06ddaa585b36 "pdflatex"
   "_minted-Tesi/0791530869AA9D203DEC4FED790C921F08E641BD446B584ADC94137CDE24B0AD.pygtex" 1561498281 1288 17659b3ca4d82bd7f70a2b80379d4a3b ""
   "_minted-Tesi/09B760B10F490FDC1BD2D0710BC19A1208E641BD446B584ADC94137CDE24B0AD.pygtex" 1561497925 1244 93fec65c28507dcb410fb4acf3f65fea ""
   "_minted-Tesi/4AF7EFACCC2758DF0AB29455DD5A7EA908E641BD446B584ADC94137CDE24B0AD.pygtex" 1561497030 2586 f114645e062bfd56c0f7d2079494a3da ""
@@ -136,7 +136,7 @@
   "chapters/flutter/flutter.tex" 1561558966 19987 60e809153551e5b65ca163256b294f96 ""
   "chapters/introduzione/introduzione.tex" 1561558695 7367 a8f8ec4e0dd9841206c6407e36c172ee ""
   "chapters/mappa/mappa.tex" 1561664398 19695 2453d71fdf0b0f085123524c168f34be ""
-  "chapters/sist_operativi/sis_operativi.tex" 1561559198 12224 e2f61fb0575990c84d4033ad8de3e3a6 ""
+  "chapters/sist_operativi/sis_operativi.tex" 1561671682 12259 15a5938d06a0f97b6b60212d24bbe5b1 ""
   "chapters/utenti/utenti.tex" 1561547432 8968 c53b30cdb9ae62db46599c51f21cfeb6 ""
   "copertina2.pdf" 1561664386 131121 0c35e84ee32140e64e8e8a6785aad6ed ""
   "images/AddStation1.jpg" 1561490668 41117 bfadbb205de1b804e37cc2709521ccd0 ""
@@ -172,5 +172,5 @@
   (generated)
   "Tesi.log"
   "Tesi.pdf"
-  "Tesi.toc"
   "Tesi.aux"
+  "Tesi.toc"
