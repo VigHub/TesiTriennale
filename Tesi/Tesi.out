@@ -1,0 +1,42 @@
+\BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Obiettivi e origine del progetto}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Scelta del framework}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Organizzazione e sviluppo}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Git e Bitbucket}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Trello}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{Visual Studio Code}{section.1.3}% 7
+\BOOKMARK [1][-]{section.1.4}{Struttura generale dell'applicazione}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Sistemi operativi mobili: Android e iOS}{}% 9
+\BOOKMARK [1][-]{section.2.1}{Android}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.1.1}{Kernel Linux e Architettura}{section.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.1.2}{ART Virtual Machine e Dalvik Virtual Machine}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.3}{Sviluppo applicazioni in Android}{section.2.1}% 13
+\BOOKMARK [1][-]{section.2.2}{iOS}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.1}{Architettura}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{Kernel XNU}{section.2.2}% 16
+\BOOKMARK [0][-]{chapter.3}{Flutter}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Stateless e Stateful Widget}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Principali Widget}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Material Design}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Animation}{chapter.3}% 21
+\BOOKMARK [0][-]{chapter.4}{Gestione degli utenti}{}% 22
+\BOOKMARK [1][-]{section.4.1}{Firebase}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.2}{Schermata di avvio, tipologia di Utente e pagina Profilo}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.3}{Registrazione}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.4}{Utente anonimo}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.5}{Codifica}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{Gestione e struttura del database}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Progettazione iniziale}{chapter.5}% 29
+\BOOKMARK [2][-]{subsection.5.1.1}{Schema Concettuale}{section.5.1}% 30
+\BOOKMARK [2][-]{subsection.5.1.2}{Schema Logico}{section.5.1}% 31
+\BOOKMARK [1][-]{section.5.2}{Gestione dati in Firebase}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.3}{Utilizzare il Cloud Firestore}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.3.1}{Ottenere tutti gli elementi di una collezione}{section.5.3}% 34
+\BOOKMARK [2][-]{subsection.5.3.2}{Ottenere dati filtrati da una collezione}{section.5.3}% 35
+\BOOKMARK [0][-]{chapter.6}{Mappa e funzionalit\340}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Scelta del servizio API}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{MapPage}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.3}{Funzionalit\340}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.4}{Aggiungere una Stazione}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.5}{Codifica}{chapter.6}% 41
+\BOOKMARK [0][-]{chapter.7}{Conclusioni}{}% 42

@@ -22,8 +22,8 @@
 \BIBdecl
 
 \bibitem{1}
-G.~Lombardo, ``Ecco i dati ufficiali ancma 2017: l’e-bike vola anche in
-  italia e segna un ulteriore +19\%,'' https://www.bicitech.it, 2018.
+{Gianni Lombardo}, ``Ecco i dati ufficiali ancma 2017: l’e-bike vola anche in
+  italia e segna un ulteriore +19\%,'' \url{https://www.bicitech.it}, 2018.
 
 \bibitem{3}
 TuttoAndroid, ``Android: origini, storia, versioni e varianti del robottino
@@ -37,14 +37,15 @@ TuttoAndroid, ``Android: origini, storia, versioni e varianti del robottino
   \emph{{La Repubblica}}, {3 gennaio 2019}.
 
 \bibitem{huhuh}
-{{Apple Inc.}}, ``ios architecture,''
-  https://developer.apple.com/library/archivedocumentation, 2015.
+{{Apple Inc.}}, ``{iOS Architecture},''
+  \url{https://developer.apple.com/library/archive/documentation/MacOSX}, 2015.
 
 \bibitem{xnu}
 {Min(Spark) Zeng, Xiaolong Bai, Hunter Alibaba Orion Security Lab},
   \emph{Eternal War in XNU Kernel Objects}, 2018.
 
 \bibitem{2}
-Material, ``Material design,'' https://material.io/design/introduction, 2019.
+Material, ``Material design,'' \url{https://material.io/design/introduction},
+  2019.
 
 \end{thebibliography}

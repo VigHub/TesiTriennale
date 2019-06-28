@@ -29,14 +29,14 @@ spostarsi in un'altra zona della mappa la schermata rimaneva per qualche secondo
 completamente grigia, rendendo l'esperienza di utilizzo sicuramente peggiore.
 Nel seguito, tra Gennaio e Febbraio 2019 è stata rilasciata la prima versione
 ufficiale di Flutter (versione 1.0.0) e tra le tante novità spiccava la presenza
-di un widget particolare, chiamato \textit{GoogleMap}. Semplificando notevolmente
+di un widget particolare, chiamato \texttt{GoogleMap}. Semplificando notevolmente
 l'utilizzo delle mappe, tale widget presenta ottime prestazioni e facilità di
 implementazione. Si è quindi deciso di dedicare del tempo nell'apprendere ogni
 aspetto delle politiche di utilizzo delle API di Google, capendo quindi che,
 facendo un numero di richieste minore di una soglia stabilita, non è necessario
 pagare nulla, anche se si è registrata una carta di credito. Quindi la scelta è
 ricaduta sulle API di Google e si è importato nel progetto il pacchetto
-\verb|googlemap|.
+\textit{googlemap}.
 
 \section{MapPage}
 % \subsection{MapPage}
@@ -116,7 +116,7 @@ Il secondo pulsante ha la funzione di filtro e al tempo stesso di legenda.
 Premendolo, viene mostrata a schermo una AlertDialog (fig. \ref{filtro}) che indica quali
 tipologie di stazioni si possono cercare. Sulla destra sono presenti dei Button
 di tipo check (che possono essere True o False): se si vede la casella spuntata
-allora si vedra la relativa tipologia sulla mappa, se tale casella è vuota
+allora si vedrà la relativa tipologia sulla mappa, se tale casella è vuota
 allora la mappa verrà filtrata e non sarà possibile cercare tutte le stazioni di
 quel tipo. \\
 Il terzo pulsante mostra un'icona con la classica freccia indicante la
@@ -216,7 +216,7 @@ fuorchè la descrizione) si avrà la situazione mostrata in figura \ref{addStati
 Sotto tutti i campi in cui non è stato inserito nessun dato, si mostrerà a
 schermo una scritta di colore rosso indicante il motivo dell'errore. Questo
 accade perchè quando si preme il pulsante viene richiamata la funzione
-\textit{onSubmit} che richiama tutte le funzioni dallo stesso nome all'interno
+\texttt{onSubmit} che richiama tutte le funzioni dallo stesso nome all'interno
 di tutte le TextFormField. Ognuna di queste funzioni deve restituire un tipo di
 dato booleano
 True o False. Se anche un solo campo restituisce False, tutto lo stato della

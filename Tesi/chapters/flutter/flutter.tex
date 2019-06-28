@@ -50,7 +50,7 @@
 	modo da rendere le performance del software paragonabili a quelle di app
 	native sia su iOS sia su Android. 
 
-	\section{Stateless e Statefull Widget}
+	\section{Stateless e Stateful Widget}
 	% \subsection{Stateless e Statefull Widget}
 	In Flutter esiste una prima importante distinzione fra widget diversi:
 	quelli \textit{senza stato} e quelli \textit{con stato}. I primi possono
@@ -60,18 +60,18 @@
 	\textit{flutter/material.dart} che contiene tutti i principali widget. Nel
 	metodo main è presente solo una funzione, denominata \textit{runApp}, che
 	ottenuto in input un widget con particolari caratteristiche, esegue sul
-	dispositivo di test tale widget. Nell'esempio esso è chiamato MyApp ed
-	estende la classe StateLessWidget. Un oggetto di questo tipo deve
-	sovrascrivere il metodo \textit{build} che riceve in input il contesto nel
+	dispositivo di test tale widget. Nell'esempio esso è chiamato \texttt{MyApp} ed
+	estende la classe \texttt{StatelessWidget}. Un oggetto di questo tipo deve
+	sovrascrivere il metodo \texttt{build} che riceve in input il contesto nel
 	quale l'app si trova (che consiste nel particolare valore delle variabili e
 	di altri oggetti in quel preciso istante di esecuzione), e ritorna il widget
 	vero e proprio che dovrà essere eseguito. Per ottenere una corretta
 	struttura, anche in progetti più complessi di questo semplice esempio, è
-	necessario introdurre la classe MaterialApp, e tramite il suo costruttore
-	definire la sua \textit{home}, cioè la pagina principale, con una Scaffold,
-	definibile come l'impalcatura del widget. \'E necessario introdurre nel parametro
+	necessario introdurre la classe \texttt{MaterialApp}, e tramite il suo costruttore
+	definire la sua \textit{home}, cioè la pagina principale, con una \texttt{Scaffold},
+	definibile come l'impalcatura del widget. \`E necessario introdurre nel parametro
 	\textit{body} la classe che si vuole eseguire, la quale a sua volta estende
-	StateLessWidget e presenta ancora il metodo build. Qui viene ritornato un
+	\texttt{StatelessWidget} e presenta ancora il metodo build. Qui viene ritornato un
 	widget che avrà posizione centrale (Center), sarà contenuto in un
 	contenitore (Container, utile per decorare e aggiungere funzionalità a
 	specifiche sezioni di codice), e mostrerà un testo con il più classico dei
@@ -80,9 +80,9 @@
 	Da questo esempio si può già notare come la
 	struttura del codice flutter assuma \textit{graficamente} un'indentazione
 	naturale, con una gerarchia ad albero in cui c'è un padre iniziale e da cui
-	seguono numerosi figli, padri di successivi widget.
+	seguono numerosi figli, padri di successivi widget. 
 	\begin{minted}
-		[	frame=topline, framesep=2mm, baselinestretch=1.2,
+		[	frame=lines, framesep=2mm, baselinestretch=1.2,
 		fontsize=\footnotesize, linenos	]
 		{python}
 import 'package:flutter/material.dart'
@@ -96,8 +96,7 @@ class MyApp extends StatelessWidget {
 			home: Scaffold(
 				body: Home(),
 			) // Scaffold
-		); // MaterialApp
-}
+		); // MaterialApp  }
 }
 class Home extends StatelessWidget {
 	@override
@@ -107,8 +106,7 @@ class Home extends StatelessWidget {
 				child: Text('Hello World!',
 				style: TextStyle(fontSize:35.0),),
 			), // Container
-		); // Center
-	}
+		); // Center   }
 }
 	\end{minted}
 	\begin{figure}[!h]
@@ -118,27 +116,27 @@ class Home extends StatelessWidget {
 		\label{stateless1}
 	\end{figure} 
 	Nell'immagine \ref{statefull} viene mostrato invece un widget di tipo
-	Statefull. Si può notare come la prima parte del codice sia identica, con la
+	\texttt{Stateful}. Si può notare come la prima parte del codice sia identica, con la
 	classe MyApp che è ancora un widget senza stato. Ciò che cambia è la classe
 	Home che ora è con stato e presenta un unico metodo sovrascritto chiamato
-	\textit{createState}. La freccia =$>$ in dart è una notazione per scrivere in
+	\texttt{createState}. La freccia =$>$ in dart è una notazione per scrivere in
 	modo compatto un metodo che ritorna un unico oggetto, in questo caso una
-	classe chiamata \_HomeState, che estende State$<$Home$>$. Il trattino basso
+	classe chiamata \texttt{\_HomeState}, che estende \texttt{State$<$Home$>$}. Il trattino basso
 	in dart sta a indicare un oggetto privato, a cui quindi non è possibile
-	accedere se non in quella specifica classe. \_HomeState possiede una
+	accedere se non in quella specifica classe. \texttt{\_HomeState} possiede una
 	varibile di tipo intero denominata counter (anch'essa privata grazie al
 	trattino basso) e ha valore iniziale 0. Presenta poi un metodo denominato
-	buttonPressed al cui interno risiede una funzione molto importante, la
-	\textit{setState}. Quando viene compilata una sezione di codice che sta
+	\texttt{buttonPressed} al cui interno risiede una funzione molto importante, la
+	\texttt{setState}. Quando viene compilata una sezione di codice che sta
 	all'interno di tale funzione, viene richiamata la funzione build del widget
 	in esecuzione ed è quindi grazie ad essa che l'app diventa interattiva, in
 	quanto tramite azioni dell'utente cambiano i valori delle variabili.
 	Nell'esempio è presente un pulsante (FloatingActionButton) che aumenta il
 	valore della variabile counter, che viene stampato a schermo. Da notare
-	infine come si possa accedere al metodo toString di un oggetto in dart
-	anteponendo al suo nome il carattere \$. \newpage
+	infine come si possa accedere al metodo \texttt{toString} di un oggetto in dart
+	anteponendo al suo nome il carattere \texttt{\$}. \newpage
 	\begin{minted}
-		[	frame=topline, framesep=2mm, baselinestretch=1.2,
+		[	frame=lines, framesep=2mm, baselinestretch=1.2,
 		fontsize=\footnotesize, linenos	]
 		{python}
 import 'package:flutter/material.dart'
@@ -187,7 +185,7 @@ class _HomeState extends State<Home> {
 	\end{minted}
 	\begin{figure}[h!]
 		\centering
-		\caption{Esempio di codice di widget statefull}{\includegraphics[scale=0.55]{StateFullApp.png}\label{statefull}}
+		\caption{Esempio di codice di widget stateful}{\includegraphics[scale=0.55]{StateFullApp.png}\label{statefull}}
 	\end{figure}
 
 	\section{Principali Widget}
@@ -244,7 +242,7 @@ class _HomeState extends State<Home> {
 		minime dimensioni per poter contenere il widget indicato come child. \'E
 		molto utilizzato nel momento in cui si vuole migliorare graficamente una
 		schermata in quanto tramite il parametro opzionale decoration si può
-		introdurre una nuova classe chiamata BoxDecoration che gestisce un
+		introdurre una nuova classe chiamata \texttt{BoxDecoration} che gestisce un
 		grande insieme di aspetti grafici come i contorni (angoli e
 		ombre) o riempire con un colore o un'immagine il Container.
 	\end{trivlist}
@@ -296,7 +294,7 @@ class _HomeState extends State<Home> {
 		Consiste in un pannello orizzontale trascinabile dall'utente che entra
 		in orizzontale sullo schermo
 		solitamente dal lato sinistro della Scaffold. Come figlio è solito avere
-		una ListView (particolare tipo di Column che gestisce anche lo scroll
+		una \texttt{ListView} (particolare tipo di Column che gestisce anche lo scroll
 		verticale), in modo da mostrare all'utente utili link per la navigazione
 		all'interno dell'applicazione. L'AppBar mostra in automatico un Drawer
 		vuoto con la classica icona dei menù a comparsa se non viene specificato
@@ -314,15 +312,15 @@ class _HomeState extends State<Home> {
 		dell'azione che verrà eseguita a seguito di un tocco da parte
 		dell'utente. Il secondo è invece circolare e contiene un'icona che
 		dovrebbe mostrare direttamente quale sarà la sua funzione. Entrambi sono
-		widget di tipo Statefull, in quanto il loro colore o la loro forma può
+		widget di tipo Stateful, in quanto il loro colore o la loro forma può
 		cambiare a seguito di pressioni sullo schermo.
 		\item \textbf{TextField} \newline
 		Consente all'utente di inserire del testo, attraverso l'uso della
 		tastiera che appare sullo schermo. Il widget chiama la funzione
-		\textit{onChanged} ogni volta che viene modificato il testo nel campo. Se
+		\texttt{onChanged} ogni volta che viene modificato il testo nel campo. Se
 		l'utente indica di aver finito di digitare (ad esempio
 		premendo il pulsante di invio), si attiva
-		la funzione \textit{onSubmitted}. Per controllare il testo visualizzato nel
+		la funzione \texttt{onSubmitted}. Per controllare il testo visualizzato nel
 		TextField si può utilizzare una particolare classe chiamata
 		\verb|TextEditingController|, ad esempio per impostare
 		un valore iniziale già presente all'avvio della schermata o per inserire
@@ -349,11 +347,11 @@ class _HomeState extends State<Home> {
 		(solitamente una Column o una ListView). Esistono due tipologie: fisso e
 		dinamico. La prima rimane visibile anche quando l'utente interagisce con
 		altre parti dell'app. Può essere creato e visualizzato  con
-		la funzione \textit{ScaffoldState.showBottomSheet}. La seconda tipologia
+		la funzione \texttt{ScaffoldState.showBottomSheet}. La seconda tipologia
 		è un'alternativa a un menù o a una AlertDialog e impedisce all'utente di
 		interagire con il resto dell'app. I BottomSheet di questo tipo possono
 		essere creati e visualizzati con
-		la funzione \textit{showModalBottomSheet}.
+		la funzione \texttt{showModalBottomSheet}.
 	\end{trivlist}
 
 	\section{Animation}
@@ -376,9 +374,9 @@ class _HomeState extends State<Home> {
 	dinamiche di oggetti concreti. Per esempio per muovere una piccola sfera la
 	velocità con cui essa rimbalzerà dipenderà dalla spinta iniziale che le è
 	stata posta mentre l'altezza del salto dipenderà invece da quanto essa sia lontana dal terreno.
-	Nello specifico esiste una classe chiamata AnimationController che possiede
-	il metodo \textit{animateWith} e inoltre è possibile simulare il
-	comportamento di una molla con la classe SpringSimulator.
+	Nello specifico esiste una classe chiamata \texttt{AnimationController} che possiede
+	il metodo \texttt{animateWith} e inoltre è possibile simulare il
+	comportamento di una molla con la classe \texttt{SpringSimulator}.
 
 
 
